@@ -1,5 +1,5 @@
 ---
-title: "Bill's Maine Blueberry Gateau"
+title: "Blueberry Gateau"
 from: Paseman
 credit: "Bill"
 category: Desserts
