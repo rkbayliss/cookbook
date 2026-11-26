@@ -32,6 +32,7 @@ Thanksgiving 2026 turkey: brined with Kinder's Butcher's Brine Kit, then broken 
 - 1 clove fresh garlic, smashed
 
 ## Preparation
+You want 1lb of turkey per person at the meal. For a 12 lb bird, start thawing on Saturday before thanksgiving
 
 1. **Thaw:** thaw the turkey in the refrigerator, allowing 1 day for every 4 to 5 lbs. Once completely thawed, remove the neck and giblets and make sure the cavity is empty. Save the neck for stock.
 2. **Make the brine:** in a large pot, bring 8 cups of water to a boil. Turn off the heat and stir in the brine mix until fully dissolved. Add 8 cups of ice and 8 cups of cold water, and stir until the ice dissolves.
@@ -47,8 +48,5 @@ Thanksgiving 2026 turkey: brined with Kinder's Butcher's Brine Kit, then broken 
 ## Notes
 
 - For crispier skin, make sure the turkey is completely dry. The brine kit suggests air drying it uncovered in the refrigerator for up to 2 days.
-- The brine kit box's own method roasts the whole turkey instead: brush with butter or oil, rub with the Buttery Poultry Blend Seasoning, and roast breast side up at 325°F (rack on the lowest shelf), about 1 hour per 4 lbs, until a thermometer reads at least 165°F. Rest 30 minutes before carving.
 - Food safety: 130°F is the very bottom of the safe range for sous vide poultry. It's only safe because of the long cook time, and the water must stay at or above 130°F the whole time. Many sous vide cooks use about 135°F to 140°F for light meat for more margin.
 - Save the carcass, the neck, and the liquid from the bags for the [[turkey-gravy-and-carcass-stock|Turkey Gravy and Carcass Stock]].
-- Compare with [[sabrinas-thanksgiving-turkey|Sabrina's Thanksgiving Turkey]] from the 2012 Paseman cookbook, which uses similar aromatics.
-- Thanksgiving 2026: 
