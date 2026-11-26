@@ -1,0 +1,80 @@
+---
+pagination:
+  data: editions
+  size: 1
+  alias: edition
+editions:
+  - { slug: "", family: "", name: "" }
+  - { slug: "bayliss", family: "Bayliss", name: "The Bayliss Kitchen" }
+  - { slug: "paseman", family: "Paseman", name: "The Paseman Kitchen" }
+permalink: "/book/{% if edition.slug %}{{ edition.slug }}/{% endif %}"
+eleventyExcludeFromCollections: true
+---
+{#- The printable cookbook. Finished recipes only (status: done), grouped by kitchen and then
+    by category. /book/?r=slug1,slug2 shows just those recipes (drafts included) for printing.
+    scripts/build-pdf.js renders these pages to PDF with headless Chrome. -#}
+{%- set finished = collections.recipes | finished | fromFamily(edition.family) -%}
+{%- set kitchens = [edition.family] if edition.family else (collections.recipes | families) -%}
+<!doctype html>
+<html lang="{{ site.lang }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ edition.name or site.title }} · {{ site.families }}</title>
+  <link rel="stylesheet" href="/assets/cookbook.css">
+  <link rel="stylesheet" href="/assets/book.css">
+</head>
+<body class="page-book">
+  <nav class="book-nav screen-only">
+    <a href="/">← Back to the cookbook</a>
+    <button type="button" class="tool tool-strong" data-action="print">Print or save as PDF</button>
+  </nav>
+
+  <section class="book-cover">
+    <p class="title-families">{{ site.families }}</p>
+    <h1 class="title-main">{{ site.title }}</h1>
+    {%- if edition.name %}<p class="book-edition">{{ edition.name }}</p>{% endif %}
+    <div class="ornament" aria-hidden="true">❦</div>
+    <p class="title-tagline">{{ site.tagline }}</p>
+  </section>
+
+  <section class="book-toc">
+    <h2>Contents</h2>
+    {%- for k in kitchens %}
+    {%- if not edition.family %}<h3 class="toc-kitchen">The {{ k }} Kitchen</h3>{% endif %}
+    {%- for group in finished | fromFamily(k) | byCategory %}
+    <h4 class="toc-chapter">{{ group.name }}</h4>
+    <ol class="toc-list">
+      {%- for r in group.items %}
+      <li data-slug="{{ r.page.fileSlug }}"><a href="#r-{{ r.page.fileSlug }}"><span class="toc-title">{{ r.data.title | typography }}</span><span class="toc-leader" aria-hidden="true"></span><span class="toc-page"></span></a></li>
+      {%- endfor %}
+    </ol>
+    {%- endfor %}
+    {%- endfor %}
+  </section>
+
+  {%- for k in kitchens %}
+  {%- if not edition.family %}
+  <section class="book-part"><p class="part-label">Part {{ loop.index0 | roman }}</p><h2>The {{ k }} Kitchen</h2></section>
+  {%- endif %}
+  {%- for group in finished | fromFamily(k) | byCategory %}
+  <section class="book-chapter" data-chapter="{{ group.name }}">
+    <h2 class="book-chapter-title">{{ group.name }}</h2>
+  </section>
+  {%- for r in group.items %}
+  {%- set rd = r.data -%}{%- set rhtml = r.content -%}{%- set rslug = r.page.fileSlug -%}
+  {% include "recipe-article.njk" %}
+  {%- endfor %}
+  {%- endfor %}
+  {%- endfor %}
+
+  {#- Drafts and anything else, only shown when picked with ?r= -#}
+  <div class="book-extras" hidden>
+    {%- for r in collections.recipes | fromFamily(edition.family) %}{% if r.data.status == 'draft' %}
+    {%- set rd = r.data -%}{%- set rhtml = r.content -%}{%- set rslug = r.page.fileSlug -%}
+    {% include "recipe-article.njk" %}
+    {%- endif %}{% endfor %}
+  </div>
+  <script src="/assets/cookbook.js"></script>
+</body>
+</html>

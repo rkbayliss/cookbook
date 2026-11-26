@@ -1,0 +1,66 @@
+{#- One recipe, used by both its own page and the printed book.
+    Expects: rd (front matter), rhtml (rendered Markdown), rslug, rpath (source file), inBook. -#}
+{%- set parts = rhtml | sections -%}
+{%- set shown = rd.photos | availablePhotos(photoFiles) -%}
+<article class="recipe{% if rd.status == 'draft' %} is-draft{% endif %}{% if shown.length %} has-photo{% endif %}" id="r-{{ rslug }}" data-slug="{{ rslug }}">
+  <header class="recipe-header">
+    <p class="recipe-kicker">{{ rd.category }}{% if rd.from %} · {{ rd.from }} kitchen{% endif %}</p>
+    <h1 class="recipe-title">{{ rd.title | typography }}</h1>
+    {%- if rd.credit %}<p class="recipe-credit">from {{ rd.credit }}</p>{% endif %}
+    {%- if rd.serves or rd.time %}
+    <dl class="recipe-facts">
+      {%- if rd.serves %}<div><dt>Serves</dt><dd>{{ rd.serves }}</dd></div>{% endif %}
+      {%- if rd.time %}<div><dt>Time</dt><dd>{{ rd.time | typography }}</dd></div>{% endif %}
+    </dl>
+    {%- endif %}
+    {%- if rd.status == 'draft' %}<p class="draft-note">A recipe still being written down</p>{% endif %}
+  </header>
+
+  {%- if shown.length %}
+  <figure class="recipe-hero">
+    <img src="/images/{{ shown[0] | photoName }}.jpg" srcset="/images/{{ shown[0] | photoName }}-800.jpg 800w, /images/{{ shown[0] | photoName }}.jpg 1600w" sizes="(min-width: 60rem) 56rem, 100vw" alt="{{ shown[0] | photoCaption or rd.title }}">
+    {%- if shown[0] | photoCaption %}<figcaption>{{ shown[0] | photoCaption }}</figcaption>{% endif %}
+  </figure>
+  {%- endif %}
+
+  {%- if parts.intro | trim %}<div class="recipe-story">{{ parts.intro | safe }}</div>{% endif %}
+
+  <div class="recipe-body">
+    {%- if parts.ingredients %}
+    <section class="recipe-ingredients" aria-labelledby="{{ rslug }}-ingredients">
+      <h2 id="{{ rslug }}-ingredients">Ingredients</h2>
+      {{ parts.ingredients | safe }}
+    </section>
+    {%- endif %}
+    {%- if parts.method %}
+    <section class="recipe-method" aria-labelledby="{{ rslug }}-method">
+      <h2 id="{{ rslug }}-method">Preparation</h2>
+      {{ parts.method | safe }}
+    </section>
+    {%- endif %}
+  </div>
+
+  {%- for o in parts.other %}
+  <section class="recipe-extra"><h2>{{ o.heading | safe }}</h2>{{ o.body | safe }}</section>
+  {%- endfor %}
+
+  {%- if parts.notes %}
+  <section class="recipe-notes" aria-labelledby="{{ rslug }}-notes">
+    <h2 id="{{ rslug }}-notes">Notes</h2>
+    {{ parts.notes | safe }}
+  </section>
+  {%- endif %}
+
+  {%- if shown.length > 1 %}
+  <div class="recipe-gallery">
+    {%- for p in shown.slice(1) %}
+    <figure>
+      <img src="/images/{{ p | photoName }}-800.jpg" loading="lazy" alt="{{ p | photoCaption or rd.title }}">
+      {%- if p | photoCaption %}<figcaption>{{ p | photoCaption }}</figcaption>{% endif %}
+    </figure>
+    {%- endfor %}
+  </div>
+  {%- endif %}
+
+  {%- if rd.source %}<p class="recipe-source">{{ rd.source | typography }}</p>{% endif %}
+</article>

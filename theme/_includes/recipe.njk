@@ -1,0 +1,20 @@
+---
+layout: base.njk
+bodyClass: page-recipe
+---
+{%- set rd = { title: title, from: from, credit: credit, category: category, tags: tags, serves: serves, time: time, status: status, source: source, photos: photos } -%}
+{%- set rhtml = content -%}
+{%- set rslug = page.fileSlug -%}
+<nav class="recipe-nav" aria-label="Recipe tools">
+  <a href="/#{{ category | slugify }}" class="back">← {{ category }}</a>
+  <span class="tools">
+    <button type="button" class="tool" data-action="wake" hidden>Keep screen on</button>
+    <button type="button" class="tool" data-action="print">Print</button>
+    <a class="tool" href="{{ site.repo }}/edit/{{ site.branch }}/{{ page.inputPath | replace('./', '') }}">Edit</a>
+  </span>
+</nav>
+{% include "recipe-article.njk" %}
+{%- set tagList = (tags or []) -%}
+{%- if tagList.length %}
+<p class="recipe-tags">{% for t in tagList %}<a href="/?tag={{ t | urlencode }}">{{ t }}</a>{% endfor %}</p>
+{%- endif %}

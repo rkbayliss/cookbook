@@ -1,0 +1,24 @@
+---
+title: "Giblet Gravy"
+from: Bayliss
+credit: ""
+category: Side Dishes
+tags: []
+serves:
+time:
+status: done
+photos: []
+---
+
+## Ingredients
+
+- 1 can Chicken broth and dripping/broth from poultry
+- giblets/turkey meat
+- 2 eggs-sliced
+
+## Preparation
+
+1. After it is about to come to a boil, add ~ 3 Tbsp Parkay (margarine)
+2. Allow to boil/rolling boil
+3. Add 3 Tbsp of cornstarch mix to pot
+4. When thick add black pepper

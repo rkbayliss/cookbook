@@ -1,0 +1,25 @@
+{
+  "name": "rkbayliss-cookbook",
+  "version": "1.0.0",
+  "description": "The Bayliss & Paseman family cookbook",
+  "scripts": {
+    "build": "eleventy && node scripts/build-images.js",
+    "start": "node scripts/build-images.js && eleventy --serve",
+    "pdf": "node scripts/build-pdf.js",
+    "photos": "node scripts/photos.js",
+    "add-photo": "node scripts/photos.js add"
+  },
+  "type": "module",
+  "private": true,
+  "dependencies": {
+    "@11ty/eleventy": "^3.1.8",
+    "@fontsource-variable/eb-garamond": "^5.3.0",
+    "heic-convert": "^2.1.0",
+    "pdf-lib": "^1.17.1",
+    "puppeteer": "^25.19.0",
+    "sharp": "^0.35.5"
+  },
+  "allowScripts": {
+    "puppeteer@25.19.0": true
+  }
+}

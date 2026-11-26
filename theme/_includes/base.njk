@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="{{ site.lang }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if title %}{{ title | typography }} · {% endif %}{{ site.title }}</title>
+  <meta name="description" content="{{ description or site.tagline }}">
+  <meta name="theme-color" content="#f6efe1" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#1f1a15" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="/assets/fonts/eb-garamond-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/assets/cookbook.css">
+</head>
+<body class="{{ bodyClass }}">
+  <header class="masthead">
+    <a href="/" class="masthead-link">
+      <span class="masthead-families">{{ site.families }}</span>
+      <span class="masthead-title">{{ site.title }}</span>
+    </a>
+  </header>
+  <main id="main">
+    {{ content | safe }}
+  </main>
+  <footer class="colophon">
+    <div class="ornament" aria-hidden="true">⁂</div>
+    <p>Set in EB Garamond. <a href="/pdf/family-cookbook.pdf">The cookbook as a PDF</a> · <a href="{{ site.repo }}">Edit on GitHub</a></p>
+  </footer>
+  <script src="/assets/cookbook.js" defer></script>
+</body>
+</html>

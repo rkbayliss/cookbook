@@ -1,0 +1,52 @@
+/* The printable book (/book/). On screen it reads as one long page. Printed from the browser,
+   or rendered by scripts/build-pdf.js, it becomes a paginated cookbook. */
+
+.book-nav { max-width: var(--wide); margin: 0 auto; padding: 1rem 1.25rem; display: flex; justify-content: space-between; align-items: center; gap: 1rem; flex-wrap: wrap; }
+.book-cover { text-align: center; padding: 18vh 1.25rem 12vh; }
+.book-edition { font-size: 1.4em; font-style: italic; margin: 0.8rem 0 0; }
+.book-cover .ornament { font-size: 1.8em; margin: 2.5rem 0 1rem; }
+
+.book-toc { max-width: var(--measure); margin: 0 auto 4rem; padding: 0 1.25rem; }
+.book-toc h2 { text-align: center; font-weight: 400; font-style: italic; font-size: 2em; margin: 0 0 1.5rem; }
+.toc-kitchen { font-weight: 400; font-size: 1.2em; text-align: center; margin: 2rem 0 0.4rem; font-variant-caps: all-small-caps; letter-spacing: 0.12em; color: var(--accent); }
+.toc-chapter { font-weight: 400; font-style: italic; font-size: 1.05em; margin: 1rem 0 0.2rem; color: var(--ink-soft); }
+.toc-list { list-style: none; margin: 0; padding: 0; }
+.toc-list li { margin: 0.08rem 0; }
+.toc-list a { text-decoration: none; display: flex; align-items: baseline; gap: 0.4em; }
+.toc-leader { flex: 1; border-bottom: 1px dotted var(--ink-faint); transform: translateY(-0.25em); opacity: 0.6; }
+.toc-page { min-width: 1.8em; text-align: right; font-variant-numeric: oldstyle-nums; }
+/* Page numbers only mean something on paper. The space is reserved even while empty, so
+   filling the numbers in (scripts/build-pdf.js) never moves anything. */
+@media screen { .toc-leader, .toc-page { display: none; } }
+
+.book-part, .book-chapter { text-align: center; padding: 3rem 1.25rem; }
+.part-label { font-variant-caps: all-small-caps; letter-spacing: 0.14em; color: var(--ink-faint); margin: 0; }
+.book-part h2 { font-weight: 400; font-style: italic; font-size: 2.6em; margin: 0.2em 0; }
+.book-chapter-title { font-weight: 400; font-size: 2em; margin: 0; }
+.book-chapter-title::after { content: "❦"; display: block; color: var(--accent); font-size: 0.6em; margin-top: 0.6em; }
+.page-book .recipe { padding: 2rem 1.25rem; border-top: 1px solid var(--rule); }
+.page-book .recipe-ingredients { position: static; }
+.page-book.is-selection .recipe { border-top: 0; }
+
+/* ---------- Print ---------- */
+@page {
+  size: letter;
+  margin: 0.8in 0.85in 0.9in;
+  @bottom-center { content: counter(page); font-family: "EB Garamond", serif; font-size: 10pt; color: #6d6053; }
+}
+@page cover { @bottom-center { content: none; } }
+@page divider { @bottom-center { content: none; } }
+
+@media print {
+  .page-book { font-size: 11pt; }
+  .book-nav { display: none; }
+  .book-cover { page: cover; padding: 2.6in 0 0; }
+  .book-toc { page: divider; break-before: page; padding: 0; margin: 0; font-size: 0.95em; max-width: none; }
+  .book-toc .toc-list li, .toc-chapter { break-inside: avoid; }
+  .toc-chapter { break-after: avoid; }
+  .book-part, .book-chapter { page: divider; break-before: page; padding-top: 3in; }
+  .page-book .recipe { border-top: 0; padding: 0; break-before: page; }
+  .page-book.is-selection .recipe:first-of-type { break-before: auto; }
+  .page-book .recipe-hero img { max-height: 3.4in; }
+  .page-book .recipe-source { margin-bottom: 0; }
+}
