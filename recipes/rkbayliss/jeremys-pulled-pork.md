@@ -14,7 +14,8 @@ photos: []
 
 Ahhh your captains are marrying each other. It's exciting so here is the process…
 
-## From Rod and Katherine
+## From Katherine
+Jeremy made this for Cheyenne and Luis' wedding pot luck. As the legend goes, he blacked out the night before and didn't remember putting it in the oven, but black-out Jeremy had done sober Jeremy a solid. It was delicious. The following week, I made it for Ray for his birthday. It's pretty easy to make and incredibly aromatic. Your home will smell insane. I'd like to try and modify it to work in a slow cooker. 
 
 ## Ingredients
 
