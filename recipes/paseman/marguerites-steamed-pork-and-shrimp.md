@@ -2,7 +2,7 @@
 title: "Marguerite's Steamed Pork and Shrimp"
 from: Paseman
 credit: "Marguerite"
-category: Main Dishes
+category: Weeknight Mains
 tags: []
 serves:
 time:

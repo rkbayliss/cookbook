@@ -2,7 +2,7 @@
 title: "Marguerite's Steamed Catfish"
 from: Paseman
 credit: "Marguerite"
-category: Main Dishes
+category: Weeknight Mains
 tags: []
 serves:
 time:

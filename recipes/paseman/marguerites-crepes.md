@@ -2,7 +2,7 @@
 title: "Marguerite's Crepes"
 from: Paseman
 credit: "Marguerite"
-category: Appetizers and Snacks
+category: Special Occasion
 tags: []
 serves:
 time:

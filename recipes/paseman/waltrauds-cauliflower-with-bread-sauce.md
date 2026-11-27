@@ -2,8 +2,8 @@
 title: "Waltraud's Cauliflower with Bread Sauce"
 from: Paseman
 credit: "Waltraud"
-category: Side Dishes
-tags: []
+category: Weeknight Sides
+tags: [thanksgiving]
 serves:
 time:
 status: done

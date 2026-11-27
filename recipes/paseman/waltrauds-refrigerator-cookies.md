@@ -3,7 +3,7 @@ title: "Waltraud's Refrigerator Cookies"
 from: Paseman
 credit: "Waltraud"
 category: Desserts
-tags: []
+tags: [christmas]
 serves:
 time:
 status: done

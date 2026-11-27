@@ -2,7 +2,7 @@
 title: "Jamaican Jerk Seasoning"
 from: Bayliss
 credit: ""
-category: Main Dishes
+category: Weeknight Mains
 tags: []
 serves:
 time:

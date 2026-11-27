@@ -2,7 +2,7 @@
 title: "Mommy's Sweet Tea"
 from: Bayliss
 credit: "Mommy"
-category: Beverages
+category: Drinks
 tags: []
 serves:
 time:

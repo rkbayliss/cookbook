@@ -2,7 +2,7 @@
 title: "Mommy's Mexican Cornbread"
 from: Bayliss
 credit: "Mommy"
-category: Side Dishes
+category: Weeknight Sides
 tags: []
 serves:
 time:

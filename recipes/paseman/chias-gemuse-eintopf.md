@@ -2,7 +2,7 @@
 title: "Chia's Gemüse Eintopf"
 from: Paseman
 credit: "Chia"
-category: Main Dishes
+category: Weeknight Mains
 tags: []
 serves:
 time:

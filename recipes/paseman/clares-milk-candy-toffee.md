@@ -3,7 +3,7 @@ title: "Clare's Milk Candy/Toffee"
 from: Paseman
 credit: "Clare"
 category: Desserts
-tags: []
+tags: [christmas]
 serves:
 time:
 status: done

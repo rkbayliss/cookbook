@@ -2,7 +2,7 @@
 title: "Marguerite's Shrimp and Eggs"
 from: Paseman
 credit: "Marguerite"
-category: Main Dishes
+category: Weeknight Mains
 tags: []
 serves:
 time:

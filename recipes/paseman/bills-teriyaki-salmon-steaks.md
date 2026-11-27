@@ -2,7 +2,7 @@
 title: "Bill's Teriyaki Salmon Steaks"
 from: Paseman
 credit: "Bill"
-category: Main Dishes
+category: Weeknight Mains
 tags: []
 serves:
 time:

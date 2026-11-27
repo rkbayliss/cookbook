@@ -2,7 +2,7 @@
 title: "Bill's Quick Poached Chinese Fish"
 from: Paseman
 credit: "Bill"
-category: Main Dishes
+category: Weeknight Mains
 tags: []
 serves:
 time:

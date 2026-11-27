@@ -2,7 +2,7 @@
 title: "Ray's Broiled Steak"
 from: Paseman
 credit: "Ray"
-category: Main Dishes
+category: Weeknight Mains
 tags: []
 serves:
 time:

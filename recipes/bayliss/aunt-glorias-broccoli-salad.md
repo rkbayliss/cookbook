@@ -2,7 +2,7 @@
 title: "Aunt Gloria's Broccoli Salad"
 from: Bayliss
 credit: "Aunt Gloria"
-category: Side Dishes
+category: Weeknight Sides
 tags: []
 serves:
 time:

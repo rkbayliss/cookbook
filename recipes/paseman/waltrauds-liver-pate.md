@@ -2,7 +2,7 @@
 title: "Waltraud's Liver Pate"
 from: Paseman
 credit: "Waltraud"
-category: Appetizers and Snacks
+category: Special Occasion
 tags: []
 serves:
 time:

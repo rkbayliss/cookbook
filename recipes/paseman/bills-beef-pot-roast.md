@@ -2,7 +2,7 @@
 title: "Bill's Beef Pot Roast"
 from: Paseman
 credit: "Bill"
-category: Main Dishes
+category: Weeknight Mains
 tags: []
 serves:
 time:

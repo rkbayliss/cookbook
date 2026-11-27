@@ -2,7 +2,7 @@
 title: "Katherine's Dutch Baby"
 from: Paseman
 credit: "Katherine"
-category: Appetizers and Snacks
+category: Special Occasion
 tags: []
 serves:
 time:

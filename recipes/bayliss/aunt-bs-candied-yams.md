@@ -2,7 +2,7 @@
 title: "Aunt B's Candied Yams"
 from: Bayliss
 credit: "Aunt B"
-category: Side Dishes
+category: Holidays
 tags: []
 serves:
 time:

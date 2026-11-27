@@ -2,7 +2,7 @@
 title: "Nana's Kool Aid Punch"
 from: Bayliss
 credit: "Nana"
-category: Beverages
+category: Drinks
 tags: []
 serves:
 time:

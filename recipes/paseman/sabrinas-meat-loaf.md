@@ -2,7 +2,7 @@
 title: "Sabrina's Meat Loaf"
 from: Paseman
 credit: "Sabrina"
-category: Main Dishes
+category: Weeknight Mains
 tags: []
 serves:
 time:

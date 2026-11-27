@@ -29,8 +29,13 @@ scripts/                photos.js (photo tidying), build-images.js, build-pdf.js
   - `title`: in quotes if it contains an apostrophe, e.g. `"Waltraud's Citrus Salad"`.
   - `from`: `Bayliss` or `Paseman`. This is the kitchen it's listed under.
   - `credit`: the person it came from, as the family calls them (`Mommy`, `Aunt B`, `Bill`).
-  - `category`: exactly one of `Appetizers and Snacks`, `Main Dishes`, `Side Dishes`,
-    `Desserts`, `Beverages`.
+  - `category`: exactly one of `Weeknight Mains`, `Weeknight Sides`, `Holidays`,
+    `Special Occasion`, `Desserts`, `Drinks`. Pick by how the dish is mainly used: anything
+    made on ordinary weeknights is Weeknight, even if it also appears at a holiday (give it the
+    holiday tag instead). Holidays is for dishes made for a holiday (Thanksgiving, Christmas,
+    St. Patrick's Day, New Year's). Special Occasion is for birthdays, guests, weekend
+    breakfasts like the Dutch baby and crepes, and appetizers. A recipe made to go into another
+    one (ragu, polpette, preserved lemons) takes that dish's category.
   - `tags`: occasions and other useful words, lowercase, e.g. `[thanksgiving, christmas]`.
     `[]` if none.
   - `serves`, `time`: free text, may be blank.

@@ -2,7 +2,7 @@
 title: "Bill's Corned Beef (and Cabbage)"
 from: Paseman
 credit: "Bill"
-category: Main Dishes
+category: Holidays
 tags: [holiday]
 serves:
 time:

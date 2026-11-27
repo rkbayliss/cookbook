@@ -2,7 +2,7 @@
 title: "Pumpkin Dip"
 from: Bayliss
 credit: ""
-category: Side Dishes
+category: Holidays
 tags: []
 serves:
 time:

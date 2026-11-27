@@ -2,7 +2,7 @@
 title: "Corn & Cheese Chowder"
 from: Bayliss
 credit: ""
-category: Side Dishes
+category: Weeknight Sides
 tags: []
 serves:
 time:

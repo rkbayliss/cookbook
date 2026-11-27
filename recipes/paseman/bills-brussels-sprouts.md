@@ -2,7 +2,7 @@
 title: "Bill's Brussels Sprouts"
 from: Paseman
 credit: "Bill"
-category: Side Dishes
+category: Weeknight Sides
 tags: []
 serves:
 time:

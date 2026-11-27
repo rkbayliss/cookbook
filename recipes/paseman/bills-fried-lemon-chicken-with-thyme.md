@@ -2,7 +2,7 @@
 title: "Bill's Fried Lemon Chicken with Thyme"
 from: Paseman
 credit: "Bill"
-category: Main Dishes
+category: Weeknight Mains
 tags: []
 serves:
 time:

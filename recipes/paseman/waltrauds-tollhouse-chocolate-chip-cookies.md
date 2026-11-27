@@ -3,7 +3,7 @@ title: "Waltraud's Tollhouse Chocolate Chip Cookies"
 from: Paseman
 credit: "Waltraud"
 category: Desserts
-tags: []
+tags: [christmas]
 serves:
 time:
 status: done

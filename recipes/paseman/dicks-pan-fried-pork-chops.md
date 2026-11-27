@@ -2,7 +2,7 @@
 title: "Dick's Pan Fried Pork Chops"
 from: Paseman
 credit: "Dick"
-category: Main Dishes
+category: Weeknight Mains
 tags: []
 serves:
 time:

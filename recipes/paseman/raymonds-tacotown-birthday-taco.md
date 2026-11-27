@@ -2,7 +2,7 @@
 title: "Raymond's TacoTown Birthday Taco"
 from: Paseman
 credit: "Raymond"
-category: Main Dishes
+category: Special Occasion
 tags: [holiday]
 serves:
 time:

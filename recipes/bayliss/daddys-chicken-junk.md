@@ -2,7 +2,7 @@
 title: "Daddy's Chicken Junk"
 from: Bayliss
 credit: "Daddy"
-category: Main Dishes
+category: Weeknight Mains
 tags: []
 serves:
 time:

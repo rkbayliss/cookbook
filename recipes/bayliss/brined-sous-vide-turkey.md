@@ -2,7 +2,7 @@
 title: "Brined Sous Vide Turkey"
 from: Bayliss
 credit: "Katherine"
-category: Main Dishes
+category: Holidays
 tags: [thanksgiving]
 serves:
 time: 3 to 5 days thawing, 12 hours brining, 12 to 24 hours sous vide

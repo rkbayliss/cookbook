@@ -2,7 +2,7 @@
 title: "Marguerite's Egg Rice"
 from: Paseman
 credit: "Marguerite"
-category: Side Dishes
+category: Weeknight Sides
 tags: []
 serves:
 time:

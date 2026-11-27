@@ -2,7 +2,7 @@
 title: "Green Beans and Bacon"
 from: Paseman
 credit: "Waltraud"
-category: Side Dishes
+category: Weeknight Sides
 tags: []
 serves:
 time:

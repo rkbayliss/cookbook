@@ -2,7 +2,7 @@
 title: "Bill's Standing Rib Roast"
 from: Paseman
 credit: "Bill"
-category: Main Dishes
+category: Holidays
 tags: [holiday]
 serves:
 time:

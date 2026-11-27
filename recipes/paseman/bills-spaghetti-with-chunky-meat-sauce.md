@@ -2,7 +2,7 @@
 title: "Bill's Spaghetti with Chunky Meat Sauce"
 from: Paseman
 credit: "Bill"
-category: Main Dishes
+category: Weeknight Mains
 tags: []
 serves:
 time:

@@ -2,7 +2,7 @@
 title: "Polpette (Meatballs)"
 from: Paseman
 credit: ""
-category: Main Dishes
+category: Special Occasion
 tags: [holiday]
 serves:
 time:

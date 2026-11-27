@@ -2,7 +2,7 @@
 title: "Waltraud's Citrus Salad"
 from: Paseman
 credit: "Waltraud"
-category: Side Dishes
+category: Holidays
 tags: []
 serves:
 time:

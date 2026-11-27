@@ -2,8 +2,8 @@
 title: Recipe Name
 from: Bayliss          # Bayliss, Paseman, or Friends
 credit: Who it's from  # e.g. Mommy, Aunt B, Dad, a friend's name
-category: Main Dishes  # Main Dishes, Side Dishes, Beverages, Desserts, Appetizers and Snacks
-tags: [thanksgiving]   # optional, any words that help you find it later
+category: Weeknight Mains  # Weeknight Mains, Weeknight Sides, Holidays, Special Occasion, Desserts, Drinks
+tags: []               # e.g. [thanksgiving]: a weeknight dish you also make for a holiday keeps its category and gets the holiday tag
 serves:
 time:
 status: draft          # draft while you're still working on it, done when it's final

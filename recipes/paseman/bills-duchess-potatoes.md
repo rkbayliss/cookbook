@@ -2,8 +2,8 @@
 title: "Bill's Duchess Potatoes"
 from: Paseman
 credit: "Bill"
-category: Side Dishes
-tags: []
+category: Weeknight Sides
+tags: [thanksgiving]
 serves:
 time:
 status: done

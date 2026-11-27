@@ -2,7 +2,7 @@
 title: "Jamaican Steamed Cabbage"
 from: Bayliss
 credit: ""
-category: Side Dishes
+category: Weeknight Sides
 tags: []
 serves:
 time:

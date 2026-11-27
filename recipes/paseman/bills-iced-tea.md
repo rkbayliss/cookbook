@@ -2,7 +2,7 @@
 title: "Bill's Iced Tea"
 from: Paseman
 credit: "Bill"
-category: Beverages
+category: Drinks
 tags: []
 serves:
 time:

@@ -2,7 +2,7 @@
 title: "Mom's Egg Pancakes"
 from: Paseman
 credit: "Mom"
-category: Appetizers and Snacks
+category: Special Occasion
 tags: []
 serves:
 time:

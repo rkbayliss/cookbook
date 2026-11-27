@@ -2,7 +2,7 @@
 title: "Mechtha's Pizza"
 from: Paseman
 credit: "Mechtha"
-category: Main Dishes
+category: Weeknight Mains
 tags: []
 serves:
 time:

@@ -2,7 +2,7 @@
 title: "Katherine's Perfect Pasta"
 from: Paseman
 credit: "Katherine"
-category: Main Dishes
+category: Weeknight Mains
 tags: []
 serves:
 time:

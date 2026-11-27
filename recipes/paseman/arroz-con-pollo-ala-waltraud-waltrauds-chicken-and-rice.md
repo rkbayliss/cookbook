@@ -2,7 +2,7 @@
 title: "Arroz Con Pollo ala Waltraud (Waltraud's chicken and Rice)"
 from: Paseman
 credit: "Waltraud"
-category: Main Dishes
+category: Weeknight Mains
 tags: []
 serves:
 time:

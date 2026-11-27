@@ -2,7 +2,7 @@
 title: "Bill's Baked Brie"
 from: Paseman
 credit: "Bill"
-category: Appetizers and Snacks
+category: Special Occasion
 tags: []
 serves:
 time:

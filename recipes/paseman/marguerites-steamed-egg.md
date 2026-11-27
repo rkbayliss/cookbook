@@ -2,7 +2,7 @@
 title: "Marguerite's Steamed Egg"
 from: Paseman
 credit: "Marguerite"
-category: Side Dishes
+category: Weeknight Sides
 tags: []
 serves:
 time:

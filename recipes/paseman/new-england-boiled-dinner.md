@@ -2,7 +2,7 @@
 title: "New England Boiled Dinner"
 from: Paseman
 credit: ""
-category: Main Dishes
+category: Holidays
 tags: [holiday]
 serves:
 time:

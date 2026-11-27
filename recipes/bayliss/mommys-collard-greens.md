@@ -2,7 +2,7 @@
 title: "Mommy's Collard Greens"
 from: Bayliss
 credit: "Mommy"
-category: Side Dishes
+category: Holidays
 tags: []
 serves:
 time:

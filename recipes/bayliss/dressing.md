@@ -2,8 +2,8 @@
 title: "Dressing"
 from: Bayliss
 credit: ""
-category: Side Dishes
-tags: []
+category: Holidays
+tags: [thanksgiving]
 serves:
 time:
 status: draft

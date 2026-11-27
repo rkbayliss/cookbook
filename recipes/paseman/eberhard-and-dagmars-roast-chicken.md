@@ -2,7 +2,7 @@
 title: "Eberhard and Dagmar's Roast Chicken"
 from: Paseman
 credit: "Eberhard and Dagmar"
-category: Main Dishes
+category: Weeknight Mains
 tags: []
 serves:
 time:

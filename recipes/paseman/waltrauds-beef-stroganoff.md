@@ -2,7 +2,7 @@
 title: "Waltraud's Beef Stroganoff"
 from: Paseman
 credit: "Waltraud"
-category: Main Dishes
+category: Weeknight Mains
 tags: []
 serves:
 time:

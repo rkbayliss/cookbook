@@ -2,7 +2,7 @@
 title: "Jamaican Rum Punch"
 from: Bayliss
 credit: ""
-category: Beverages
+category: Drinks
 tags: []
 serves:
 time:

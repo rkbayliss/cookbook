@@ -2,7 +2,7 @@
 title: "Waltraud's Anchovies and Eggs"
 from: Paseman
 credit: "Waltraud"
-category: Appetizers and Snacks
+category: Holidays
 tags: [christmas]
 serves:
 time:

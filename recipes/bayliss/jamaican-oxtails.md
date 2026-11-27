@@ -2,7 +2,7 @@
 title: "Jamaican Oxtails"
 from: Bayliss
 credit: ""
-category: Main Dishes
+category: Special Occasion
 tags: []
 serves:
 time:

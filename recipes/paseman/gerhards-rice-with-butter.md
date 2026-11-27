@@ -2,7 +2,7 @@
 title: "Gerhard's Rice with Butter"
 from: Paseman
 credit: "Gerhard"
-category: Side Dishes
+category: Weeknight Sides
 tags: []
 serves:
 time:

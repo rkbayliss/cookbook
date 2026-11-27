@@ -2,7 +2,7 @@
 title: "Sterny's Pork Fried Rice"
 from: Bayliss
 credit: "Sterny"
-category: Main Dishes
+category: Weeknight Mains
 tags: []
 serves:
 time:

@@ -3,7 +3,7 @@ title: "Sabrina's Pumpkin Pie"
 from: Paseman
 credit: "Sabrina"
 category: Desserts
-tags: []
+tags: [thanksgiving]
 serves:
 time:
 status: done

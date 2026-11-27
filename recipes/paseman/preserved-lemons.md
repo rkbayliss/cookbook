@@ -2,7 +2,7 @@
 title: "Preserved Lemons"
 from: Paseman
 credit: ""
-category: Main Dishes
+category: Special Occasion
 tags: []
 serves:
 time:

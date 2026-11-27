@@ -2,7 +2,7 @@
 title: "Waltraud's Broccoli (or Spinach) Casserole"
 from: Paseman
 credit: "Waltraud"
-category: Side Dishes
+category: Weeknight Sides
 tags: []
 serves:
 time:

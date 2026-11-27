@@ -2,7 +2,7 @@
 title: "Clare's Cutlets"
 from: Paseman
 credit: "Clare"
-category: Appetizers and Snacks
+category: Special Occasion
 tags: []
 serves:
 time:

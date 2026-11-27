@@ -2,7 +2,7 @@
 title: "Marguerite's Napa Cabbage with Rice Bean Thread"
 from: Paseman
 credit: "Marguerite"
-category: Side Dishes
+category: Weeknight Sides
 tags: []
 serves:
 time:

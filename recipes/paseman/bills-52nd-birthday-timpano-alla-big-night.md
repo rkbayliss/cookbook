@@ -2,7 +2,7 @@
 title: "Bill's 52nd Birthday - Timpano Alla \"Big Night\""
 from: Paseman
 credit: "Bill"
-category: Main Dishes
+category: Special Occasion
 tags: [holiday]
 serves:
 time:

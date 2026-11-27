@@ -2,7 +2,7 @@
 title: "Bill's Chicken Tagine with Prunes and Tomatoes"
 from: Paseman
 credit: "Bill"
-category: Main Dishes
+category: Special Occasion
 tags: []
 serves:
 time:

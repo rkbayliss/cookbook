@@ -2,7 +2,7 @@
 title: "Marguerite's Milk Tea"
 from: Paseman
 credit: "Marguerite"
-category: Beverages
+category: Drinks
 tags: []
 serves:
 time:

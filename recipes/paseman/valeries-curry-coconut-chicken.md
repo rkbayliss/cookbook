@@ -2,7 +2,7 @@
 title: "Valerie's Curry Coconut Chicken"
 from: Paseman
 credit: "Valerie"
-category: Main Dishes
+category: Weeknight Mains
 tags: []
 serves:
 time:

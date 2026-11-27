@@ -2,7 +2,7 @@
 title: "Mona's Cranberry Sauce"
 from: Paseman
 credit: "Mona"
-category: Appetizers and Snacks
+category: Holidays
 tags: [thanksgiving]
 serves:
 time:

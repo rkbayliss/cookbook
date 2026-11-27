@@ -2,7 +2,7 @@
 title: "Bill's Meatless Moussaka"
 from: Paseman
 credit: "Bill"
-category: Main Dishes
+category: Weeknight Mains
 tags: []
 serves:
 time:

@@ -2,7 +2,7 @@
 title: "Sterny's Sous Vide Steaks"
 from: Bayliss
 credit: "Sterny"
-category: Main Dishes
+category: Special Occasion
 tags: []
 serves:
 time:

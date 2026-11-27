@@ -2,7 +2,7 @@
 title: Aunt B's Pot Roast
 from: Bayliss
 credit: Mommy, adapted from Aunt B
-category: Main Dishes
+category: Weeknight Mains
 tags: [christmas, crock pot]
 serves:
 time: about 5 hours (mostly hands-off)

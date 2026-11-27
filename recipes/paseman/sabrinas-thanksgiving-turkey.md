@@ -2,7 +2,7 @@
 title: "Sabrina's Thanksgiving Turkey"
 from: Paseman
 credit: "Sabrina"
-category: Main Dishes
+category: Holidays
 tags: [holiday, thanksgiving]
 serves:
 time:
