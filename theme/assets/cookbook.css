@@ -334,3 +334,34 @@ figcaption { text-align: center; font-style: italic; color: var(--ink-soft); fon
 .home-nav a:hover { border-bottom-color: var(--accent); }
 @media (max-width: 30rem) { .home-nav { text-align: center; } }
 @media print { .home-nav { display: none; } }
+
+/* ---------- Home: frontispiece ---------- */
+.frontispiece {
+  max-width: var(--wide); margin: 0.6rem auto 2.2rem;
+  display: grid; grid-template-columns: 1fr; gap: 2rem; align-items: center;
+}
+.frontis-photo {
+  margin: 0; padding: 0.65rem 0.65rem 0; background: var(--paper-deep);
+  border: 1px solid var(--rule); border-radius: 2px;
+  box-shadow: 0 10px 28px -18px rgba(60, 40, 20, 0.45);
+}
+.frontis-photo img {
+  width: 100%; aspect-ratio: 4 / 3; object-fit: cover; object-position: 50% 30%;
+  filter: sepia(0.14) contrast(1.03); border-radius: 1px;
+}
+.frontis-photo figcaption {
+  margin: 0; padding: 0.45rem 0 0.55rem; font-size: 0.8em; color: var(--ink-faint);
+  font-variant-caps: all-small-caps; letter-spacing: 0.1em; font-style: normal;
+}
+.frontis-text { text-align: center; }
+.frontis-text .title-main { font-size: clamp(2.5rem, 1.7rem + 3.4vw, 3.9rem); margin-top: 0; }
+.frontis-text .title-tagline { margin: 1.1rem auto 1.8rem; }
+.frontis-text .search { display: block; max-width: 22rem; margin: 0 auto; }
+@media (min-width: 52rem) {
+  .frontispiece { grid-template-columns: minmax(0, 6fr) minmax(0, 4fr); gap: 3rem; margin-top: 1.4rem; }
+  .frontis-text .title-main { font-size: clamp(2.6rem, 1.2rem + 2.6vw, 3.6rem); }
+  .frontis-photo img { aspect-ratio: 4 / 5; }
+}
+@media (prefers-color-scheme: dark) { .frontis-photo img { filter: sepia(0.14) brightness(0.92); } }
+.finder { margin-top: 0; }
+@media (max-width: 51.99rem) { .frontis-photo { order: -1; } }

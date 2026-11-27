@@ -7,17 +7,25 @@ bodyClass: page-index
 <nav class="home-nav" aria-label="Site">
   <a href="/about/">About the cookbook</a>
 </nav>
-<section class="title-page">
-  <h1 class="title-main">{{ site.title }}</h1>
-  <p class="title-tagline">{{ site.tagline }}</p>
-  <p class="title-count">{{ all.length }} recipes</p>
-</section>
+{#- Frontispiece: the title facing a mounted photograph, as in an old book. -#}
+<header class="frontispiece">
+  <div class="frontis-text">
+    <h1 class="title-main">{{ site.title }}</h1>
+    <p class="title-tagline">{{ site.tagline }}</p>
+    <label class="search">
+      <span class="visually-hidden">Search recipes</span>
+      <input type="search" id="search" placeholder="Search {{ all.length }} recipes…" title="Search by name, cook, or ingredient" autocomplete="off">
+    </label>
+  </div>
+  <figure class="frontis-photo">
+    <img src="/assets/header.jpg" srcset="/assets/header-1000.jpg 1000w, /assets/header.jpg 1800w"
+         sizes="(min-width: 52rem) 26rem, 100vw" width="1800" height="1200"
+         alt="Rod and Katherine on their wedding day, foreheads together, both smiling">
+    <figcaption>Photograph by Rose Freedman</figcaption>
+  </figure>
+</header>
 
-<section class="finder" aria-label="Find a recipe">
-  <label class="search">
-    <span class="visually-hidden">Search recipes</span>
-    <input type="search" id="search" placeholder="Search by name, cook, or ingredient…" autocomplete="off">
-  </label>
+<section class="finder" aria-label="Filter recipes">
   <div class="filters" role="group" aria-label="Kitchen">
     <button type="button" class="chip is-on" data-family="">Both kitchens</button>
     {%- for f in all | families %}
