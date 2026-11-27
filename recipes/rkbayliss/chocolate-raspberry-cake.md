@@ -8,7 +8,7 @@ serves:
 time:
 status: draft
 story_by:
-photos: []
+photos: [chocolate-raspberry-cake_katherine-with-the-cake.jpg]
 ---
 
 ## From Rod and Katherine
