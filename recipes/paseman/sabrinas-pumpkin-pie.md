@@ -45,4 +45,7 @@ Sabrina has made this pumpkin pie from scratch for several Thanksgivings. It als
 
 1. CRUST In the bowl of a food processor fitted with the steel blade, process the flour sugar, cinnamon and salt. Add the frozen butter and process until it is the size of large peas, about 5 seconds. Add the frozen shortening and process for 3 seconds. In a measuring cup, combine the egg and the water. Add egg mixture and process for 5 seconds. Empty the dough onto a counter and incorporate Remaining flour without overworking the dough. Let rest 2 hours. FILLING In small bowl, combine sugar, salt and spices. Beat eggs in a large bowl. Stir in pumpkin and evaporated milk. Pour into pie shell. Bake at 425 degrees for 15 minutes. Reduce temperature to 350 and bake for 45 minutes or until firm
 
-## Notes http://www.foodnetwork.com/recipes/ traditional-pumpkin-pie-recipe/index.html IMG4815
+## Notes
+
+- Original recipe: http://www.foodnetwork.com/recipes/traditional-pumpkin-pie-recipe/index.html
+- Photos in the 2012 book: IMG4815

@@ -42,15 +42,16 @@ const METHOD = ["preparation", "method", "directions", "instructions", "steps"];
 // Splits rendered recipe HTML at each <h2> so the layout can place the parts.
 export function splitSections(html) {
   const chunks = String(html).split(/(?=<h2[\s>])/);
-  const out = { intro: "", stories: [], ingredients: "", method: "", notes: "", other: [] };
+  const out = { intro: "", stories: [], ingredients: "", ingredientsLabel: "Ingredients", method: "", methodLabel: "Preparation", notes: "", other: [] };
   if (!/^<h2[\s>]/.test(chunks[0] || "")) out.intro = chunks.shift() || "";
   for (const chunk of chunks) {
     const m = chunk.match(/^<h2[^>]*>([\s\S]*?)<\/h2>\s*/);
     const heading = m ? m[1].replace(/<[^>]+>/g, "").trim() : "";
     const body = m ? chunk.slice(m[0].length) : chunk;
     const key = heading.toLowerCase();
-    if (key === "ingredients") out.ingredients = body;
-    else if (METHOD.includes(key)) out.method = body;
+    // "Ingredients", "Ingredients & Equipment", "Preparation", "Method"... keep the writer's wording
+    if (key.startsWith("ingredients") && !out.ingredients) { out.ingredients = body; out.ingredientsLabel = heading; }
+    else if (METHOD.some((w) => key.startsWith(w)) && !out.method) { out.method = body; out.methodLabel = heading; }
     else if (key === "notes") out.notes = body;
     // "## From Rod and Katherine", "## From Katherine", ... : a signed description
     else if (key.startsWith("from ")) {

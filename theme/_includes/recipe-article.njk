@@ -56,13 +56,13 @@
   <div class="recipe-body">
     {%- if parts.ingredients %}
     <section class="recipe-ingredients" aria-labelledby="{{ rslug }}-ingredients">
-      <h2 id="{{ rslug }}-ingredients">Ingredients</h2>
+      <h2 id="{{ rslug }}-ingredients">{{ parts.ingredientsLabel | safe }}</h2>
       {{ parts.ingredients | safe }}
     </section>
     {%- endif %}
     {%- if parts.method %}
     <section class="recipe-method" aria-labelledby="{{ rslug }}-method">
-      <h2 id="{{ rslug }}-method">Preparation</h2>
+      <h2 id="{{ rslug }}-method">{{ parts.methodLabel | safe }}</h2>
       {{ parts.method | withStepPhotos(ph.steps, rd.title) | safe }}
     </section>
     {%- endif %}

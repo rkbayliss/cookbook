@@ -50,4 +50,7 @@ I always liked meatloaf, but lost my Mom's recipe. So I looked this one up and S
 3. Pack this mixture into a 10-inch loaf pan to mold the shape of the meatloaf. Onto a parchment paper-lined baking sheet, turn the meatloaf out of the pan onto the center of the tray. Insert a temperature probe at a 45 degree angle into the top of the meatloaf. Avoid touching the bottom of the tray with the probe. Set the probe for 155 degrees.
 4. Combine the catsup, cumin, Worcestershire sauce, hot pepper sauce and honey. Brush the glaze onto the meatloaf after it has been cooking for about 10 minutes.
 
-## Notes http://www.foodnetwork.com/recipes/alton-brown/ good-eats-meat-loaf-recipe2/index.html http://www.youtube.com/watch?v=tsyXL8zKTrM
+## Notes
+
+- Original recipe: http://www.foodnetwork.com/recipes/alton-brown/good-eats-meat-loaf-recipe2/index.html
+- Video: http://www.youtube.com/watch?v=tsyXL8zKTrM

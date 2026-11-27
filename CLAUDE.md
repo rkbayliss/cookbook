@@ -63,7 +63,8 @@ scripts/                photos.js (photo tidying), build-images.js, build-pdf.js
      is speaking ("I"), rename the heading to `## From Katherine` or `## From Rod`; any
      `## From <name>` heading before Ingredients is shown as a signed description. Write
      only what they tell you, in their words; don't invent memories.
-  3. `## Ingredients`: a `- ` bullet list. Sub-groups get a bold line of their own,
+  3. `## Ingredients` (a heading that starts with "Ingredients", like
+     `## Ingredients & Equipment`, also works): a `- ` bullet list. Sub-groups get a bold line of their own,
      e.g. `**For the brine**`, followed by their bullets.
   4. `## Preparation`: a numbered list. A step may start with a bold lead-in, e.g.
      `1. **Brine:** ...`.

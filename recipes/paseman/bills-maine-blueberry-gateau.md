@@ -50,4 +50,6 @@ I saw this in a newspaper, and made it first for Gia Audebert as a thank you for
 16. Transfer the cake to a platter, berry side up.
 17. Dust with confectioner's sugar before serving.
 
-## Notes bcam 240.jpg
+## Notes
+
+- Photos in the 2012 book: bcam 240.jpg

@@ -34,4 +34,6 @@ Mrs. Hsu would make this for Christmas. I could always count on a jar as a prese
 6. Score the candy with a butter knife (cut into 4 pieces); flip over to cool on both sides Note: Candy is most delicious in this semi-molten semi-cooled state.
 7. After about 10 minutes, completely cut the candies and store in a jar
 
-## Notes mcam 005
+## Notes
+
+- Photos in the 2012 book: mcam 005
