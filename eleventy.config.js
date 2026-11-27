@@ -63,6 +63,16 @@ export default function (eleventyConfig) {
   eleventyConfig.addFilter("availablePhotos", (list, have) =>
     (Array.isArray(list) ? list : list ? [list] : []).filter((p) => have[path.basename(String(p)).replace(/\.[^.]+$/, "")]),
   );
+  // Section forewords: forewords/<file>.md with category: <the section's name>. A section with
+  // one gets a clickable heading on the home page.
+  eleventyConfig.addCollection("forewords", (api) => api.getFilteredByGlob("forewords/*.md"));
+  eleventyConfig.addFilter("forewordFor", (forewords, category) =>
+    (forewords || []).find((f) => f.data.category === category),
+  );
+  eleventyConfig.addFilter("inCategory", (recipes, category) =>
+    recipes.filter((r) => r.data.category === category && r.data.archive !== true),
+  );
+
   eleventyConfig.addFilter("roman", (n) => ["I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X"][n] ?? String(n + 1));
 
   // Recipes grouped by category, in cookbook order (unknown categories go last).

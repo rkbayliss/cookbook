@@ -53,7 +53,8 @@ bodyClass: page-index
     </header>
     {%- for group in sec.recipes | byCategory %}
     <section class="chapter" id="{{ sec.prefix }}{{ group.slug }}">
-      <h3 class="chapter-title"><span class="chapter-number">{{ loop.index0 | roman }}</span> {{ group.name }}</h3>
+      {%- set fw = collections.forewords | forewordFor(group.name) %}
+      <h3 class="chapter-title"><span class="chapter-number">{{ loop.index0 | roman }}</span> {% if fw and not sec.prefix %}<a class="chapter-link" href="{{ fw.url }}">{{ group.name }}</a>{% else %}{{ group.name }}{% endif %}</h3>
       <ol class="chapter-list">
         {%- for r in group.items %}
         {% include "toc-entry.njk" %}

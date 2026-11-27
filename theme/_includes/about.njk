@@ -4,7 +4,7 @@ bodyClass: page-about
 ---
 {%- set sections = content | aboutSections -%}
 <nav class="recipe-nav" aria-label="Page tools">
-  <a href="/" class="back">← The cookbook</a>
+  <a href="/{% if category %}#{{ category | slugify }}{% endif %}" class="back">← The cookbook</a>
   <span class="tools">
     <a class="tool" href="{{ site.repo }}/edit/{{ site.branch }}/{{ page.inputPath | replace('./', '') }}">Edit</a>
   </span>
@@ -27,4 +27,18 @@ bodyClass: page-about
   {%- else %}
   <p class="about-empty">Coming soon.</p>
   {%- endfor %}
+  {#- A section foreword (category: set) lists that section's recipes after the text. -#}
+  {%- if category %}
+  {%- set sectionRecipes = collections.recipes | inCategory(category) %}
+  {%- if sectionRecipes.length %}
+  <section class="about-section foreword-recipes">
+    <h2 class="story-label">The recipes</h2>
+    <ol class="chapter-list">
+      {%- for r in sectionRecipes %}
+      {% include "toc-entry.njk" %}
+      {%- endfor %}
+    </ol>
+  </section>
+  {%- endif %}
+  {%- endif %}
 </article>

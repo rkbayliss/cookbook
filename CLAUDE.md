@@ -16,6 +16,7 @@ recipes/
   bayliss/              Recipes from Rod's family, the Bayliss side
   paseman/              Recipes from Katherine's family, the Paseman side
   images/               All recipe photos, flat, named <recipe-file-name>_<description>.jpg
+forewords/              Section forewords, e.g. magnificent-cakes.md (see below)
 theme/                  Site design: templates (_includes, pages), CSS/JS (assets), helpers (lib)
 scripts/                photos.js (photo tidying), build-images.js, build-pdf.js
 ```
@@ -98,6 +99,11 @@ the same way: each `## ` heading is a section, and an empty one is hidden. On th
 every bullet is one item, written `- **Name** a few words about it` (no dash or colon after the
 bold name); sections are free, e.g. `## Always in the pantry`, `## Equipment we love`. These
 pages and About each have an Edit button that opens the file on GitHub.
+
+**Section forewords** live in `forewords/`, one file per section, e.g. `forewords/magnificent-cakes.md`
+(copy it for a new one: set `title`, `category` to the section's exact name, and `permalink:
+/section/<slug>/`). A section with a foreword gets a clickable heading on the home page, and its
+page lists the section's recipes after the text. Write only Katherine's (or Rod's) own words.
 
 ## Photos
 

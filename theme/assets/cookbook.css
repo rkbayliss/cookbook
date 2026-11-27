@@ -141,6 +141,9 @@ main { padding: 0 1.25rem; }
   display: flex; align-items: baseline; justify-content: center; gap: 0.5em;
 }
 .chapter-number { color: var(--accent); font-size: 0.8em; }
+/* A section with a foreword: its name links to it */
+.chapter-link { color: inherit; text-decoration: none; border-bottom: 1px solid var(--rule); }
+.chapter-link:hover { color: var(--accent); border-bottom-color: var(--accent); }
 .chapter-list { list-style: none; margin: 0; padding: 0; }
 .entry { display: flex; align-items: baseline; gap: 0.5rem; }
 .entry-pick { display: none; }
@@ -314,6 +317,8 @@ figcaption { text-align: center; font-style: italic; color: var(--ink-soft); fon
 .about-empty { text-align: center; font-style: italic; color: var(--ink-faint); }
 .about-section h3 { font-weight: 400; font-style: italic; font-size: 1.5em; text-align: center; margin: 0.4rem 0 1.2rem; }
 .about-section p:last-child:not(:first-child) { text-align: right; font-style: italic; color: var(--ink-soft); }
+/* A section foreword is ordinary paragraphs, no sign-off line */
+.foreword .about-section p:last-child:not(:first-child) { text-align: inherit; font-style: inherit; color: inherit; }
 
 /* The original description from the 2012 book, set like a note tucked into the new one:
    an older, slightly darker slip of paper with a fine border and its page reference. */
