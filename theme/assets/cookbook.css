@@ -342,13 +342,14 @@ figcaption { text-align: center; font-style: italic; color: var(--ink-soft); fon
 
 /* Home: "About the cookbook" in the top-right corner */
 .home-nav { max-width: var(--wide); margin: 0 auto; padding: 1.1rem 0 0; text-align: right; }
-.home-nav { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 0.4rem 1.4rem; }
+.home-nav { display: flex; flex-wrap: wrap; justify-content: flex-end; align-items: baseline; gap: 0.3rem 0.7rem; font-size: 0.85rem; }
+.home-nav-dot { color: var(--ink-faint); }
 .home-nav a {
   font-variant-caps: all-small-caps; letter-spacing: 0.12em; color: var(--accent);
   text-decoration: none; border-bottom: 1px solid var(--rule); padding-bottom: 0.1rem;
 }
 .home-nav a:hover { border-bottom-color: var(--accent); }
-@media (max-width: 30rem) { .home-nav { justify-content: center; } }
+@media (max-width: 40rem) { .home-nav { justify-content: center; } .home-nav-dot { display: none; } }
 @media print { .home-nav { display: none; } }
 
 /* ---------- Home: frontispiece ---------- */
