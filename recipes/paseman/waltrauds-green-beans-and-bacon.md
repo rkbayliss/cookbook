@@ -12,9 +12,10 @@ story_by: Bill
 photos: []
 ---
 
-This Dish is incredibly simple, and is one of Katherine's favorites. The recipe comes from Grandma Paseman (Waltroud). Katherine enjoys these on top of rice and will eat all the green beans first, leaving the onions and bacon to mix with the rice. The picture is from our 2006 Thanksgiving table.
+This Dish is incredibly simple, and is one of Katherine's favorites. The recipe comes from Grandma Paseman (Waltroud).  The picture is from our 2006 Thanksgiving table.
 
-## From Rod and Katherine
+## From Katherine
+I have loved these for as long as I can remember. My favorite way to eat them is as leftovers the day after dinner. You put them on top of rice and eat all the green beans first, then eat the onions and bacon with the rice.
 
 ## Ingredients
 
