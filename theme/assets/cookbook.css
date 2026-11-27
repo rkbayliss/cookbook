@@ -129,7 +129,7 @@ main { padding: 0 1.25rem; }
 .contents { max-width: var(--measure); margin: 0 auto; }
 .chapter { margin: 0 0 2.6rem; scroll-margin-top: 1rem; }
 .chapter-title {
-  font-weight: 400; font-style: italic; font-size: 1.45em; text-align: center; margin: 0 0 0.9rem;
+  font-weight: 400; font-size: 1.45em; text-align: center; margin: 0 0 0.9rem;
   display: flex; align-items: baseline; justify-content: center; gap: 0.5em;
 }
 .chapter-number { color: var(--accent); font-size: 0.8em; }
@@ -301,3 +301,28 @@ figcaption { text-align: center; font-style: italic; color: var(--ink-soft); fon
 .title-count a:hover { text-decoration: underline; }
 .about-section h3 { font-weight: 400; font-style: italic; font-size: 1.5em; text-align: center; margin: 0.4rem 0 1.2rem; }
 .about-section p:last-child:not(:first-child) { text-align: right; font-style: italic; color: var(--ink-soft); }
+
+/* The original description from the 2012 book, set like a note tucked into the new one:
+   an older, slightly darker slip of paper with a fine border and its page reference. */
+.book-note {
+  position: relative; background: var(--paper-deep); border: 1px solid var(--rule);
+  padding: 1.1rem 1.3rem 0.9rem; border-radius: 2px;
+  box-shadow: 0 1px 0 color-mix(in srgb, var(--rule) 50%, transparent), 0 6px 18px -12px rgba(60, 40, 20, 0.35);
+  transform: rotate(-0.4deg);
+}
+.recipe-stories.has-two .book-note { transform: rotate(0.6deg); }
+.book-note::before {
+  /* a strip of tape holding the note in */
+  content: ""; position: absolute; top: -0.55rem; left: 50%; width: 4.5rem; height: 1.1rem;
+  transform: translateX(-50%) rotate(-2deg);
+  background: color-mix(in srgb, var(--rule) 45%, transparent); border-radius: 1px;
+}
+.book-note .story-label { border-bottom-style: dotted; }
+.recipe .book-note-source {
+  margin: 0.7rem 0 0; font-size: 0.82em; text-align: right; color: var(--ink-faint);
+  font-style: normal; font-variant-caps: all-small-caps; letter-spacing: 0.08em;
+}
+@media print {
+  .book-note { transform: none; box-shadow: none; background: none; }
+  .book-note::before { display: none; }
+}
