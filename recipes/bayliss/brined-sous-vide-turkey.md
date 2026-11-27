@@ -1,5 +1,5 @@
 ---
-title: "Brined Sous Vide Turkey"
+title: "Rod and Kat's Sous Vide Turkey"
 from: Bayliss
 credit: "Katherine"
 category: Holidays
@@ -12,17 +12,19 @@ photos: []
 ---
 
 ## From Rod and Katherine
+We make 1-2 of these Turkeys every year because of how popular they have become with our friends and family. All the meat is incredibly tender and never dry. It's easy to butcher and serve beautifully. Every year, Katherine is anxious about how many days in advance you need to plan for it. She recommends the Friday before Thanksgiving, taking stock of all your 
 
-Thanksgiving 2026 turkey: brined with Kinder's Butcher's Brine Kit, then broken down and cooked sous vide, with the light and dark meat at different temperatures, and finished under the broiler.
-
-## Ingredients
+## Ingredients & Equipment
 
 - 1 whole turkey, up to 20 lbs
 - 1 Kinder's Butcher's Brine Kit (brine mix, Buttery Poultry Blend Seasoning, brining bag, twist tie)
 - 8 cups water, for boiling
 - 8 cups ice
 - 8 cups cold water
-- 5 sous vide bags
+- 5 sous vide bags/Gallon ziplock bags
+- 2 sous vide sticks
+- 2 sous-vide safe containers (we use an old cooler and a stock pot)
+  
 
 **Aromatics, for each breast and leg quarter bag**
 
