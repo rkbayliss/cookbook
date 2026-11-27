@@ -4,5 +4,9 @@
   "tagline": "Recipes gathered from two family kitchens, with the stories and lessons that came with them.",
   "repo": "https://github.com/rkbayliss/cookbook",
   "branch": "main",
-  "lang": "en"
+  "lang": "en",
+  "archive": {
+    "name": "The Archive",
+    "blurb": "Recipes from further back in the family's history: dishes that were made, loved, and written down, but never became part of everyday or holiday cooking."
+  }
 }

@@ -268,3 +268,12 @@ figcaption { text-align: center; font-style: italic; color: var(--ink-soft); fon
   h2 { break-after: avoid; }
   a { text-decoration: none; }
 }
+
+/* ---------- The Archive (archive: true) ---------- */
+.archive { margin: 4rem 0 0; padding-top: 2.5rem; border-top: 1px solid var(--rule); }
+.archive-header { text-align: center; margin-bottom: 2rem; }
+.archive-title { font-weight: 400; font-style: italic; font-size: 2em; margin: 0.3rem 0 0.4rem; }
+.archive-blurb { color: var(--ink-soft); font-style: italic; max-width: 28rem; margin: 0 auto; text-wrap: balance; font-size: 0.95em; }
+.archive-chapter-title { font-weight: 400; font-size: 1em; text-align: center; margin: 0 0 0.6rem; color: var(--accent); font-variant-caps: all-small-caps; letter-spacing: 0.12em; }
+.chapter-archive { margin-bottom: 2rem; }
+.archive[hidden] { display: none; }

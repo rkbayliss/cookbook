@@ -1,0 +1,9 @@
+{#- One line in the home page contents. Expects: r (a recipe). -#}
+<li class="entry" data-family="{{ (r.data.from or '') | lower }}" data-tags="{{ (r.data.tags or []) | join(',') }}" data-search="{{ r | searchText }}">
+  <label class="entry-pick"><input type="checkbox" value="{{ r.page.fileSlug }}"><span class="visually-hidden">Select {{ r.data.title }} for printing</span></label>
+  <a href="{{ r.url }}" class="entry-link">
+    <span class="entry-title">{{ r.data.title | typography }}{% if r.data.status == 'draft' %} <em class="entry-draft">in progress</em>{% endif %}</span>
+    <span class="entry-leader" aria-hidden="true"></span>
+    <span class="entry-credit">{{ r.data.credit }}{% if r.data.from %}<span class="entry-family"> · {{ r.data.from }}</span>{% endif %}</span>
+  </a>
+</li>

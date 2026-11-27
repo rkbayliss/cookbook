@@ -4,7 +4,7 @@
 {%- set shown = rd.photos | availablePhotos(photoFiles) -%}
 <article class="recipe{% if rd.status == 'draft' %} is-draft{% endif %}{% if shown.length %} has-photo{% endif %}" id="r-{{ rslug }}" data-slug="{{ rslug }}">
   <header class="recipe-header">
-    <p class="recipe-kicker">{{ rd.category }}{% if rd.from %} · {{ rd.from }} kitchen{% endif %}</p>
+    <p class="recipe-kicker">{% if rd.archive %}{{ site.archive.name }} · {% endif %}{{ rd.category }}{% if rd.from %} · {{ rd.from }} kitchen{% endif %}</p>
     <h1 class="recipe-title">{{ rd.title | typography }}</h1>
     {%- if rd.credit %}<p class="recipe-credit">from {{ rd.credit }}</p>{% endif %}
     {%- if rd.serves or rd.time %}

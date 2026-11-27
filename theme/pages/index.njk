@@ -31,23 +31,37 @@ bodyClass: page-index
 </section>
 
 <nav class="contents" aria-label="Contents">
-  {%- for group in all | byCategory %}
+  {%- for group in all | everyday | byCategory %}
   <section class="chapter" id="{{ group.slug }}">
     <h2 class="chapter-title"><span class="chapter-number">{{ loop.index0 | roman }}</span> {{ group.name }}</h2>
     <ol class="chapter-list">
       {%- for r in group.items %}
-      <li class="entry" data-family="{{ (r.data.from or '') | lower }}" data-tags="{{ (r.data.tags or []) | join(',') }}" data-search="{{ r | searchText }}">
-        <label class="entry-pick"><input type="checkbox" value="{{ r.page.fileSlug }}"><span class="visually-hidden">Select {{ r.data.title }} for printing</span></label>
-        <a href="{{ r.url }}" class="entry-link">
-          <span class="entry-title">{{ r.data.title | typography }}{% if r.data.status == 'draft' %} <em class="entry-draft">in progress</em>{% endif %}</span>
-          <span class="entry-leader" aria-hidden="true"></span>
-          <span class="entry-credit">{{ r.data.credit }}{% if r.data.from %}<span class="entry-family"> · {{ r.data.from }}</span>{% endif %}</span>
-        </a>
-      </li>
+      {% include "toc-entry.njk" %}
       {%- endfor %}
     </ol>
   </section>
   {%- endfor %}
+
+  {%- set archived = all | archived %}
+  {%- if archived.length %}
+  <section class="archive" id="archive">
+    <header class="archive-header">
+      <div class="ornament" aria-hidden="true">❦</div>
+      <h2 class="archive-title">{{ site.archive.name }}</h2>
+      <p class="archive-blurb">{{ site.archive.blurb }}</p>
+    </header>
+    {%- for group in archived | byCategory %}
+    <section class="chapter chapter-archive" id="archive-{{ group.slug }}">
+      <h3 class="archive-chapter-title">{{ group.name }}</h3>
+      <ol class="chapter-list">
+        {%- for r in group.items %}
+        {% include "toc-entry.njk" %}
+        {%- endfor %}
+      </ol>
+    </section>
+    {%- endfor %}
+  </section>
+  {%- endif %}
 </nav>
 
 <section class="print-bar" aria-label="Print">

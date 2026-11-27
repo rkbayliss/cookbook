@@ -2,11 +2,15 @@
 layout: base.njk
 bodyClass: page-recipe
 ---
-{%- set rd = { title: title, from: from, credit: credit, category: category, tags: tags, serves: serves, time: time, status: status, source: source, photos: photos } -%}
+{%- set rd = { title: title, from: from, credit: credit, category: category, tags: tags, serves: serves, time: time, status: status, source: source, photos: photos, archive: archive } -%}
 {%- set rhtml = content -%}
 {%- set rslug = page.fileSlug -%}
 <nav class="recipe-nav" aria-label="Recipe tools">
+  {%- if archive %}
+  <a href="/#archive" class="back">← {{ site.archive.name }}</a>
+  {%- else %}
   <a href="/#{{ category | slugify }}" class="back">← {{ category }}</a>
+  {%- endif %}
   <span class="tools">
     <button type="button" class="tool" data-action="wake" hidden>Keep screen on</button>
     <button type="button" class="tool" data-action="print">Print</button>

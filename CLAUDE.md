@@ -36,6 +36,11 @@ scripts/                photos.js (photo tidying), build-images.js, build-pdf.js
   - `serves`, `time`: free text, may be blank.
   - `status`: `draft` while being written down, `done` when it's final. Only `done`
     recipes go into the printed book; drafts show on the site marked "in progress".
+  - `archive`: `true` puts the recipe in **The Archive**: dishes from the family's history that
+    were made and written down but aren't part of everyday or holiday cooking (Katherine
+    didn't really grow up eating them). They get their own section at the end of the home page
+    and their own final part in the PDF. Leave it out, or set `false`, for everything else.
+    Only Rod or Katherine decide what goes in; don't move recipes there on your own judgment.
   - `source`: only for recipes from another book, e.g. `"Paseman Family Cookbook (2012), page 47"`.
   - `photos`: list of photo file names, first one is the main photo. `[]` if none.
 - **Body**, in this order:

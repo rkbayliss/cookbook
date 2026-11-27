@@ -13,7 +13,8 @@ eleventyExcludeFromCollections: true
 {#- The printable cookbook. Finished recipes only (status: done), grouped by kitchen and then
     by category. /book/?r=slug1,slug2 shows just those recipes (drafts included) for printing.
     scripts/build-pdf.js renders these pages to PDF with headless Chrome. -#}
-{%- set finished = collections.recipes | finished | fromFamily(edition.family) -%}
+{%- set finished = collections.recipes | finished | fromFamily(edition.family) | everyday -%}
+{%- set archived = collections.recipes | finished | fromFamily(edition.family) | archived -%}
 {%- set kitchens = [edition.family] if edition.family else (collections.recipes | families) -%}
 <!doctype html>
 <html lang="{{ site.lang }}">
@@ -51,6 +52,17 @@ eleventyExcludeFromCollections: true
     </ol>
     {%- endfor %}
     {%- endfor %}
+    {%- if archived.length %}
+    <h3 class="toc-kitchen">{{ site.archive.name }}</h3>
+    {%- for group in archived | byCategory %}
+    <h4 class="toc-chapter">{{ group.name }}</h4>
+    <ol class="toc-list">
+      {%- for r in group.items %}
+      <li data-slug="{{ r.page.fileSlug }}"><a href="#r-{{ r.page.fileSlug }}"><span class="toc-title">{{ r.data.title | typography }}</span><span class="toc-leader" aria-hidden="true"></span><span class="toc-page"></span></a></li>
+      {%- endfor %}
+    </ol>
+    {%- endfor %}
+    {%- endif %}
   </section>
 
   {%- for k in kitchens %}
@@ -67,6 +79,23 @@ eleventyExcludeFromCollections: true
   {%- endfor %}
   {%- endfor %}
   {%- endfor %}
+
+  {%- if archived.length %}
+  <section class="book-part">
+    {%- if not edition.family %}<p class="part-label">Part {{ kitchens.length | roman }}</p>{% endif %}
+    <h2>{{ site.archive.name }}</h2>
+    <p class="part-blurb">{{ site.archive.blurb }}</p>
+  </section>
+  {%- for group in archived | byCategory %}
+  <section class="book-chapter" data-chapter="{{ group.name }}">
+    <h2 class="book-chapter-title">{{ group.name }}</h2>
+  </section>
+  {%- for r in group.items %}
+  {%- set rd = r.data -%}{%- set rhtml = r.content -%}{%- set rslug = r.page.fileSlug -%}
+  {% include "recipe-article.njk" %}
+  {%- endfor %}
+  {%- endfor %}
+  {%- endif %}
 
   {#- Drafts and anything else, only shown when picked with ?r= -#}
   <div class="book-extras" hidden>

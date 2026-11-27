@@ -7,6 +7,7 @@ tags: [thanksgiving]   # optional, any words that help you find it later
 serves:
 time:
 status: draft          # draft while you're still working on it, done when it's final
+archive: false         # true = The Archive: family history, not everyday or holiday cooking
 photos: []             # e.g. [recipe-file-name_2026-carved.jpg]; first one is the main photo. See CLAUDE.md
 ---
 

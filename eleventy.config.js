@@ -74,6 +74,9 @@ export default function (eleventyConfig) {
   eleventyConfig.addFilter("fromFamily", (recipes, family) =>
     family ? recipes.filter((r) => (r.data.from || "").toLowerCase() === family.toLowerCase()) : recipes,
   );
+  // archive: true puts a recipe in The Archive instead of the everyday chapters.
+  eleventyConfig.addFilter("archived", (recipes) => recipes.filter((r) => r.data.archive === true));
+  eleventyConfig.addFilter("everyday", (recipes) => recipes.filter((r) => r.data.archive !== true));
   eleventyConfig.addFilter("finished", (recipes) => recipes.filter((r) => r.data.status !== "draft"));
   eleventyConfig.addFilter("families", (recipes) => [...new Set(recipes.map((r) => r.data.from).filter(Boolean))].sort());
   eleventyConfig.addFilter("allTags", (recipes) =>

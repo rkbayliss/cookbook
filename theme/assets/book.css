@@ -50,3 +50,5 @@
   .page-book .recipe-hero img { max-height: 3.4in; }
   .page-book .recipe-source { margin-bottom: 0; }
 }
+
+.part-blurb { font-style: italic; color: var(--ink-soft); max-width: 26rem; margin: 1.2rem auto 0; text-wrap: balance; }

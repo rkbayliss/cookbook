@@ -56,6 +56,7 @@
         if (ok) n++;
       }
       $$(".chapter").forEach((c) => (c.hidden = !$$(".entry", c).some((e) => !e.hidden)));
+      $$(".archive").forEach((a) => (a.hidden = !$$(".entry", a).some((e) => !e.hidden)));
       $$("[data-family]").forEach((b) => b.tagName === "BUTTON" && b.classList.toggle("is-on", b.dataset.family === state.family));
       $$("[data-tag]").forEach((b) => b.classList.toggle("is-on", b.dataset.tag === state.tag));
       const filtered = words.length || state.family || state.tag;
