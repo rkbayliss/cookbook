@@ -7,6 +7,7 @@ tags: [christmas]
 serves:
 time:
 status: done
+archive: true
 source: "Paseman Family Cookbook (2012), page 14"
 photos: []
 ---
