@@ -14,7 +14,8 @@ photos: []
 
 This salad can be very painstaking to create, but turns out well if executed correctly. Below, Ray, Katherine and Marguerite are working to create this salad for our 2006 Thanksgiving.
 
-## From Rod and Katherine
+## From Katherine
+Waltroud is my Grandma. I never made this as the recipe describes, we usually just peel whatever assortment of citrus look good, removing all of the white parts. I haven't made it in ages, but it is one of the surest ways to show someone you love them.
 
 ## Ingredients
 
