@@ -35,6 +35,25 @@
     );
   }
 
+  // ---- Photos: tap to see full size (without JavaScript the link opens the image)
+  const zooms = $$("a.zoom");
+  if (zooms.length && typeof HTMLDialogElement === "function") {
+    const box = document.createElement("dialog");
+    box.className = "lightbox";
+    const big = document.createElement("img");
+    box.append(big);
+    document.body.append(box);
+    box.addEventListener("click", () => box.close());
+    zooms.forEach((a) =>
+      a.addEventListener("click", (e) => {
+        e.preventDefault();
+        big.src = a.href;
+        big.alt = a.querySelector("img")?.alt || "";
+        box.showModal();
+      }),
+    );
+  }
+
   // ---- Home page: search and filters
   const search = $("#search");
   if (search) {

@@ -82,8 +82,65 @@ export function photoCaption(file) {
   if (/^card(-front)?$/.test(desc)) return "The original recipe card";
   if (desc === "card-back") return "The original recipe card (back)";
   if (/^book-\d{4}/.test(desc)) return `From the ${desc.slice(5, 9)} family cookbook`;
+  const step = desc.match(/^step-\d+-?(.*)$/);
+  if (step) return step[1] ? step[1].replace(/-/g, " ").replace(/^./, (c) => c.toUpperCase()) : "";
   const m = desc.match(/^(\d{4})-?(.*)$/);
   const words = (s) => s.replace(/-/g, " ").replace(/^./, (c) => c.toUpperCase());
   if (m) return m[2] ? `${m[1]} · ${words(m[2])}` : m[1];
   return words(desc);
+}
+
+// ---------- Photos by kind (decided by the file name) ----------
+//   <recipe>_card.jpg, _card-front, _card-back   the original recipe card or sheet
+//   <recipe>_step-3.jpg, _step-3-folding          a photo for step 3
+//   anything else                                 the first is the dish photo at the top,
+//                                                 the rest are snapshots after the Notes
+const base = (f) => String(f).split("/").pop().replace(/\.[^.]+$/, "");
+const desc = (f) => (base(f).includes("_") ? base(f).slice(base(f).indexOf("_") + 1) : "");
+
+export function groupPhotos(list) {
+  const out = { hero: null, cards: [], steps: {}, snaps: [] };
+  for (const f of list || []) {
+    const d = desc(f);
+    const step = d.match(/^step-(\d+)/);
+    if (/^card(-|$)/.test(d)) out.cards.push(f);
+    else if (step) (out.steps[step[1]] ||= []).push(f);
+    else if (!out.hero) out.hero = f;
+    else out.snaps.push(f);
+  }
+  return out;
+}
+
+const esc = (s) => String(s).replace(/&/g, "&amp;").replace(/"/g, "&quot;").replace(/</g, "&lt;");
+
+// Puts each step's photos at the end of that step (the Nth item of the first numbered list).
+// Photos for steps that don't exist, or a method without a numbered list, go after the method.
+export function withStepPhotos(html, steps, title = "") {
+  const figure = (f) => {
+    const name = base(f), cap = photoCaption(f);
+    return `<figure class="step-photo"><a href="/images/${name}.jpg" class="zoom"><img src="/images/${name}-800.jpg" loading="lazy" alt="${esc(cap || title)}"></a>${cap ? `<figcaption>${esc(cap)}</figcaption>` : ""}</figure>`;
+  };
+  const left = { ...steps };
+  html = String(html);
+  const olStart = html.indexOf("<ol");
+  if (olStart !== -1) {
+    // walk the top-level <li> elements of the first <ol>
+    const re = /<(\/?)(ol|ul|li)\b[^>]*>/g;
+    re.lastIndex = olStart;
+    let depth = 0, item = 0, m, out = html.slice(0, olStart), last = olStart;
+    while ((m = re.exec(html))) {
+      const [tag, close, name] = m;
+      if (name === "ol" || name === "ul") depth += close ? -1 : 1;
+      if (name === "li" && !close && depth === 1) item++;
+      if (name === "li" && close && depth === 1 && left[item]) {
+        out += html.slice(last, m.index) + left[item].map(figure).join("");
+        last = m.index;
+        delete left[item];
+      }
+      if (depth === 0) break;
+    }
+    html = out + html.slice(last);
+  }
+  const rest = Object.keys(left).sort((a, b) => a - b).flatMap((k) => left[k]);
+  return html + (rest.length ? `<div class="step-photos-extra">${rest.map(figure).join("")}</div>` : "");
 }

@@ -1,5 +1,5 @@
 ---
-title: "$250 Neiman- Marcus Cookies"
+title: "$250 Neiman-Marcus Cookies"
 from: Bayliss
 credit: ""
 category: Desserts
@@ -7,11 +7,9 @@ tags: []
 serves:
 time:
 status: done
-story_by:
-photos: []
+story_by: the original card
+photos: [250-neiman-marcus-cookies_card.jpg]
 ---
-
-## From Rod and Katherine
 
 A friend of a friend (of a friend) had lunch at Neiman-Marcus in Dallas last November, and for dessert she had a cookie. She thought it was the most wonderful cookie she had ever tasted and asked if the recipe was available. She was told that it was, but there was a charge of two-fifty. She said that was fine. She got the recipe and told them to charge it to her account.
 
@@ -20,6 +18,8 @@ In December, when she received her bill, there was a charge for $250.00. She cal
 The bottom line is, she paid.
 
 She vowed to get back at Neiman's and wants to give the recipe out to everyone she possibly can. She asks that everyone who gets a copy send it to everyone they know. So…. here it is:
+
+## From Rod and Katherine
 
 ## Ingredients
 
@@ -34,7 +34,7 @@ She vowed to get back at Neiman's and wants to give the recipe out to everyone s
 - 2 tsp. Baking powder
 - 2 tsp. Baking soda
 - 24 oz. chocolate chips (2 large bags)
-- 18 oz. Hershey bar, grated
+- 1 (8 oz.) Hershey bar, grated (yes, this is really 1/2 lb.)
 - 3 cups chopped nuts
 - **Blended oatmeal: measure and process in blender to a fine powder.
 
@@ -47,3 +47,7 @@ She vowed to get back at Neiman's and wants to give the recipe out to everyone s
 5. Roll into balls and place two inches apart on a cookie sheet.
 6. Bake for 9-10 minutes at 375 ℉
 7. Makes 112 cookies
+
+## Notes
+
+- **From the original card:** "Only do 1/2 batch" is handwritten at the top; the full recipe makes 112 cookies. The card's 6 minutes is crossed out and changed to 9-10, the time used above.

@@ -90,8 +90,16 @@ The site is **public**. Photos must never carry location (GPS) data.
   - Exactly one underscore, between the recipe name and the description.
   - Description: lowercase words joined with hyphens. Start with the year when known,
     e.g. `2026-carved`, `2006-sabrina-age-14`. It becomes the caption ("2006 · Sabrina age 14").
-  - Reserved descriptions: `card` (or `card-front` / `card-back`) for a scan of a handwritten
-    recipe card, and `book-2012` for a photo from the 2012 Paseman cookbook.
+  - The description decides where the photo appears on the recipe page:
+    - `card` (or `card-front` / `card-back`): the original recipe card or sheet. Shown
+      uncropped, pinned beside the descriptions; tap to read it full size.
+    - `step-3` (or `step-3-folding-the-dough`, which also becomes the caption): a photo for
+      step 3, placed at the end of that step. Several per step are fine. **When you renumber
+      a recipe's steps, rename its step photos to match** (and update `photos:`).
+    - Anything else: the first one in `photos:` is the dish photo across the top of the
+      page; the rest are snapshots after the Notes (people, moments, the table).
+    - `book-2012`: a photo from the 2012 Paseman cookbook (shown as a snapshot).
+  - Every photo must be listed in the recipe's `photos:`; `add-photo` does that for you.
 - To add a photo, **always** use the script. It converts (including iPhone HEIC), turns the
   photo upright, shrinks it to at most 2400px, strips all metadata including GPS, names it,
   and adds it to the recipe's `photos:` list:

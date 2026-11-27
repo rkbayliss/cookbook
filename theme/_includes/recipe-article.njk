@@ -2,7 +2,8 @@
     Expects: rd (front matter), rhtml (rendered Markdown), rslug, rpath (source file), inBook. -#}
 {%- set parts = rhtml | sections -%}
 {%- set shown = rd.photos | availablePhotos(photoFiles) -%}
-<article class="recipe{% if rd.status == 'draft' %} is-draft{% endif %}{% if shown.length %} has-photo{% endif %}" id="r-{{ rslug }}" data-slug="{{ rslug }}">
+{%- set ph = shown | groupPhotos -%}
+<article class="recipe{% if rd.status == 'draft' %} is-draft{% endif %}{% if ph.hero %} has-photo{% endif %}" id="r-{{ rslug }}" data-slug="{{ rslug }}">
   <header class="recipe-header">
     <p class="recipe-kicker">{% if rd.archive %}{{ site.archive.name }} · {% endif %}{{ rd.category }}{% if rd.from %} · {{ rd.from }} kitchen{% endif %}</p>
     <h1 class="recipe-title">{{ rd.title | typography }}</h1>
@@ -16,17 +17,18 @@
     {%- if rd.status == 'draft' %}<p class="draft-note">A recipe still being written down</p>{% endif %}
   </header>
 
-  {%- if shown.length %}
+  {%- if ph.hero %}
   <figure class="recipe-hero">
-    <img src="/images/{{ shown[0] | photoName }}.jpg" srcset="/images/{{ shown[0] | photoName }}-800.jpg 800w, /images/{{ shown[0] | photoName }}.jpg 1600w" sizes="(min-width: 60rem) 56rem, 100vw" alt="{{ shown[0] | photoCaption or rd.title }}">
-    {%- if shown[0] | photoCaption %}<figcaption>{{ shown[0] | photoCaption }}</figcaption>{% endif %}
+    <img src="/images/{{ ph.hero | photoName }}.jpg" srcset="/images/{{ ph.hero | photoName }}-800.jpg 800w, /images/{{ ph.hero | photoName }}.jpg 1600w" sizes="(min-width: 60rem) 56rem, 100vw" alt="{{ ph.hero | photoCaption or rd.title }}">
+    {%- if ph.hero | photoCaption %}<figcaption>{{ ph.hero | photoCaption }}</figcaption>{% endif %}
   </figure>
   {%- endif %}
 
   {%- set hasOriginal = parts.intro | trim %}
   {%- set fromBook = hasOriginal and rd.source %}
-  {%- if hasOriginal or parts.stories.length %}
-  <div class="recipe-stories{% if (parts.stories.length + (1 if hasOriginal else 0)) > 1 %} has-two{% endif %}">
+  {%- set storyCount = parts.stories.length + (1 if hasOriginal else 0) + ph.cards.length %}
+  {%- if storyCount %}
+  <div class="recipe-stories{% if storyCount > 1 %} has-two{% endif %}{% if storyCount > 2 %} has-more{% endif %}">
     {#- Rod and Katherine's words first (left), the original second (right). -#}
     {%- for st in parts.stories %}
     <div class="recipe-story">
@@ -41,6 +43,13 @@
       {%- if fromBook %}<p class="book-note-source">{{ rd.source | typography }}</p>{% endif %}
     </div>
     {%- endif %}
+    {#- The original recipe card(s), pinned beside the descriptions, never cropped. -#}
+    {%- for c in ph.cards %}
+    <figure class="recipe-card-photo">
+      <a href="/images/{{ c | photoName }}.jpg" class="zoom"><img src="/images/{{ c | photoName }}-800.jpg" alt="{{ c | photoCaption }} for {{ rd.title }}"></a>
+      <figcaption>{{ c | photoCaption }}<span class="zoom-hint screen-only"> · tap to read</span></figcaption>
+    </figure>
+    {%- endfor %}
   </div>
   {%- endif %}
 
@@ -54,7 +63,7 @@
     {%- if parts.method %}
     <section class="recipe-method" aria-labelledby="{{ rslug }}-method">
       <h2 id="{{ rslug }}-method">Preparation</h2>
-      {{ parts.method | safe }}
+      {{ parts.method | withStepPhotos(ph.steps, rd.title) | safe }}
     </section>
     {%- endif %}
   </div>
@@ -70,11 +79,11 @@
   </section>
   {%- endif %}
 
-  {%- if shown.length > 1 %}
+  {%- if ph.snaps.length %}
   <div class="recipe-gallery">
-    {%- for p in shown.slice(1) %}
+    {%- for p in ph.snaps %}
     <figure>
-      <img src="/images/{{ p | photoName }}-800.jpg" loading="lazy" alt="{{ p | photoCaption or rd.title }}">
+      <a href="/images/{{ p | photoName }}.jpg" class="zoom"><img src="/images/{{ p | photoName }}-800.jpg" loading="lazy" alt="{{ p | photoCaption or rd.title }}"></a>
       {%- if p | photoCaption %}<figcaption>{{ p | photoCaption }}</figcaption>{% endif %}
     </figure>
     {%- endfor %}
