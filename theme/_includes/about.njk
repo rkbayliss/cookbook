@@ -9,9 +9,12 @@ bodyClass: page-about
 <article class="about">
   <header class="recipe-header">
     <h1 class="recipe-title">{{ title }}</h1>
+    {%- if jump and sections.length > 1 %}
+    <p class="about-jump"><a href="#{{ jump.to | slugify }}">{{ jump.label | typography }} ↓</a></p>
+    {%- endif %}
   </header>
   {%- for s in sections %}
-  <section class="about-section">
+  <section class="about-section" id="{{ s.heading | striptags | slugify }}">
     <h2 class="story-label">{{ s.heading | safe }}</h2>
     {{ s.body | safe }}
   </section>

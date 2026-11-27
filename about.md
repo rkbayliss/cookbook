@@ -2,6 +2,10 @@
 layout: about.njk
 permalink: /about/
 title: About the Cookbook
+# A link under the title that jumps to a section further down the page.
+jump:
+  label: "Jump to Bill's introduction"
+  to: "From the 2012 Paseman Family Cookbook"
 ---
 
 <!--
@@ -10,6 +14,16 @@ Each "## " heading below is a section; a section with nothing under it isn't sho
 -->
 
 ## From Katherine
+
+I'm writing this in November of 2026. Rod and I got married earlier this year, and we have just finished our Thanksgiving dinner. My father's foreword below is one of my favorite pieces of writing in the world. It's no mystery then that for as long as I can remember, I have believed in the magic of food. I was so lucky that in 2012 my dad compiled all our family's recipes into one book. I kept those recipes with me when I went to boarding school and in college whenever I missed home. My first holiday with the Baylisses, I asked Rod to write down every recipe they cooked. We became historians of our own lives.
+
+Now that we're married, it's time for us to keep track of our own recipes.
+
+In our vows, I said "I promise that our life will be great — not because of the incredible things we accomplish, but because even the most regular day with you is a blessing. I am so excited to have a lifetime of regular days with you."
+
+To me, these recipes are the way we can always come back to the magic of our regular days. I hope if you find yourself in your kitchen or at your table with one of these recipes on your plate, you remember that love is stored in the kitchen, and all of these recipes were made, cooked, and written down with love.
+
+— Katherine
 
 ## From the 2012 Paseman Family Cookbook
 
