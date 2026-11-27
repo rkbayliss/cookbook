@@ -11,7 +11,7 @@ story_by:
 photos: []
 ---
 
-## Katherine
+## From Katherine
 I never liked potato salad growing up, but at Rod's fraternity ND, the cook Dona Vicki (DV) made the best potato salad I've ever had. Since then, I'd occasionally make potato salad, but once my mom and Josie got a taste of it, it became one of my most requested recipes. 
 
 ## Ingredients & Equipment
