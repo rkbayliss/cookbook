@@ -8,7 +8,7 @@ serves:
 time: 3 to 5 days thawing, 12 hours brining, 12 to 24 hours sous vide
 status: draft
 story_by:
-photos: []
+photos: [brined-sous-vide-turkey_2026-thanksgiving-platter.jpg, brined-sous-vide-turkey_2026-thanksgiving-legs-and-thighs.jpg, brined-sous-vide-turkey_2026-prepping-the-turkey-together.jpg]
 ---
 
 ## From Rod and Katherine
