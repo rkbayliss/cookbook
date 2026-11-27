@@ -29,7 +29,7 @@ She vowed to get back at Neiman's and wants to give the recipe out to everyone s
 - 4 eggs
 - 2 tsp. Vanilla (really 1 Tbsp.)
 - 4 cups flour
-- 5 cups blended oatmeal**
+- 5 cups blended old-fashioned rolled oats**
 - 1 tsp. Salt
 - 2 tsp. Baking powder
 - 2 tsp. Baking soda
