@@ -14,7 +14,8 @@ photos: []
 
 Mechtha made this for me once on a visit to Bielefeld. I have altered it by using a rich red wine (Merlot) instead of white, and by letting the chicken marinate several hours before cooking. It is fast, simple and delicious. I cook it more than any other main dish, with the possible exception of spaghetti. The picture below was taken in the mid 1980's and shows Mechtha as I remember her.
 
-## From Rod and Katherine
+## From Katherine
+This is an all time classic in the Paseman household. I don't actually make it that much at home becuase I tend to not keep red onions and wine on hand and I never seem to keep track of time enough to make sure I've marinated it the night before. Even so, these are one of Rod's favorites and he is always asking me to make it. I do recall loving it very, very much when I was younger.
 
 ## Ingredients
 
