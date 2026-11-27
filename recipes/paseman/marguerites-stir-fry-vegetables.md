@@ -14,7 +14,8 @@ photos: []
 
 This is the general mechanism Marguerite uses to create any stir fried vegetable dish. The picture is of Marguerite at a Campsite in Corcovado Park in Costa Rica. She took me there for my 50th birthday.
 
-## From Rod and Katherine
+## From Katherine
+No matter how hard I try, my stir fried vegetables are never as good as my moms. I also mainly buy frozen broccoli now becase it is cheaper and has a much longer shelf life. That said, whenever I go to visit Rod's family, my first stop is a grocery store to buy several pounds of broccoli. I'll make a big batch like this to snack on throughout the week so that I feel less guilty indulging in all the other deep fried delights August has to offer.
 
 ## Ingredients
 
