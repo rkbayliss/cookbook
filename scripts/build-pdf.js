@@ -1,5 +1,6 @@
 // Renders the printable book pages to PDF with headless Chrome. Run after `npm run build`:
-//   npm run pdf  ->  _site/pdf/family-cookbook.pdf, bayliss-kitchen.pdf, paseman-kitchen.pdf
+//   npm run pdf  ->  _site/pdf/family-cookbook.pdf, rkbayliss-kitchen.pdf, bayliss-kitchen.pdf,
+//                     paseman-kitchen.pdf
 //
 // Chrome can't fill in table-of-contents page numbers itself, so each book is printed twice:
 // the first pass's PDF bookmarks tell us which page every recipe starts on, those numbers are
@@ -14,6 +15,7 @@ const SITE = path.resolve("_site");
 const PREFIX = (process.env.PATH_PREFIX || "/").replace(/\/?$/, "/");
 const EDITIONS = [
   ["book/", "family-cookbook.pdf"],
+  ["book/rkbayliss/", "rkbayliss-kitchen.pdf"],
   ["book/bayliss/", "bayliss-kitchen.pdf"],
   ["book/paseman/", "paseman-kitchen.pdf"],
 ];

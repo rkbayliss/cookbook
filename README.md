@@ -27,7 +27,7 @@ When a change is saved to `main`, the site updates itself within a few minutes.
 - **Thanksgiving 2026:** pulled the breasts at 130°F after 14h, perfect. Legs needed the full 24h.
 ```
 
-**New recipe**: copy `recipes/_template.md` into `recipes/bayliss/` or `recipes/paseman/`
+**New recipe**: copy `recipes/_template.md` into `recipes/rkbayliss/` (your own), `recipes/bayliss/` or `recipes/paseman/`
 with a lowercase-hyphenated name, like `grandmas-apple-pie.md`, and fill it in.
 
 **Photos**: the site is public, and phone photos record where they were taken. Ask Claude

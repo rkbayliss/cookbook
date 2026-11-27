@@ -12,8 +12,9 @@ exactly. Consistency across recipes matters more than any one recipe's formattin
 ```
 recipes/
   _template.md          Copy this for every new recipe
-  bayliss/              Recipes from the Bayliss side (and recipes Rod & Katherine created)
-  paseman/              Recipes from the Paseman side
+  rkbayliss/            Rod and Katherine's own recipes (what they cook together now)
+  bayliss/              Recipes from Rod's family, the Bayliss side
+  paseman/              Recipes from Katherine's family, the Paseman side
   images/               All recipe photos, flat, named <recipe-file-name>_<description>.jpg
 theme/                  Site design: templates (_includes, pages), CSS/JS (assets), helpers (lib)
 scripts/                photos.js (photo tidying), build-images.js, build-pdf.js
@@ -24,10 +25,12 @@ scripts/                photos.js (photo tidying), build-images.js, build-pdf.js
 - **File name**: lowercase, hyphenated, no apostrophes, `.md`, e.g. `aunt-bs-pot-roast.md`.
   The file name is the recipe's web address (`/aunt-bs-pot-roast/`) and the prefix of its
   photos. **Don't rename an existing recipe**: it breaks links and photo names.
-- **Folder**: `recipes/bayliss/` or `recipes/paseman/`, matching `from:`.
+- **Folder**: `recipes/rkbayliss/`, `recipes/bayliss/` or `recipes/paseman/`, matching `from:`.
 - **Front matter**, in this order (see `recipes/_template.md`):
   - `title`: in quotes if it contains an apostrophe, e.g. `"Waltraud's Citrus Salad"`.
-  - `from`: `Bayliss` or `Paseman`. This is the kitchen it's listed under.
+  - `from`: `RKBayliss`, `Bayliss` or `Paseman`. This is the kitchen it's listed under:
+    RKBayliss for recipes that are Rod and Katherine's own, Bayliss and Paseman for the ones
+    that came from their families.
   - `credit`: the person it came from, as the family calls them (`Mommy`, `Aunt B`, `Bill`).
   - `category`: exactly one of `Weeknight Mains`, `Weeknight Sides`, `Holidays`,
     `Special Occasion`, `Desserts`, `Drinks`. Pick by how the dish is mainly used: anything

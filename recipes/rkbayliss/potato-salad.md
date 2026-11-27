@@ -1,7 +1,7 @@
 ---
 title: "Potato Salad"
-from: Bayliss
-credit: ""
+from: RKBayliss
+credit: "Katherine"
 category: Weeknight Sides
 tags: []
 serves:

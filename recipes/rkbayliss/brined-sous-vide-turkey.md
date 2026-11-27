@@ -1,6 +1,6 @@
 ---
 title: "Rod and Kat's Sous Vide Turkey"
-from: Bayliss
+from: RKBayliss
 credit: "Katherine"
 category: Holidays
 tags: [thanksgiving]

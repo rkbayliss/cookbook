@@ -27,8 +27,8 @@ bodyClass: page-index
 
 <section class="finder" aria-label="Filter recipes">
   <div class="filters" role="group" aria-label="Kitchen">
-    <button type="button" class="chip is-on" data-family="">Both kitchens</button>
-    {%- for f in all | families %}
+    <button type="button" class="chip is-on" data-family="">All kitchens</button>
+    {%- for f in all | families(site.kitchens) %}
     <button type="button" class="chip" data-family="{{ f | lower }}">{{ f }}</button>
     {%- endfor %}
   </div>
@@ -67,7 +67,7 @@ bodyClass: page-index
 </nav>
 
 <section class="print-bar" aria-label="Print">
-  <p>Download the cookbook as a PDF: <a href="/pdf/family-cookbook.pdf">the whole book</a> · <a href="/pdf/bayliss-kitchen.pdf">the Bayliss kitchen</a> · <a href="/pdf/paseman-kitchen.pdf">the Paseman kitchen</a></p>
+  <p>Download the cookbook as a PDF: <a href="/pdf/family-cookbook.pdf">the whole book</a> · <a href="/pdf/rkbayliss-kitchen.pdf">the RKBayliss kitchen</a> · <a href="/pdf/bayliss-kitchen.pdf">the Bayliss kitchen</a> · <a href="/pdf/paseman-kitchen.pdf">the Paseman kitchen</a></p>
   <p>
     <button type="button" class="tool" id="pick-toggle">Choose recipes to print</button>
     <a class="tool tool-strong" id="pick-print" href="/book/" hidden>Print selected</a>

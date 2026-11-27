@@ -81,7 +81,12 @@ export default function (eleventyConfig) {
   eleventyConfig.addFilter("archived", (recipes) => recipes.filter((r) => r.data.archive === true));
   eleventyConfig.addFilter("everyday", (recipes) => recipes.filter((r) => r.data.archive !== true));
   eleventyConfig.addFilter("finished", (recipes) => recipes.filter((r) => r.data.status !== "draft"));
-  eleventyConfig.addFilter("families", (recipes) => [...new Set(recipes.map((r) => r.data.from).filter(Boolean))].sort());
+  // Kitchens in the order given (site.json "kitchens"); any others follow alphabetically.
+  eleventyConfig.addFilter("families", (recipes, order = []) => {
+    const found = [...new Set(recipes.map((r) => r.data.from).filter(Boolean))];
+    const rank = (k) => (order.includes(k) ? order.indexOf(k) : order.length);
+    return found.sort((a, b) => rank(a) - rank(b) || a.localeCompare(b));
+  });
   eleventyConfig.addFilter("allTags", (recipes) =>
     [...new Set(recipes.flatMap((r) => r.data.tags || []))].filter((t) => t !== "recipe").sort(),
   );

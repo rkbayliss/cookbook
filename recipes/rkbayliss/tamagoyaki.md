@@ -1,8 +1,8 @@
 ---
-title: "Chili"
-from: Bayliss
-credit: ""
-category: Weeknight Mains
+title: "Tamagoyaki"
+from: RKBayliss
+credit: "Katherine"
+category: Special Occasion
 tags: []
 serves:
 time:

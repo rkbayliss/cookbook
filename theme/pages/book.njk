@@ -5,6 +5,7 @@ pagination:
   alias: edition
 editions:
   - { slug: "", family: "", name: "" }
+  - { slug: "rkbayliss", family: "RKBayliss", name: "The RKBayliss Kitchen" }
   - { slug: "bayliss", family: "Bayliss", name: "The Bayliss Kitchen" }
   - { slug: "paseman", family: "Paseman", name: "The Paseman Kitchen" }
 permalink: "/book/{% if edition.slug %}{{ edition.slug }}/{% endif %}"
@@ -15,7 +16,7 @@ eleventyExcludeFromCollections: true
     scripts/build-pdf.js renders these pages to PDF with headless Chrome. -#}
 {%- set finished = collections.recipes | finished | fromFamily(edition.family) | everyday -%}
 {%- set archived = collections.recipes | finished | fromFamily(edition.family) | archived -%}
-{%- set kitchens = [edition.family] if edition.family else (collections.recipes | families) -%}
+{%- set kitchens = [edition.family] if edition.family else (collections.recipes | families(site.kitchens)) -%}
 <!doctype html>
 <html lang="{{ site.lang }}">
 <head>

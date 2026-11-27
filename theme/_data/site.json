@@ -4,6 +4,7 @@
   "repo": "https://github.com/rkbayliss/cookbook",
   "branch": "main",
   "lang": "en",
+  "kitchens": ["RKBayliss", "Bayliss", "Paseman"],
   "recipeBox": {
     "name": "The Recipe Box",
     "blurb": "The recipes we keep coming back to"
