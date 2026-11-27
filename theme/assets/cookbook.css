@@ -182,7 +182,7 @@ main { padding: 0 1.25rem; }
 .draft-note { display: inline-block; margin: 1rem 0 0; color: var(--accent); font-style: italic; font-size: 0.9em; }
 
 .recipe-hero { margin: 0 auto 2rem; max-width: var(--wide); }
-.recipe-hero img { width: 100%; max-height: 70vh; object-fit: cover; border-radius: 2px; }
+.recipe-hero img { width: auto; max-width: 100%; max-height: 75vh; margin: 0 auto; border-radius: 2px; } /* never cropped */
 figcaption { text-align: center; font-style: italic; color: var(--ink-soft); font-size: 0.88em; margin-top: 0.5rem; }
 
 
