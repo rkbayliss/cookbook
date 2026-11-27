@@ -14,7 +14,8 @@ photos: []
 
 Another simple recipe we cook a lot. I sometimes leave out the breading, since Sabrina is very calorie conscious. The picture shows our 2006 Thanksgiving dinner with the Citrus Salad and roasted fingerling potatoes in the Background.
 
-## From Rod and Katherine
+## From Katherine
+My dad loves cauliflower. When I was younger, he would marvel at the enormous cauliflowers he could get for just a couple dollars. I always think of him whenever I eat cauliflower. Pictured here is an enormous cauliflower I got him for $4.
 
 ## Ingredients
 
@@ -29,5 +30,5 @@ Another simple recipe we cook a lot. I sometimes leave out the breading, since S
 3. Take Cauliflower from pot, put in serving bowl and pour mixture over the top.
 
 ## Notes
-
+- Lately he told me he makes the bread sauce in the same pan as the cauliflower once it's done cooking. "like any good cook, I am always trying to minimize the number of dishes I have to wash after cooking"
 - Photos in the 2012 book: IMG_4785.JPG
