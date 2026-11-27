@@ -12,7 +12,7 @@ photos: []
 ---
 
 ## From Rod and Katherine
-We make 1-2 of these Turkeys every year because of how popular they have become with our friends and family. All the meat is incredibly tender and never dry. It's easy to butcher and serve beautifully. Every year, Katherine is anxious about how many days in advance you need to plan for it. She recommends the Friday before Thanksgiving, taking stock of all your 
+We make 1-2 of these Turkeys every year because of how popular they have become with our friends and family. All the meat is incredibly tender and never dry. It's easy to butcher and serve beautifully. Every year, Katherine is anxious about how many days in advance you need to plan for it. She recommends the Friday before Thanksgiving, taking stock of all your equipment and ingredients to make sure you are well set up. If you have totally goofed and your turkey is still frozen, thawing in water and replacing the water every 30 mins works in a pinch!
 
 ## Ingredients & Equipment
 
