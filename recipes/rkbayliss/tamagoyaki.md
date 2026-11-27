@@ -2,7 +2,7 @@
 title: "Tamagoyaki"
 from: RKBayliss
 credit: "Katherine"
-category: Special Occasion
+category: Weeknight Mains
 tags: []
 serves:
 time:
