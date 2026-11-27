@@ -4,17 +4,21 @@ permalink: /
 bodyClass: page-index
 ---
 {%- set all = collections.recipes -%}
-<section class="title-page">
-  <h1 class="title-main">{{ site.title }}</h1>
-  <p class="title-tagline">{{ site.tagline }}</p>
-  <p class="title-count">{{ all.length }} recipes</p>
-</section>
+{#- Home page only: title and search share a bar that stays at the top while scrolling. -#}
+<header class="topbar">
+  <div class="topbar-inner">
+    <div class="topbar-title">
+      <h1 class="topbar-name">{{ site.title }}</h1>
+      <p class="topbar-tagline">{{ site.tagline }}</p>
+    </div>
+    <label class="topbar-search">
+      <span class="visually-hidden">Search recipes</span>
+      <input type="search" id="search" placeholder="Search {{ all.length }} recipes…" title="Search by name, cook, or ingredient" autocomplete="off">
+    </label>
+  </div>
+</header>
 
-<section class="finder" aria-label="Find a recipe">
-  <label class="search">
-    <span class="visually-hidden">Search recipes</span>
-    <input type="search" id="search" placeholder="Search by name, cook, or ingredient…" autocomplete="off">
-  </label>
+<section class="finder" aria-label="Filter recipes">
   <div class="filters" role="group" aria-label="Kitchen">
     <button type="button" class="chip is-on" data-family="">Both kitchens</button>
     {%- for f in all | families %}
