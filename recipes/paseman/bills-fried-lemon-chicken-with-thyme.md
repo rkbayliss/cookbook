@@ -14,7 +14,8 @@ photos: []
 
 I used to cook this a great deal, but migrated to Wine chicken since it was easier, and I seemed to be the only one who liked the Lemon Sauce. It is quite rich and tasty. Perhaps when the kids' palates mature a bit, I'll dust it off and try again.
 
-## From Rod and Katherine
+## From Katherine
+My dad didn't make this too much when I was a kid, but since I've been an adult this is one of my favorite week night meals. I almost always have all of the ingredients on hand and it's delicious.
 
 ## Ingredients
 
