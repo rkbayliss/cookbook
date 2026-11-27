@@ -14,7 +14,8 @@ photos: []
 
 This is Ray's Favorite everyday dish.
 
-## From Rod and Katherine
+## From Katherine
+This was one of the staples of my childhood. Even though we attribute it to Ray, my mom mostly made it. I haven't cooked it much as an adult, but one time I made it was when our good friends Brycen and Josie came over for dinner. I can't remember why, but I remember I felt so happy being able to give my friends a delicious home cooked meal. 
 
 ## Ingredients
 
