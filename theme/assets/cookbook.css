@@ -243,8 +243,17 @@ figcaption { text-align: center; font-style: italic; color: var(--ink-soft); fon
 .recipe-notes li::before { content: "❧"; position: absolute; left: -0.2rem; color: var(--accent); font-size: 0.8em; top: 0.15em; }
 .recipe-notes strong { font-weight: 600; }
 
-.recipe-gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr)); gap: 1.4rem; max-width: var(--wide); margin: 2.6rem auto 0; }
-.recipe-gallery img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 2px; }
+/* The Gallery: photos uncropped and notes, in flowing columns like a scrapbook page */
+.recipe-gallery-section { max-width: var(--measure); margin: 2.6rem auto 0; }
+.recipe-gallery { columns: 2 14rem; column-gap: 1.4rem; }
+.recipe-gallery > * { break-inside: avoid; margin: 0 0 1.4rem; }
+.recipe-gallery img { width: 100%; height: auto; border-radius: 2px; }
+.recipe-gallery figcaption { text-align: left; font-style: normal; color: var(--ink-soft); margin-top: 0.45rem; font-size: 0.95em; }
+.recipe-gallery figcaption p { margin: 0.2rem 0 0; text-wrap: pretty; }
+.gallery-caption { display: block; font-style: italic; color: var(--ink-faint); font-size: 0.92em; }
+.gallery-note { padding: 1rem 1.15rem; border: 1px solid var(--rule); background: color-mix(in srgb, var(--rule) 12%, var(--paper)); font-style: italic; color: var(--ink-soft); }
+.gallery-note p { margin: 0 0 0.6em; text-wrap: pretty; }
+.gallery-note > :last-child { margin-bottom: 0; }
 .recipe-story img, .recipe-method img, .recipe-notes img { margin: 1rem auto; border-radius: 2px; }
 
 .recipe-source { text-align: center; font-style: italic; color: var(--ink-faint); font-size: 0.88em; margin: 2.6rem auto 0; }
@@ -268,7 +277,7 @@ figcaption { text-align: center; font-style: italic; color: var(--ink-soft); fon
   .recipe-ingredients li.is-done::before { background: none; }
   .recipe-method ol > li.is-current { background: none; box-shadow: none; }
   .recipe-hero img { max-height: 3.6in; }
-  .recipe-gallery { grid-template-columns: repeat(3, 1fr); }
+  .recipe-gallery { columns: 2; }
   .recipe-method li, .recipe-notes li, figure { break-inside: avoid; }
   h2 { break-after: avoid; }
   a { text-decoration: none; }
@@ -422,9 +431,8 @@ figcaption { text-align: center; font-style: italic; color: var(--ink-soft); fon
 .step-photo img { width: 100%; max-height: 26rem; object-fit: cover; border-radius: 2px; }
 .step-photos-extra { margin-top: 1rem; }
 
-/* Snapshots after the Notes */
-.recipe-gallery { grid-template-columns: repeat(auto-fill, minmax(11rem, 1fr)); gap: 1.2rem; }
-.recipe-gallery figure { margin: 0; }
+/* The Gallery after the Notes */
+.recipe-gallery figure { margin: 0 0 1.4rem; }
 
 /* Tap to enlarge */
 a.zoom { display: block; cursor: zoom-in; }
@@ -440,6 +448,7 @@ a.zoom { display: block; cursor: zoom-in; }
   .step-photo { float: right; width: 1.8in; margin: 0 0 0.3rem 0.8rem; }
   .step-photo img { max-height: 1.8in; }
   .recipe-method ol > li::after { content: ""; display: table; clear: both; }
-  .recipe-gallery { grid-template-columns: repeat(4, 1fr); }
+  .recipe-gallery { columns: 3; column-gap: 0.25in; }
+  .recipe-gallery-section { max-width: none; }
   .zoom-hint { display: none; }
 }

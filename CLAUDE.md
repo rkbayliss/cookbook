@@ -80,6 +80,12 @@ scripts/                photos.js (photo tidying), build-images.js, build-pdf.js
      e.g. `- **Thanksgiving 2026:** brined 48h, too salty at the drumsticks. Try 36h.`
      Add new dated notes at the end. Never delete or rewrite earlier ones; they are the
      family's history of the dish.
+  6. `## Gallery` (optional): sentimental or contextual photos and words, shown after the
+     Notes in two columns. Each paragraph is one item: a photo line
+     `![Alt text](images/<file>.jpg)`, optionally with words on the very next line (they show
+     under the photo), or a paragraph of words on its own (shown as a small card). A photo
+     written into the Gallery appears only there, never as the main photo. Photos in
+     `photos:` that aren't placed anywhere else also join the end of the Gallery.
 - Write fractions as `1/2`, `1 1/2`. The site turns them into ½ and 1½ by itself.
 - Link to another recipe with `[[file-name|Display Text]]`, e.g.
   `[[turkey-gravy-and-carcass-stock|Turkey Gravy and Carcass Stock]]`.
@@ -120,8 +126,10 @@ The site is **public**. Photos must never carry location (GPS) data.
       step 3, placed at the end of that step. Several per step are fine. **When you renumber
       a recipe's steps, rename its step photos to match** (and update `photos:`).
     - Anything else: the first one in `photos:` is the dish photo across the top of the
-      page; the rest are snapshots after the Notes (people, moments, the table).
-    - `book-2012`: a photo from the 2012 Paseman cookbook (shown as a snapshot).
+      page; the rest go in the Gallery after the Notes (people, moments, the table). Photos
+      written into the `## Gallery` section are never the dish photo, and can have words
+      under them there.
+    - `book-2012`: a photo from the 2012 Paseman cookbook (shown in the Gallery).
   - Every photo must be listed in the recipe's `photos:`; `add-photo` does that for you.
 - To add a photo, **always** use the script. It converts (including iPhone HEIC), turns the
   photo upright, shrinks it to at most 2400px, strips all metadata including GPS, names it,

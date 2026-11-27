@@ -42,7 +42,7 @@ const METHOD = ["preparation", "method", "directions", "instructions", "steps"];
 // Splits rendered recipe HTML at each <h2> so the layout can place the parts.
 export function splitSections(html) {
   const chunks = String(html).split(/(?=<h2[\s>])/);
-  const out = { intro: "", stories: [], ingredients: "", ingredientsLabel: "Ingredients", method: "", methodLabel: "Preparation", notes: "", other: [] };
+  const out = { intro: "", stories: [], ingredients: "", ingredientsLabel: "Ingredients", method: "", methodLabel: "Preparation", notes: "", gallery: "", other: [] };
   if (!/^<h2[\s>]/.test(chunks[0] || "")) out.intro = chunks.shift() || "";
   for (const chunk of chunks) {
     const m = chunk.match(/^<h2[^>]*>([\s\S]*?)<\/h2>\s*/);
@@ -53,6 +53,7 @@ export function splitSections(html) {
     if (key.startsWith("ingredients") && !out.ingredients) { out.ingredients = body; out.ingredientsLabel = heading; }
     else if (METHOD.some((w) => key.startsWith(w)) && !out.method) { out.method = body; out.methodLabel = heading; }
     else if (key === "notes") out.notes = body;
+    else if (key === "gallery") out.gallery = body;
     // "## From Rod and Katherine", "## From Katherine", ... : a signed description
     else if (key.startsWith("from ")) {
       if (body.replace(/<[^>]+>|\s/g, "")) out.stories.push({ label: heading, body });
@@ -99,9 +100,11 @@ export function photoCaption(file) {
 const base = (f) => String(f).split("/").pop().replace(/\.[^.]+$/, "");
 const desc = (f) => (base(f).includes("_") ? base(f).slice(base(f).indexOf("_") + 1) : "");
 
-export function groupPhotos(list) {
+export function groupPhotos(list, exclude = []) {
   const out = { hero: null, cards: [], steps: {}, snaps: [] };
+  const skip = new Set(exclude || []);
   for (const f of list || []) {
+    if (skip.has(base(f))) continue; // written into the Gallery: shown there only
     const d = desc(f);
     const step = d.match(/^step-(\d+)/);
     if (/^card(-|$)/.test(d)) out.cards.push(f);
@@ -110,6 +113,33 @@ export function groupPhotos(list) {
     else out.snaps.push(f);
   }
   return out;
+}
+
+// The Gallery ("## Gallery", after the Notes): sentimental or contextual photos and words.
+// Each paragraph is one item: a photo (![](images/<file>.jpg)) with any words written right
+// under it, or words on their own. Photos in `photos:` that aren't the main photo, a card or a
+// step photo, and aren't written into the Gallery, join it at the end.
+export function galleryPhotoNames(html) {
+  return [...String(html || "").matchAll(/<img\b[^>]*\ssrc="([^"]+)"/g)].map((m) => base(m[1]));
+}
+
+export function galleryItems(html, snaps = [], have = {}) {
+  const items = [];
+  const blocks = String(html || "").match(/<(p|ul|ol|blockquote)\b[^>]*>[\s\S]*?<\/\1>/g) || [];
+  for (const b of blocks) {
+    const img = b.startsWith("<p") && b.match(/<img\b[^>]*>/);
+    if (img) {
+      const name = base((img[0].match(/\ssrc="([^"]+)"/) || [])[1] || "");
+      const alt = (img[0].match(/\salt="([^"]*)"/) || [])[1] || "";
+      const text = b.replace(/^<p[^>]*>|<\/p>$/g, "").replace(img[0], "").replace(/^\s*(<br\s*\/?>)?\s*/, "").trim();
+      // A photo that isn't in recipes/images (a typo, or the template's example) is left out.
+      if (have[name]) items.push({ photo: name, alt, caption: photoCaption(name), text: text ? `<p>${text}</p>` : "" });
+      else if (text) items.push({ text: `<p>${text}</p>` });
+    } else if (b.replace(/<[^>]+>|\s/g, "")) items.push({ text: b });
+  }
+  const used = new Set(items.map((i) => i.photo).filter(Boolean));
+  for (const f of snaps || []) if (!used.has(base(f))) items.push({ photo: base(f), alt: "", caption: photoCaption(f), text: "" });
+  return items;
 }
 
 const esc = (s) => String(s).replace(/&/g, "&amp;").replace(/"/g, "&quot;").replace(/</g, "&lt;");

@@ -8,7 +8,7 @@ serves:
 time:
 status: done
 story_by: the original card
-photos: [250-neiman-marcus-cookies_card.jpg]
+photos: [250-neiman-marcus-cookies_card.jpg, 250-neiman-marcus-cookies_2026-thanksgiving-dough.jpg]
 ---
 
 A friend of a friend (of a friend) had lunch at Neiman-Marcus in Dallas last November, and for dessert she had a cookie. She thought it was the most wonderful cookie she had ever tasted and asked if the recipe was available. She was told that it was, but there was a charge of two-fifty. She said that was fine. She got the recipe and told them to charge it to her account.
@@ -51,3 +51,7 @@ She vowed to get back at Neiman's and wants to give the recipe out to everyone s
 ## Notes
 
 - **From the original card:** "Only do 1/2 batch" is handwritten at the top; the full recipe makes 112 cookies. The card's 6 minutes is crossed out and changed to 9-10, the time used above.
+
+## Gallery
+
+![The dough](images/250-neiman-marcus-cookies_2026-thanksgiving-dough.jpg)

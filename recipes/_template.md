@@ -12,6 +12,9 @@ story_by:              # who wrote an original description, e.g. Bill. If there 
 photos: []             # e.g. [recipe-file-name_2026-carved.jpg]; first one is the main photo. See CLAUDE.md
 # Replace every lorem ipsum below. "## From Katherine" can be "## From Rod" or "## From Rod and Katherine".
 # Ingredients: equipment first, then ingredients. Preparation: numbered steps, each with a bold lead-in.
+# Gallery: sentimental or contextual photos and words. Each paragraph is one item: a photo line
+# (add it with npm run add-photo first), optionally with words on the line right under it, or
+# words on their own. Delete the section if there's nothing for it yet.
 ---
 
 ## From Katherine
@@ -32,3 +35,9 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu feugiat libero
 ## Notes
 - Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 - **Thanksgiving 2026:** Lorem ipsum dolor sit amet. Dated notes about a particular time go last.
+
+## Gallery
+![Lorem ipsum](images/recipe-file-name_2026-description.jpg)
+Lorem ipsum dolor sit amet, consectetur adipiscing elit: a few words about this photo.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu feugiat libero: a memory or bit of context on its own.

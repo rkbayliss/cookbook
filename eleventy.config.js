@@ -1,7 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { HtmlBasePlugin } from "@11ty/eleventy";
-import { CATEGORY_ORDER, slugify, typography, splitSections, photoCaption, wikiLinks, aboutSections, groupPhotos, withStepPhotos } from "./theme/lib/recipes.js";
+import { CATEGORY_ORDER, slugify, typography, splitSections, photoCaption, wikiLinks, aboutSections, groupPhotos, withStepPhotos, galleryPhotoNames, galleryItems } from "./theme/lib/recipes.js";
 
 export default function (eleventyConfig) {
   eleventyConfig.addPlugin(HtmlBasePlugin);
@@ -59,6 +59,8 @@ export default function (eleventyConfig) {
   eleventyConfig.addFilter("photoCaption", photoCaption);
   eleventyConfig.addFilter("groupPhotos", groupPhotos);
   eleventyConfig.addFilter("withStepPhotos", withStepPhotos);
+  eleventyConfig.addFilter("galleryPhotoNames", galleryPhotoNames);
+  eleventyConfig.addFilter("galleryItems", galleryItems);
   // Only the listed photos that exist in recipes/images (a typo shouldn't show a broken image).
   eleventyConfig.addFilter("availablePhotos", (list, have) =>
     (Array.isArray(list) ? list : list ? [list] : []).filter((p) => have[path.basename(String(p)).replace(/\.[^.]+$/, "")]),

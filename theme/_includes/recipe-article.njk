@@ -2,7 +2,8 @@
     Expects: rd (front matter), rhtml (rendered Markdown), rslug, rpath (source file), inBook. -#}
 {%- set parts = rhtml | sections -%}
 {%- set shown = rd.photos | availablePhotos(photoFiles) -%}
-{%- set ph = shown | groupPhotos -%}
+{%- set ph = shown | groupPhotos(parts.gallery | galleryPhotoNames) -%}
+{%- set gallery = parts.gallery | galleryItems(ph.snaps, photoFiles) -%}
 <article class="recipe{% if rd.status == 'draft' %} is-draft{% endif %}{% if ph.hero %} has-photo{% endif %}" id="r-{{ rslug }}" data-slug="{{ rslug }}">
   <header class="recipe-header">
     <p class="recipe-kicker">{% if rd.archive %}{{ site.archive.name }} · {% endif %}{{ rd.category }}{% if rd.from %} · {{ rd.from }} kitchen{% endif %}</p>
@@ -79,15 +80,23 @@
   </section>
   {%- endif %}
 
-  {%- if ph.snaps.length %}
-  <div class="recipe-gallery">
-    {%- for p in ph.snaps %}
-    <figure>
-      <a href="/images/{{ p | photoName }}.jpg" class="zoom"><img src="/images/{{ p | photoName }}-800.jpg" loading="lazy" alt="{{ p | photoCaption or rd.title }}"></a>
-      {%- if p | photoCaption %}<figcaption>{{ p | photoCaption }}</figcaption>{% endif %}
-    </figure>
-    {%- endfor %}
-  </div>
+  {#- The Gallery: sentimental and contextual photos and words, after the Notes. -#}
+  {%- if gallery.length %}
+  <section class="recipe-gallery-section" aria-labelledby="{{ rslug }}-gallery">
+    <h2 id="{{ rslug }}-gallery">Gallery</h2>
+    <div class="recipe-gallery">
+      {%- for g in gallery %}
+      {%- if g.photo %}
+      <figure class="gallery-photo">
+        <a href="/images/{{ g.photo }}.jpg" class="zoom"><img src="/images/{{ g.photo }}-800.jpg" loading="lazy" alt="{{ g.alt or g.caption or rd.title }}"></a>
+        {%- if g.caption or g.text %}<figcaption>{% if g.caption %}<span class="gallery-caption">{{ g.caption }}</span>{% endif %}{{ g.text | safe }}</figcaption>{% endif %}
+      </figure>
+      {%- else %}
+      <div class="gallery-note">{{ g.text | safe }}</div>
+      {%- endif %}
+      {%- endfor %}
+    </div>
+  </section>
   {%- endif %}
 
   {%- if rd.source and not fromBook %}<p class="recipe-source">{{ rd.source | typography | linkUrls | safe }}</p>{% endif %}
