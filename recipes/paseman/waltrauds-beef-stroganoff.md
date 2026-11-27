@@ -7,6 +7,7 @@ tags: []
 serves:
 time:
 status: done
+archive: true
 source: "Paseman Family Cookbook (2012), page 34"
 story_by: Bill
 photos: []

@@ -7,6 +7,7 @@ tags: []
 serves:
 time:
 status: draft
+archive: true
 story_by:
 photos: []
 ---
