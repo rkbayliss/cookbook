@@ -79,7 +79,7 @@ a:hover { color: var(--accent); text-decoration-color: currentColor; }
 :focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
 img { max-width: 100%; height: auto; display: block; }
 .visually-hidden { position: absolute !important; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
-.smallcaps, .recipe-kicker, .title-families, .recipe-facts dt, .tool, .chip, .recipe-nav .back {
+.smallcaps, .recipe-kicker, .title-families, .recipe-facts dt, .chapter-number, .tool, .chip, .recipe-nav .back {
   font-variant-caps: all-small-caps;
   letter-spacing: 0.08em;
 }
@@ -96,49 +96,28 @@ main { padding: 0 1.25rem; }
 .ornament { color: var(--accent); font-size: 1.3em; letter-spacing: 0.3em; }
 
 /* ---------- Title page / home ---------- */
+.title-page { text-align: center; max-width: var(--measure); margin: 0 auto; padding: clamp(3rem, 10vh, 6rem) 0 2rem; }
 .title-families { color: var(--ink-soft); margin: 0; font-size: 1.05em; }
 .title-main {
-  font-weight: 400; font-style: italic; margin: 0.15em 0 0.25em;
-  font-size: clamp(2.4rem, 1.4rem + 4.2vw, 4.2rem); line-height: 1.02; letter-spacing: -0.01em; text-wrap: balance;
+  font-weight: 400; font-style: normal; margin: 0.15em 0 0.25em;
+  font-size: clamp(2.6rem, 1.6rem + 5vw, 4.6rem); line-height: 1.02; letter-spacing: -0.01em; text-wrap: balance;
 }
 .title-main::after {
   content: ""; display: block; width: 7rem; margin: 0.45em auto 0;
   border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); height: 3px;
 }
-.title-tagline { color: var(--ink-soft); font-style: italic; font-size: 1.15em; max-width: 28rem; margin: 1rem auto; text-wrap: balance; }
+.title-tagline { color: var(--ink-soft); font-style: italic; max-width: 26rem; margin: 1rem auto; text-wrap: balance; }
+.title-count { color: var(--ink-faint); font-size: 0.85em; font-variant-caps: all-small-caps; letter-spacing: 0.1em; }
 
-/* ---------- Home: sticky title + search bar ---------- */
-.page-index main { padding-top: 0; }
-.topbar {
-  position: sticky; top: 0; z-index: 10; margin: 0 -1.25rem;
-  background: color-mix(in srgb, var(--paper) 92%, transparent);
-  -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px);
-  border-bottom: 1px solid var(--rule);
+.finder { max-width: var(--measure); margin: 0 auto 2.5rem; }
+.search input {
+  width: 100%; font: inherit; color: inherit; background: transparent;
+  border: 0; border-bottom: 1px solid var(--rule); padding: 0.45rem 0.1rem; border-radius: 0;
+  font-style: italic; text-align: center; -webkit-appearance: none; appearance: none;
 }
-.topbar-inner {
-  max-width: var(--wide); margin: 0 auto; padding: 0.9rem 1.25rem;
-  display: flex; align-items: center; justify-content: space-between; gap: 1rem 2.5rem;
-}
-.topbar-name { font-weight: 400; font-style: italic; font-size: clamp(1.45rem, 1.1rem + 1.2vw, 2rem); line-height: 1.05; margin: 0; }
-.topbar-tagline { margin: 0.2rem 0 0; color: var(--ink-soft); font-style: italic; font-size: 0.92em; }
-.topbar-search { flex: 0 1 22rem; }
-.topbar-search input {
-  width: 100%; font: inherit; font-size: 0.95em; font-style: italic; color: inherit;
-  background: var(--paper); border: 1px solid var(--rule); border-radius: 999px;
-  padding: 0.4rem 1rem 0.45rem; -webkit-appearance: none; appearance: none;
-}
-.topbar-search input:focus { outline: none; border-color: var(--accent); }
-.topbar-search input::placeholder { color: var(--ink-faint); }
-@media (max-width: 44rem) {
-  .topbar-inner { flex-direction: column; align-items: stretch; gap: 0.6rem; padding: 0.7rem 1.25rem; }
-  .topbar-title { text-align: center; }
-  .topbar-tagline { font-size: 0.85em; }
-  .topbar-search { flex: none; }
-}
-html { scroll-padding-top: 7rem; }
-
-.finder { max-width: var(--measure); margin: 1.6rem auto 3rem; }
-.filters { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.35rem 0.5rem; margin-top: 0.5rem; }
+.search input:focus { outline: none; border-bottom-color: var(--accent); }
+.search input::placeholder { color: var(--ink-faint); }
+.filters { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.35rem 0.5rem; margin-top: 0.9rem; }
 .chip {
   font: inherit; font-size: 0.95em; color: var(--ink-soft); background: transparent; cursor: pointer;
   border: 1px solid transparent; border-radius: 999px; padding: 0.05rem 0.75rem 0.15rem;
@@ -148,17 +127,12 @@ html { scroll-padding-top: 7rem; }
 .finder-status { text-align: center; color: var(--ink-faint); font-style: italic; min-height: 1.5em; margin: 0.6rem 0 0; font-size: 0.9em; }
 
 .contents { max-width: var(--measure); margin: 0 auto; }
-/* Section (The Recipe Box, The Archive) > chapter (Weeknight Mains…) > recipe */
-.cookbook-section { scroll-margin-top: 1rem; }
-.cookbook-section + .cookbook-section { margin-top: 4.5rem; padding-top: 3rem; border-top: 1px solid var(--rule); }
-.section-header { text-align: center; margin-bottom: 2.4rem; }
-.section-title { font-weight: 400; font-style: italic; font-size: clamp(2rem, 1.6rem + 1.6vw, 2.6rem); line-height: 1.1; margin: 0.3rem 0 0.4rem; }
-.section-blurb { color: var(--ink-soft); font-style: italic; max-width: 28rem; margin: 0 auto; text-wrap: balance; }
-.chapter { margin: 0 0 2.2rem; scroll-margin-top: 1rem; }
+.chapter { margin: 0 0 2.6rem; scroll-margin-top: 1rem; }
 .chapter-title {
-  font-weight: 400; font-size: 1.05em; text-align: center; margin: 0 0 0.7rem; color: var(--accent);
-  font-variant-caps: all-small-caps; letter-spacing: 0.14em;
+  font-weight: 400; font-style: italic; font-size: 1.45em; text-align: center; margin: 0 0 0.9rem;
+  display: flex; align-items: baseline; justify-content: center; gap: 0.5em;
 }
+.chapter-number { color: var(--accent); font-size: 0.8em; }
 .chapter-list { list-style: none; margin: 0; padding: 0; }
 .entry { display: flex; align-items: baseline; gap: 0.5rem; }
 .entry-pick { display: none; }
@@ -278,7 +252,7 @@ figcaption { text-align: center; font-style: italic; color: var(--ink-soft); fon
 @media print {
   :root { --paper: #fff; --ink: #1d1611; --ink-soft: #3f342b; --ink-faint: #6d6053; --accent: #7a2817; --rule: #bfa983; --check: #8a7b68; }
   body { font-size: 11.5pt; background: #fff; }
-  .masthead, .topbar, .recipe-nav, .colophon, .recipe-tags, .finder, .print-bar, .screen-only { display: none !important; }
+  .masthead, .recipe-nav, .colophon, .recipe-tags, .finder, .print-bar, .screen-only { display: none !important; }
   main { padding: 0; }
   .recipe-header { margin-top: 0; }
   .recipe-body { grid-template-columns: 2fr 3fr; gap: 0 2.2rem; }
@@ -294,3 +268,13 @@ figcaption { text-align: center; font-style: italic; color: var(--ink-soft); fon
   a { text-decoration: none; }
 }
 
+
+/* ---------- Sections: The Recipe Box and The Archive ---------- */
+.section-header { text-align: center; margin: 0 0 2.6rem; }
+.section-title { font-weight: 400; font-style: normal; font-size: clamp(2.2rem, 1.6rem + 2.6vw, 3.2rem); line-height: 1.05; margin: 0; }
+.section-title::after {
+  content: ""; display: block; width: 5rem; margin: 0.4em auto 0;
+  border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); height: 3px;
+}
+.section-blurb { color: var(--ink-soft); font-style: italic; font-size: 1.1em; margin: 0.8rem auto 0; text-wrap: balance; }
+.cookbook-section + .cookbook-section { margin-top: 5rem; }
