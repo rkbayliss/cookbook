@@ -8,7 +8,7 @@ serves:
 time:
 status: draft
 story_by:
-photos: []
+photos: [berries-and-cream-cake_2021-a-slice-on-the-porch.jpg]
 ---
 
 ## From Rod and Katherine
