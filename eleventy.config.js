@@ -50,6 +50,10 @@ export default function (eleventyConfig) {
   eleventyConfig.addFilter("sections", splitSections);
   eleventyConfig.addFilter("aboutSections", aboutSections);
   eleventyConfig.addFilter("typography", typography);
+  // A recipe's source: any web address in it becomes a link, shown as the site's name.
+  eleventyConfig.addFilter("linkUrls", (s) =>
+    String(s ?? "").replace(/https?:\/\/[^\s<]+[^\s<.,;:!?)"']/g, (u) => `<a href="${u}">${new URL(u).hostname.replace(/^www\./, "")}</a>`),
+  );
   eleventyConfig.addFilter("slugify", slugify);
   eleventyConfig.addFilter("photoName", (file) => path.basename(String(file)).replace(/\.[^.]+$/, ""));
   eleventyConfig.addFilter("photoCaption", photoCaption);

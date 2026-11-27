@@ -40,7 +40,7 @@
     <div class="recipe-story{% if fromBook %} book-note{% endif %}">
       {%- if rd.story_by %}<p class="story-label">From {{ rd.story_by }}</p>{% endif %}
       {{ parts.intro | safe }}
-      {%- if fromBook %}<p class="book-note-source">{{ rd.source | typography }}</p>{% endif %}
+      {%- if fromBook %}<p class="book-note-source">{{ rd.source | typography | linkUrls | safe }}</p>{% endif %}
     </div>
     {%- endif %}
     {#- The original recipe card(s), pinned beside the descriptions, never cropped. -#}
@@ -90,5 +90,5 @@
   </div>
   {%- endif %}
 
-  {%- if rd.source and not fromBook %}<p class="recipe-source">{{ rd.source | typography }}</p>{% endif %}
+  {%- if rd.source and not fromBook %}<p class="recipe-source">{{ rd.source | typography | linkUrls | safe }}</p>{% endif %}
 </article>
