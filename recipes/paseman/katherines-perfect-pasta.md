@@ -14,7 +14,8 @@ photos: []
 
 This is the first recipe that Katherine wanted to make after she got her first Cookbook "Children's Quick and Easy Cookbook". It is actually a bit more time consuming than the spaghetti recipe, but she really enjoys the crunchy pasta.
 
-## From Rod and Katherine
+## From Katherine
+This is the first recipe I really remember wanting to make. I remember pricking the sausage with the fork and my dad showing me how to turn them on the stove to cook on all sides. I think I do actually like my dad's spaghetti better all things said, but this recipe will always hold a special place in my heart because I remember making it with my dad. 
 
 ## Ingredients
 
