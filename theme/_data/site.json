@@ -1,16 +1,16 @@
 {
   "title": "The Paseman Bayliss Family Cookbook",
-  "tagline": "The tastes and flavors that shaped Rod and Katherine",
+  "tagline": "The foods and flavors that shaped Rod and Katherine",
   "repo": "https://github.com/rkbayliss/cookbook",
   "branch": "main",
   "lang": "en",
   "kitchens": ["RKBayliss", "Bayliss", "Paseman"],
   "recipeBox": {
     "name": "The Recipe Box",
-    "blurb": "The recipes we keep coming back to"
+    "blurb": "The foods in our daily rotation"
   },
   "archive": {
     "name": "The Archive",
-    "blurb": "Well-loved recipes from the archive"
+    "blurb": "Well-loved recipes from our families and friends"
   }
 }
