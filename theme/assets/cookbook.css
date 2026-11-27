@@ -299,3 +299,5 @@ figcaption { text-align: center; font-style: italic; color: var(--ink-soft); fon
 .about-empty { text-align: center; font-style: italic; color: var(--ink-faint); }
 .title-count a { color: var(--accent); text-decoration: none; }
 .title-count a:hover { text-decoration: underline; }
+.about-section h3 { font-weight: 400; font-style: italic; font-size: 1.5em; text-align: center; margin: 0.4rem 0 1.2rem; }
+.about-section p:last-child:not(:first-child) { text-align: right; font-style: italic; color: var(--ink-soft); }
