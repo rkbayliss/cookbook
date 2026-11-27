@@ -297,8 +297,6 @@ figcaption { text-align: center; font-style: italic; color: var(--ink-soft); fon
   font-size: 0.9em; margin: 0 0 0.8rem; padding-bottom: 0.35rem; border-bottom: 1px solid var(--rule);
 }
 .about-empty { text-align: center; font-style: italic; color: var(--ink-faint); }
-.title-count a { color: var(--accent); text-decoration: none; }
-.title-count a:hover { text-decoration: underline; }
 .about-section h3 { font-weight: 400; font-style: italic; font-size: 1.5em; text-align: center; margin: 0.4rem 0 1.2rem; }
 .about-section p:last-child:not(:first-child) { text-align: right; font-style: italic; color: var(--ink-soft); }
 
@@ -326,3 +324,13 @@ figcaption { text-align: center; font-style: italic; color: var(--ink-soft); fon
   .book-note { transform: none; box-shadow: none; background: none; }
   .book-note::before { display: none; }
 }
+
+/* Home: "About the cookbook" in the top-right corner */
+.home-nav { max-width: var(--wide); margin: 0 auto; padding: 1.1rem 0 0; text-align: right; }
+.home-nav a {
+  font-variant-caps: all-small-caps; letter-spacing: 0.12em; color: var(--accent);
+  text-decoration: none; border-bottom: 1px solid var(--rule); padding-bottom: 0.1rem;
+}
+.home-nav a:hover { border-bottom-color: var(--accent); }
+@media (max-width: 30rem) { .home-nav { text-align: center; } }
+@media print { .home-nav { display: none; } }
