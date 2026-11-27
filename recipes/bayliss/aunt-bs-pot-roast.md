@@ -7,6 +7,7 @@ tags: [christmas, crock pot]
 serves:
 time: about 5 hours (mostly hands-off)
 status: done
+archive: true
 story_by:
 photos: [pot-roast-christmas-2022.jpg]
 ---
