@@ -11,9 +11,9 @@ story_by:
 photos: []
 ---
 
-Recipe will yield about ½ cup. Store in a spice jar in spice cabinet
-
 ## From Rod and Katherine
+
+Recipe will yield about ½ cup. Store in a spice jar in spice cabinet
 
 ## Ingredients
 

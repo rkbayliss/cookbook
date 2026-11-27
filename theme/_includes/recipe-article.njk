@@ -23,16 +23,21 @@
   </figure>
   {%- endif %}
 
-  {%- if parts.intro | trim %}
-  <div class="recipe-story recipe-story-original">
-    {%- if rd.story_by %}<p class="story-label">From {{ rd.story_by }}</p>{% endif %}
-    {{ parts.intro | safe }}
-  </div>
-  {%- endif %}
-  {%- if parts.ours %}
-  <div class="recipe-story recipe-story-ours{% if not (parts.intro | trim) %} recipe-story-original{% endif %}">
-    <p class="story-label">From Rod and Katherine</p>
-    {{ parts.ours | safe }}
+  {%- set hasOriginal = parts.intro | trim %}
+  {%- if hasOriginal or parts.stories.length %}
+  <div class="recipe-stories{% if (parts.stories.length + (1 if hasOriginal else 0)) > 1 %} has-two{% endif %}">
+    {%- if hasOriginal %}
+    <div class="recipe-story">
+      {%- if rd.story_by %}<p class="story-label">From {{ rd.story_by }}</p>{% endif %}
+      {{ parts.intro | safe }}
+    </div>
+    {%- endif %}
+    {%- for st in parts.stories %}
+    <div class="recipe-story">
+      <p class="story-label">{{ st.label | safe }}</p>
+      {{ st.body | safe }}
+    </div>
+    {%- endfor %}
   </div>
   {%- endif %}
 

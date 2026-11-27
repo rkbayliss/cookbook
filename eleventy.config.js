@@ -1,7 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { HtmlBasePlugin } from "@11ty/eleventy";
-import { CATEGORY_ORDER, slugify, typography, splitSections, photoCaption, wikiLinks } from "./theme/lib/recipes.js";
+import { CATEGORY_ORDER, slugify, typography, splitSections, photoCaption, wikiLinks, aboutSections } from "./theme/lib/recipes.js";
 
 export default function (eleventyConfig) {
   eleventyConfig.addPlugin(HtmlBasePlugin);
@@ -48,6 +48,7 @@ export default function (eleventyConfig) {
   });
 
   eleventyConfig.addFilter("sections", splitSections);
+  eleventyConfig.addFilter("aboutSections", aboutSections);
   eleventyConfig.addFilter("typography", typography);
   eleventyConfig.addFilter("slugify", slugify);
   eleventyConfig.addFilter("photoName", (file) => path.basename(String(file)).replace(/\.[^.]+$/, ""));

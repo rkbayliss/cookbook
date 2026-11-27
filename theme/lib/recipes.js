@@ -42,7 +42,7 @@ const METHOD = ["preparation", "method", "directions", "instructions", "steps"];
 // Splits rendered recipe HTML at each <h2> so the layout can place the parts.
 export function splitSections(html) {
   const chunks = String(html).split(/(?=<h2[\s>])/);
-  const out = { intro: "", ours: "", ingredients: "", method: "", notes: "", other: [] };
+  const out = { intro: "", stories: [], ingredients: "", method: "", notes: "", other: [] };
   if (!/^<h2[\s>]/.test(chunks[0] || "")) out.intro = chunks.shift() || "";
   for (const chunk of chunks) {
     const m = chunk.match(/^<h2[^>]*>([\s\S]*?)<\/h2>\s*/);
@@ -52,13 +52,26 @@ export function splitSections(html) {
     if (key === "ingredients") out.ingredients = body;
     else if (METHOD.includes(key)) out.method = body;
     else if (key === "notes") out.notes = body;
-    else if (key === "from rod and katherine") out.ours = body;
+    // "## From Rod and Katherine", "## From Katherine", ... : a signed description
+    else if (key.startsWith("from ")) {
+      if (body.replace(/<[^>]+>|\s/g, "")) out.stories.push({ label: heading, body });
+    }
     else out.other.push({ heading, body });
   }
   // A recipe whose Notes section is still just an empty "- " bullet shows no Notes.
   if (!out.notes.replace(/<[^>]+>|\s/g, "")) out.notes = "";
-  if (!out.ours.replace(/<[^>]+>|\s/g, "")) out.ours = "";
   return out;
+}
+
+// The About page: one { heading, body } per "## " section that has something in it.
+export function aboutSections(html) {
+  return String(html)
+    .split(/(?=<h2[\s>])/)
+    .map((chunk) => {
+      const m = chunk.match(/^<h2[^>]*>([\s\S]*?)<\/h2>\s*/);
+      return m ? { heading: m[1], body: chunk.slice(m[0].length) } : null;
+    })
+    .filter((s) => s && s.body.replace(/<!--[\s\S]*?-->|<[^>]+>|\s/g, ""));
 }
 
 // recipe-slug_2006-sabrina-age-14.jpg -> "2006 · Sabrina age 14"

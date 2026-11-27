@@ -11,9 +11,9 @@ story_by:
 photos: []
 ---
 
-Goes with the [[brined-sous-vide-turkey|Brined Sous Vide Turkey]]. No exact measurements here; this is the idea. The stock uses up the carcass, the neck, and the liquid from the sous vide bags, and the gravy is a bacon fat roux thinned with that turkey liquid.
-
 ## From Rod and Katherine
+
+Goes with the [[brined-sous-vide-turkey|Brined Sous Vide Turkey]]. No exact measurements here; this is the idea. The stock uses up the carcass, the neck, and the liquid from the sous vide bags, and the gravy is a bacon fat roux thinned with that turkey liquid.
 
 ## Ingredients
 

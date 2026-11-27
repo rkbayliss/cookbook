@@ -11,13 +11,13 @@ story_by:
 photos: [pot-roast-christmas-2022.jpg]
 ---
 
+## From Rod and Katherine
+
 Mommy makes this pot roast a lot. She made it for Roderick in Cambridge when he broke his arm. This is a modified version of Aunt B's recipe; Mommy adds mushrooms.
 
 > "Can't even tell you the last time Aunt B cooked it." - Mommy
 
 Pictured: preparing the pot roast at Christmas 2022. The roasts were too big for the crock pot, so they were baked instead.
-
-## From Rod and Katherine
 
 ## Ingredients
 

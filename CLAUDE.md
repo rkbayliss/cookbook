@@ -56,8 +56,10 @@ scripts/                photos.js (photo tidying), build-images.js, build-pdf.js
      recipes, Bill's). Never rewrite it, and name its writer in `story_by`.
   2. `## From Rod and Katherine`: Rod and Katherine's own description: what the dish means to
      them, when they make it, and who they make it for. Every recipe has this heading, and
-     it's left empty (hidden on the site) until they write something. Write it in their voice
-     ("we") only from what they tell you; don't invent memories.
+     it's left empty (hidden on the site) until they write something. When only one of them
+     is speaking ("I"), rename the heading to `## From Katherine` or `## From Rod`; any
+     `## From <name>` heading before Ingredients is shown as a signed description. Write
+     only what they tell you, in their words; don't invent memories.
   3. `## Ingredients`: a `- ` bullet list. Sub-groups get a bold line of their own,
      e.g. `**For the brine**`, followed by their bullets.
   4. `## Preparation`: a numbered list. A step may start with a bold lead-in, e.g.
@@ -72,6 +74,13 @@ scripts/                photos.js (photo tidying), build-images.js, build-pdf.js
 - Keep the family's voice. Clean up spelling and obvious typos, but don't rewrite stories,
   quotes, or how someone describes their own recipe. For recipes from the 2012 book, keep the
   original wording.
+
+## About page
+
+`about.md` is the "About the cookbook" page, linked from the top of the home page. It has a
+`## From Katherine` section (Katherine's own words; only write what she gives you) and a
+`## From the 2012 Paseman Family Cookbook` section (Bill's original introduction, copied
+exactly). An empty section is hidden.
 
 ## Photos
 

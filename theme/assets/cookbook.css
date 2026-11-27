@@ -185,11 +185,6 @@ main { padding: 0 1.25rem; }
 .recipe-hero img { width: 100%; max-height: 70vh; object-fit: cover; border-radius: 2px; }
 figcaption { text-align: center; font-style: italic; color: var(--ink-soft); font-size: 0.88em; margin-top: 0.5rem; }
 
-.recipe-story { max-width: var(--measure); margin: 0 auto 2.4rem; font-style: italic; color: var(--ink-soft); font-size: 1.06em; }
-.recipe-story p { margin: 0 0 0.8em; text-wrap: pretty; }
-.recipe-story-original > p:not(.story-label):first-of-type::first-letter, .recipe-story-original > .story-label + p::first-letter {
-  font-style: normal; color: var(--accent); float: left; font-size: 3.35em; line-height: 0.82; padding: 0.06em 0.09em 0 0;
-}
 
 .recipe h2 {
   font-weight: 400; font-size: 1em; font-variant-caps: all-small-caps; letter-spacing: 0.14em; color: var(--accent);
@@ -279,9 +274,28 @@ figcaption { text-align: center; font-style: italic; color: var(--ink-soft); fon
 .section-blurb { color: var(--ink-soft); font-style: italic; font-size: 1.1em; margin: 0.8rem auto 0; text-wrap: balance; }
 .cookbook-section + .cookbook-section { margin-top: 5rem; }
 
-/* Two descriptions: the original (e.g. Bill's, from the 2012 book) and Rod & Katherine's */
-.story-label {
-  font-style: normal; font-variant-caps: all-small-caps; letter-spacing: 0.12em;
-  color: var(--accent); font-size: 0.88em; margin: 0 0 0.35rem !important;
+/* Descriptions: the original (e.g. "From Bill") and "From Rod and Katherine".
+   One sits centred under the title; two sit side by side on wider screens. */
+.recipe-stories { max-width: var(--measure); margin: 0 auto 2.6rem; display: grid; gap: 1.8rem 3rem; }
+.recipe-stories.has-two { max-width: var(--wide); }
+@media (min-width: 52rem) { .recipe-stories.has-two { grid-template-columns: 1fr 1fr; } }
+.recipe-story { font-style: italic; color: var(--ink-soft); font-size: 1.06em; }
+.recipe-story p { margin: 0 0 0.8em; text-wrap: pretty; }
+.recipe-story > :last-child { margin-bottom: 0; }
+.recipe-story blockquote { margin: 0 0 0.8em 1.2rem; }
+.recipe .story-label {
+  font-style: normal; font-variant-caps: all-small-caps; letter-spacing: 0.14em; color: var(--accent);
+  font-size: 0.9em; margin: 0 0 0.55rem; padding-bottom: 0.35rem; border-bottom: 1px solid var(--rule);
 }
-.recipe-story + .recipe-story { margin-top: -1rem; }
+
+/* ---------- About the cookbook ---------- */
+.about { max-width: var(--measure); margin: 0 auto; }
+.about-section { margin: 0 0 2.6rem; }
+.about-section p { margin: 0 0 0.9em; text-wrap: pretty; }
+.about .story-label {
+  font-weight: 400; font-style: normal; font-variant-caps: all-small-caps; letter-spacing: 0.14em; color: var(--accent);
+  font-size: 0.9em; margin: 0 0 0.8rem; padding-bottom: 0.35rem; border-bottom: 1px solid var(--rule);
+}
+.about-empty { text-align: center; font-style: italic; color: var(--ink-faint); }
+.title-count a { color: var(--accent); text-decoration: none; }
+.title-count a:hover { text-decoration: underline; }

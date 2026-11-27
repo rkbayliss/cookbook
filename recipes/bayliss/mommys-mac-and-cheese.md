@@ -11,6 +11,8 @@ story_by:
 photos: []
 ---
 
+## From Rod and Katherine
+
 Mommy always makes this dish for Christmas. Reese would eat half of the tray.
 
 Mommy's notes:
@@ -20,8 +22,6 @@ It's best to buy the block of cheese instead of shredded because shredded cheese
 Get the cheese spread evenly to ensure there are crunchy bits.
 
 Sometimes I add a little parmesan which gives it that little something extra
-
-## From Rod and Katherine
 
 ## Ingredients
 

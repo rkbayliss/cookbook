@@ -11,9 +11,9 @@ story_by:
 photos: []
 ---
 
-Thanksgiving 2026 turkey: brined with Kinder's Butcher's Brine Kit, then broken down and cooked sous vide, with the light and dark meat at different temperatures, and finished under the broiler.
-
 ## From Rod and Katherine
+
+Thanksgiving 2026 turkey: brined with Kinder's Butcher's Brine Kit, then broken down and cooked sous vide, with the light and dark meat at different temperatures, and finished under the broiler.
 
 ## Ingredients
 
