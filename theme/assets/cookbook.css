@@ -277,3 +277,4 @@ figcaption { text-align: center; font-style: italic; color: var(--ink-soft); fon
 .archive-chapter-title { font-weight: 400; font-size: 1em; text-align: center; margin: 0 0 0.6rem; color: var(--accent); font-variant-caps: all-small-caps; letter-spacing: 0.12em; }
 .chapter-archive { margin-bottom: 2rem; }
 .archive[hidden] { display: none; }
+.contents-blurb { text-align: center; color: var(--ink-soft); font-style: italic; font-size: 1.1em; margin: 0 auto 2.4rem; text-wrap: balance; }

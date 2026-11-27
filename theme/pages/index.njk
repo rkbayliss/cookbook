@@ -31,6 +31,7 @@ bodyClass: page-index
 </section>
 
 <nav class="contents" aria-label="Contents">
+  <p class="contents-blurb">{{ site.everyday.blurb }}</p>
   {%- for group in all | everyday | byCategory %}
   <section class="chapter" id="{{ group.slug }}">
     <h2 class="chapter-title"><span class="chapter-number">{{ loop.index0 | roman }}</span> {{ group.name }}</h2>
