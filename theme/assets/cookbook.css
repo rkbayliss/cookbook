@@ -79,7 +79,7 @@ a:hover { color: var(--accent); text-decoration-color: currentColor; }
 :focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
 img { max-width: 100%; height: auto; display: block; }
 .visually-hidden { position: absolute !important; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
-.smallcaps, .recipe-kicker, .masthead-families, .title-families, .recipe-facts dt, .chapter-number, .tool, .chip, .recipe-nav .back {
+.smallcaps, .recipe-kicker, .title-families, .recipe-facts dt, .tool, .chip, .recipe-nav .back {
   font-variant-caps: all-small-caps;
   letter-spacing: 0.08em;
 }
@@ -87,7 +87,6 @@ img { max-width: 100%; height: auto; display: block; }
 /* ---------- Masthead & colophon ---------- */
 .masthead { text-align: center; padding: 1.6rem 1rem 0.6rem; }
 .masthead-link { text-decoration: none; display: inline-flex; flex-direction: column; align-items: center; gap: 0.1rem; }
-.masthead-families { color: var(--ink-faint); font-size: 0.85em; }
 .masthead-title { font-style: italic; font-size: 1.35em; line-height: 1.1; }
 .page-index .masthead { display: none; }
 
@@ -101,13 +100,13 @@ main { padding: 0 1.25rem; }
 .title-families { color: var(--ink-soft); margin: 0; font-size: 1.05em; }
 .title-main {
   font-weight: 400; font-style: italic; margin: 0.15em 0 0.25em;
-  font-size: clamp(2.6rem, 1.6rem + 5vw, 4.6rem); line-height: 1; letter-spacing: -0.01em;
+  font-size: clamp(2.4rem, 1.4rem + 4.2vw, 4.2rem); line-height: 1.02; letter-spacing: -0.01em; text-wrap: balance;
 }
 .title-main::after {
   content: ""; display: block; width: 7rem; margin: 0.45em auto 0;
   border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); height: 3px;
 }
-.title-tagline { color: var(--ink-soft); font-style: italic; max-width: 26rem; margin: 1rem auto; text-wrap: balance; }
+.title-tagline { color: var(--ink-soft); font-style: italic; font-size: 1.15em; max-width: 28rem; margin: 1rem auto; text-wrap: balance; }
 .title-count { color: var(--ink-faint); font-size: 0.85em; font-variant-caps: all-small-caps; letter-spacing: 0.1em; }
 
 .finder { max-width: var(--measure); margin: 0 auto 2.5rem; }
@@ -128,12 +127,17 @@ main { padding: 0 1.25rem; }
 .finder-status { text-align: center; color: var(--ink-faint); font-style: italic; min-height: 1.5em; margin: 0.6rem 0 0; font-size: 0.9em; }
 
 .contents { max-width: var(--measure); margin: 0 auto; }
-.chapter { margin: 0 0 2.6rem; scroll-margin-top: 1rem; }
+/* Section (The Recipe Box, The Archive) > chapter (Weeknight Mains…) > recipe */
+.cookbook-section { scroll-margin-top: 1rem; }
+.cookbook-section + .cookbook-section { margin-top: 4.5rem; padding-top: 3rem; border-top: 1px solid var(--rule); }
+.section-header { text-align: center; margin-bottom: 2.4rem; }
+.section-title { font-weight: 400; font-style: italic; font-size: clamp(2rem, 1.6rem + 1.6vw, 2.6rem); line-height: 1.1; margin: 0.3rem 0 0.4rem; }
+.section-blurb { color: var(--ink-soft); font-style: italic; max-width: 28rem; margin: 0 auto; text-wrap: balance; }
+.chapter { margin: 0 0 2.2rem; scroll-margin-top: 1rem; }
 .chapter-title {
-  font-weight: 400; font-size: 1.45em; text-align: center; margin: 0 0 0.9rem;
-  display: flex; align-items: baseline; justify-content: center; gap: 0.5em;
+  font-weight: 400; font-size: 1.05em; text-align: center; margin: 0 0 0.7rem; color: var(--accent);
+  font-variant-caps: all-small-caps; letter-spacing: 0.14em;
 }
-.chapter-number { color: var(--accent); font-size: 0.8em; }
 .chapter-list { list-style: none; margin: 0; padding: 0; }
 .entry { display: flex; align-items: baseline; gap: 0.5rem; }
 .entry-pick { display: none; }
@@ -146,7 +150,7 @@ main { padding: 0 1.25rem; }
 .entry-credit { flex: 0 0 auto; font-style: italic; color: var(--ink-soft); font-size: 0.92em; text-align: right; }
 .entry-family { color: var(--ink-faint); }
 .entry-link:hover .entry-title { color: var(--accent); }
-.entry[hidden], .chapter[hidden] { display: none; }
+.entry[hidden], .chapter[hidden], .cookbook-section[hidden] { display: none; }
 @media (max-width: 30rem) {
   .entry-link { flex-direction: column; gap: 0; }
   .entry-leader { display: none; }
@@ -269,12 +273,3 @@ figcaption { text-align: center; font-style: italic; color: var(--ink-soft); fon
   a { text-decoration: none; }
 }
 
-/* ---------- The Archive (archive: true) ---------- */
-.archive { margin: 4rem 0 0; padding-top: 2.5rem; border-top: 1px solid var(--rule); }
-.archive-header { text-align: center; margin-bottom: 2rem; }
-.archive-title { font-weight: 400; font-style: italic; font-size: 2em; margin: 0.3rem 0 0.4rem; }
-.archive-blurb { color: var(--ink-soft); font-style: italic; max-width: 28rem; margin: 0 auto; text-wrap: balance; font-size: 0.95em; }
-.archive-chapter-title { font-weight: 400; font-size: 1em; text-align: center; margin: 0 0 0.6rem; color: var(--accent); font-variant-caps: all-small-caps; letter-spacing: 0.12em; }
-.chapter-archive { margin-bottom: 2rem; }
-.archive[hidden] { display: none; }
-.contents-blurb { text-align: center; color: var(--ink-soft); font-style: italic; font-size: 1.1em; margin: 0 auto 2.4rem; text-wrap: balance; }

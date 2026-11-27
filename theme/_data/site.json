@@ -1,12 +1,12 @@
 {
-  "title": "The Family Cookbook",
-  "families": "Bayliss & Paseman",
-  "tagline": "Recipes gathered from two family kitchens, with the stories and lessons that came with them.",
+  "title": "The Paseman Bayliss Family Cookbook",
+  "tagline": "The tastes and flavors that shaped Rod and Katherine",
   "repo": "https://github.com/rkbayliss/cookbook",
   "branch": "main",
   "lang": "en",
-  "everyday": {
-    "blurb": "The tastes and flavors that shaped Rod and Katherine"
+  "recipeBox": {
+    "name": "The Recipe Box",
+    "blurb": "The recipes we keep coming back to"
   },
   "archive": {
     "name": "The Archive",

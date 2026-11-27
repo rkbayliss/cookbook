@@ -4,6 +4,6 @@
   <a href="{{ r.url }}" class="entry-link">
     <span class="entry-title">{{ r.data.title | typography }}{% if r.data.status == 'draft' %} <em class="entry-draft">in progress</em>{% endif %}</span>
     <span class="entry-leader" aria-hidden="true"></span>
-    <span class="entry-credit">{{ r.data.credit }}{% if r.data.from %}<span class="entry-family"> · {{ r.data.from }}</span>{% endif %}</span>
+    <span class="entry-credit">{{ r.data.credit }}{% if r.data.from %}<span class="entry-family">{% if r.data.credit %} · {% endif %}{{ r.data.from }}</span>{% endif %}</span>
   </a>
 </li>

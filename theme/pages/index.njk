@@ -5,7 +5,6 @@ bodyClass: page-index
 ---
 {%- set all = collections.recipes -%}
 <section class="title-page">
-  <p class="title-families">{{ site.families }}</p>
   <h1 class="title-main">{{ site.title }}</h1>
   <p class="title-tagline">{{ site.tagline }}</p>
   <p class="title-count">{{ all.length }} recipes</p>
@@ -30,30 +29,22 @@ bodyClass: page-index
   <p class="finder-status" id="finder-status" aria-live="polite"></p>
 </section>
 
+{#- Two parallel sections: The Recipe Box (everyday) and The Archive (archive: true). -#}
+{%- set sections = [
+  { id: "recipe-box", prefix: "", name: site.recipeBox.name, blurb: site.recipeBox.blurb, recipes: all | everyday },
+  { id: "archive", prefix: "archive-", name: site.archive.name, blurb: site.archive.blurb, recipes: all | archived }
+] -%}
 <nav class="contents" aria-label="Contents">
-  <p class="contents-blurb">{{ site.everyday.blurb }}</p>
-  {%- for group in all | everyday | byCategory %}
-  <section class="chapter" id="{{ group.slug }}">
-    <h2 class="chapter-title"><span class="chapter-number">{{ loop.index0 | roman }}</span> {{ group.name }}</h2>
-    <ol class="chapter-list">
-      {%- for r in group.items %}
-      {% include "toc-entry.njk" %}
-      {%- endfor %}
-    </ol>
-  </section>
-  {%- endfor %}
-
-  {%- set archived = all | archived %}
-  {%- if archived.length %}
-  <section class="archive" id="archive">
-    <header class="archive-header">
+  {%- for sec in sections %}{% if sec.recipes.length %}
+  <section class="cookbook-section" id="{{ sec.id }}">
+    <header class="section-header">
       <div class="ornament" aria-hidden="true">❦</div>
-      <h2 class="archive-title">{{ site.archive.name }}</h2>
-      <p class="archive-blurb">{{ site.archive.blurb }}</p>
+      <h2 class="section-title">{{ sec.name }}</h2>
+      <p class="section-blurb">{{ sec.blurb }}</p>
     </header>
-    {%- for group in archived | byCategory %}
-    <section class="chapter chapter-archive" id="archive-{{ group.slug }}">
-      <h3 class="archive-chapter-title">{{ group.name }}</h3>
+    {%- for group in sec.recipes | byCategory %}
+    <section class="chapter" id="{{ sec.prefix }}{{ group.slug }}">
+      <h3 class="chapter-title">{{ group.name }}</h3>
       <ol class="chapter-list">
         {%- for r in group.items %}
         {% include "toc-entry.njk" %}
@@ -62,7 +53,7 @@ bodyClass: page-index
     </section>
     {%- endfor %}
   </section>
-  {%- endif %}
+  {%- endif %}{% endfor %}
 </nav>
 
 <section class="print-bar" aria-label="Print">

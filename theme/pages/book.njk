@@ -21,7 +21,7 @@ eleventyExcludeFromCollections: true
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{ edition.name or site.title }} · {{ site.families }}</title>
+  <title>{{ edition.name or site.title }}</title>
   <link rel="stylesheet" href="/assets/cookbook.css">
   <link rel="stylesheet" href="/assets/book.css">
 </head>
@@ -32,7 +32,6 @@ eleventyExcludeFromCollections: true
   </nav>
 
   <section class="book-cover">
-    <p class="title-families">{{ site.families }}</p>
     <h1 class="title-main">{{ site.title }}</h1>
     {%- if edition.name %}<p class="book-edition">{{ edition.name }}</p>{% endif %}
     <div class="ornament" aria-hidden="true">❦</div>
