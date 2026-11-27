@@ -9,10 +9,13 @@ time:
 status: done
 archive: true
 source: "Paseman Family Cookbook (2012), page 82"
+story_by: Bill
 photos: []
 ---
 
 Valerie made this on the last night of my August 2011 visit. She is pictured with her husband Francois, and wore that dress earlier in the day during our trip to Saint Emilion.
+
+## From Rod and Katherine
 
 ## Ingredients
 

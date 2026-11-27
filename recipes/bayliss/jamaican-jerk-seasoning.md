@@ -7,10 +7,13 @@ tags: []
 serves:
 time:
 status: done
+story_by:
 photos: []
 ---
 
 Recipe will yield about ½ cup. Store in a spice jar in spice cabinet
+
+## From Rod and Katherine
 
 ## Ingredients
 

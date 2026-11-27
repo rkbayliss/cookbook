@@ -8,10 +8,13 @@ serves:
 time:
 status: done
 source: "Paseman Family Cookbook (2012), page 9"
+story_by: Bill
 photos: []
 ---
 
 Kat would always order this at the local pancake house, and it was very expensive. So one day we tried to make it ourselves. It was pretty easy and gave a very good results.
+
+## From Rod and Katherine
 
 ## Ingredients
 

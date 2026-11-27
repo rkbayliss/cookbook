@@ -9,10 +9,13 @@ time:
 status: done
 archive: true
 source: "Paseman Family Cookbook (2012), page 77"
+story_by: Bill
 photos: []
 ---
 
 I worked for Rami in the early 1980's at Daisy Systems, my first job in California. He was a really sweet guy, willing to put up with all sorts of attitude on my part (presumably because I could deliver product). This is the recipe for a cake he brought to a potluck, which I have made many time since. It is a real crowd pleaser. Here is a picture of Daisy's first employees at its 1981 Xmas party showing Rami (in the red shirt), myself and a few others, including Vinod Khosla, who later co-founded Sun and Harvey Jones, who later co-founded Synopsys.
+
+## From Rod and Katherine
 
 ## Ingredients
 

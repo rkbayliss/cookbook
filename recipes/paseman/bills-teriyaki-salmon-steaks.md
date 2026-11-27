@@ -9,10 +9,13 @@ time:
 status: done
 archive: true
 source: "Paseman Family Cookbook (2012), page 31"
+story_by: Bill
 photos: []
 ---
 
 This is a very simple recipe which I use whenever there is a lot of salmon in the market.
+
+## From Rod and Katherine
 
 ## Ingredients
 

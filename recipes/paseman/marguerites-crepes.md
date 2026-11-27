@@ -8,10 +8,13 @@ serves:
 time:
 status: done
 source: "Paseman Family Cookbook (2012), page 8"
+story_by: Bill
 photos: []
 ---
 
 Marguerite really likes crepes. Here is a picture of Sabrina and Katherine making Heart shaped crepes for her (and my) 2009 Valentine's day present.
+
+## From Rod and Katherine
 
 ## Ingredients
 

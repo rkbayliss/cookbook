@@ -8,10 +8,13 @@ serves:
 time:
 status: done
 source: "Paseman Family Cookbook (2012), page 20"
+story_by: Bill
 photos: []
 ---
 
 This recipe came off the side of a Ronzinni spaghetti box. When we had kids around, it was probably the second most cooked recipe in our home. I would usually double the amount, cook it on Sunday and it would last most of the week. Katherine and Raymond used to enjoy eating this for breakfast, lunch and dinner.
+
+## From Rod and Katherine
 
 ## Ingredients
 

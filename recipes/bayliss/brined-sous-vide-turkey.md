@@ -7,10 +7,13 @@ tags: [thanksgiving]
 serves:
 time: 3 to 5 days thawing, 12 hours brining, 12 to 24 hours sous vide
 status: draft
+story_by:
 photos: []
 ---
 
 Thanksgiving 2026 turkey: brined with Kinder's Butcher's Brine Kit, then broken down and cooked sous vide, with the light and dark meat at different temperatures, and finished under the broiler.
+
+## From Rod and Katherine
 
 ## Ingredients
 

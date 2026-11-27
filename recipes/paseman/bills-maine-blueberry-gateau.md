@@ -8,10 +8,13 @@ serves:
 time:
 status: done
 source: "Paseman Family Cookbook (2012), page 71"
+story_by: Bill
 photos: []
 ---
 
 I saw this in a newspaper, and made it first for Gia Audebert as a thank you for inviting Katherine to the French Riviera the summer of 2005. Here is a picture of Sabrina whipping up one. I have made it at least a dozen times since (whenever blueberries look especially good in the store). A tip: When spreading the blueberries over the top, keep them away from the center of the cake. Otherwise the center will incompletely cook.
+
+## From Rod and Katherine
 
 ## Ingredients
 

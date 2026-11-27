@@ -9,10 +9,13 @@ time:
 status: done
 archive: true
 source: "Paseman Family Cookbook (2012), page 78"
+story_by: Bill
 photos: []
 ---
 
 Chris, Marguerite's Sister, is a registered nurse and was there for each of our children's births. Stated differently, whenever she was needed most, she was there. She actually got this recipe published in the cookingclub.com magazine around May of 2009. She is also Sabrina's Godmother and is here with Sabrina on her graduation day.
+
+## From Rod and Katherine
 
 ## Ingredients
 

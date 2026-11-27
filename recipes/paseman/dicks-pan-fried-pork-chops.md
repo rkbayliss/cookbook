@@ -8,10 +8,13 @@ serves:
 time:
 status: done
 source: "Paseman Family Cookbook (2012), page 24"
+story_by: Bill
 photos: []
 ---
 
 Mom and Dad had a tempestuous relationship. They split when I was 3, 13 and finally when I was 22. When I was 13, I lived with my Dad in an apartment. The deal was that he would cook and I would wash. The first night, we had pan fried pork chops and rice. It wasn't too bad. The next night, we had pan fried pork chops and rice. The third night we had leftover pan fried pork chops and rice since I hadn't finished mine from the second night. I soon discovered that if I wanted anything different, I'd have to make it myself. I started by executing recipes from the back of frozen vegetable packages and had a reasonable repertoire by the time Mom and Dad got back the second time. To be honest, I don't cook pan fried pork chops much, however it is fine food for a single person. Doing it a few times teaches you how to select a good cut of meat in the store, how hot to make a griddle, how long to cook a piece of meat, and the value of using a spatula vs a fork to turn meat.
+
+## From Rod and Katherine
 
 ## Ingredients
 

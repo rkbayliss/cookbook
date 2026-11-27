@@ -47,14 +47,22 @@ scripts/                photos.js (photo tidying), build-images.js, build-pdf.js
     and their own final part in the PDF. Leave it out, or set `false`, for everything else.
     Only Rod or Katherine decide what goes in; don't move recipes there on your own judgment.
   - `source`: only for recipes from another book, e.g. `"Paseman Family Cookbook (2012), page 47"`.
+  - `story_by`: who wrote the original description (the first paragraph), e.g. `Bill`. It
+    shows as "From Bill" above it. Blank if there isn't an original description, or if
+    Rod and Katherine wrote it.
   - `photos`: list of photo file names, first one is the main photo. `[]` if none.
 - **Body**, in this order:
-  1. The story: a short paragraph about who makes it and where it came from, with no heading.
-  2. `## Ingredients`: a `- ` bullet list. Sub-groups get a bold line of their own,
+  1. The original description, with no heading: in its writer's own words (for the 2012-book
+     recipes, Bill's). Never rewrite it, and name its writer in `story_by`.
+  2. `## From Rod and Katherine`: Rod and Katherine's own description: what the dish means to
+     them, when they make it, and who they make it for. Every recipe has this heading, and
+     it's left empty (hidden on the site) until they write something. Write it in their voice
+     ("we") only from what they tell you; don't invent memories.
+  3. `## Ingredients`: a `- ` bullet list. Sub-groups get a bold line of their own,
      e.g. `**For the brine**`, followed by their bullets.
-  3. `## Preparation`: a numbered list. A step may start with a bold lead-in, e.g.
+  4. `## Preparation`: a numbered list. A step may start with a bold lead-in, e.g.
      `1. **Brine:** ...`.
-  4. `## Notes`: bullets. **Lessons from a particular time the dish was made go here, dated**,
+  5. `## Notes`: bullets. **Lessons from a particular time the dish was made go here, dated**,
      e.g. `- **Thanksgiving 2026:** brined 48h, too salty at the drumsticks. Try 36h.`
      Add new dated notes at the end. Never delete or rewrite earlier ones; they are the
      family's history of the dish.

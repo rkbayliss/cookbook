@@ -9,10 +9,13 @@ time:
 status: done
 archive: true
 source: "Paseman Family Cookbook (2012), page 43"
+story_by: Bill
 photos: []
 ---
 
 Kiat Ming Chia Dahlmeier and I were two German emigrants to Nixdorf in 1979. She from Singapore and I from the US. We worked together for about 6 months. When I returned for a visit in 1985, she cooked a stew for her little son Daniel, her sister and I.
+
+## From Rod and Katherine
 
 ## Ingredients
 

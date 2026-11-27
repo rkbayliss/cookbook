@@ -9,10 +9,13 @@ time:
 status: done
 archive: true
 source: "Paseman Family Cookbook (2012), page 81"
+story_by: Bill
 photos: []
 ---
 
 Sabrina made these cupcakes for her boyfriend in 2009 for Valentine's day. From left to right, top to bottom, they are: "Corn on the Cob",Chicken Drumstick,Mashed Potatoes, "Corn on the Cob",Spaghetti,Peas and Carrots
+
+## From Rod and Katherine
 
 ## Ingredients
 

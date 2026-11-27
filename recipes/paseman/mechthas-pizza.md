@@ -9,10 +9,13 @@ time:
 status: done
 archive: true
 source: "Paseman Family Cookbook (2012), page 37"
+story_by: Bill
 photos: []
 ---
 
 Mechtha occasionally made this when I visited.
+
+## From Rod and Katherine
 
 ## Ingredients
 

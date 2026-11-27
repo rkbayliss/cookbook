@@ -8,10 +8,13 @@ serves:
 time:
 status: done
 source: "Paseman Family Cookbook (2012), page 65"
+story_by: Bill
 photos: []
 ---
 
 Mom used to make this pretty regularly, and I made it just recently for 2010 New year's day. I got the recipe from Joy of Cooking, and I was amazed at how simple it was. Great way to make a salad from nothing as a side dish.
+
+## From Rod and Katherine
 
 ## Ingredients
 

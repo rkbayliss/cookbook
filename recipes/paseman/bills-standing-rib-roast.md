@@ -9,10 +9,13 @@ time:
 status: done
 archive: true
 source: "Paseman Family Cookbook (2012), page 49"
+story_by: Bill
 photos: []
 ---
 
 Ray really liked the Rib Roasts I'd cook in the rotisserie. Generally I'd cook them for New Year's or Christmas or when we had guests over to enjoy July 4th. It was really pretty simple... if you have a rotisserie. Here is a recipe from Ina Garten that is quite similar, and all you need is a Roasting Pan. The picture is from Marguerite's 50th birthday party. The rib roast and roasted lemon chicken are in the foreground. The rotisserie is in the background.
+
+## From Rod and Katherine
 
 ## Ingredients
 

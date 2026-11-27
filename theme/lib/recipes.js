@@ -42,7 +42,7 @@ const METHOD = ["preparation", "method", "directions", "instructions", "steps"];
 // Splits rendered recipe HTML at each <h2> so the layout can place the parts.
 export function splitSections(html) {
   const chunks = String(html).split(/(?=<h2[\s>])/);
-  const out = { intro: "", ingredients: "", method: "", notes: "", other: [] };
+  const out = { intro: "", ours: "", ingredients: "", method: "", notes: "", other: [] };
   if (!/^<h2[\s>]/.test(chunks[0] || "")) out.intro = chunks.shift() || "";
   for (const chunk of chunks) {
     const m = chunk.match(/^<h2[^>]*>([\s\S]*?)<\/h2>\s*/);
@@ -52,10 +52,12 @@ export function splitSections(html) {
     if (key === "ingredients") out.ingredients = body;
     else if (METHOD.includes(key)) out.method = body;
     else if (key === "notes") out.notes = body;
+    else if (key === "from rod and katherine") out.ours = body;
     else out.other.push({ heading, body });
   }
   // A recipe whose Notes section is still just an empty "- " bullet shows no Notes.
   if (!out.notes.replace(/<[^>]+>|\s/g, "")) out.notes = "";
+  if (!out.ours.replace(/<[^>]+>|\s/g, "")) out.ours = "";
   return out;
 }
 

@@ -7,8 +7,11 @@ tags: [thanksgiving]
 serves:
 time:
 status: draft
+story_by:
 photos: []
 ---
+
+## From Rod and Katherine
 
 ## Ingredients
 

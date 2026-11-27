@@ -8,10 +8,13 @@ serves:
 time:
 status: done
 source: "Paseman Family Cookbook (2012), page 62"
+story_by: Bill
 photos: []
 ---
 
 This salad can be very painstaking to create, but turns out well if executed correctly. Below, Ray, Katherine and Marguerite are working to create this salad for our 2006 Thanksgiving.
+
+## From Rod and Katherine
 
 ## Ingredients
 

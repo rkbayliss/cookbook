@@ -8,10 +8,13 @@ serves:
 time:
 status: done
 source: "Paseman Family Cookbook (2012), page 10"
+story_by: Bill
 photos: []
 ---
 
 Marguerite loves these. Common in Sri Lanka (once called Ceylon) where Grandma Hsu (Clare) was born and raised. Clare met Grandpa Hsu there and was married in a grand military wedding before she left for China in 1945. Any leftovers (chicken, pork, beef, fish, turkey) can be minced to make the filling, but corned beef is best.
+
+## From Rod and Katherine
 
 ## Ingredients
 

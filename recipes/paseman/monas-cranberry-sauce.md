@@ -8,10 +8,13 @@ serves:
 time:
 status: done
 source: "Paseman Family Cookbook (2012), page 13"
+story_by: Bill
 photos: []
 ---
 
 Here is a picture of Mom and Mona, Mom's next door neighbor. The picture was taken by Hellmut, Mom's brother, when he visited in the late 90's.
+
+## From Rod and Katherine
 
 ## Ingredients
 

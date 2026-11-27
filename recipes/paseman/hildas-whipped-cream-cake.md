@@ -8,10 +8,13 @@ serves:
 time:
 status: done
 source: "Paseman Family Cookbook (2012), page 76"
+story_by: Bill
 photos: []
 ---
 
 Many of the recipes here are from the 50's and 60's, a time where we walked everywhere, and so obesity was not the problem it is today. This recipe is from even before then, from Hildegard Paseman, my father's mother. In essence, it is a simple tiramisu, with vanilla wafers taking the place of ladyfingers. Probably the most fat per cubic inch of anything you will ever try, it is simple and delicious. Don't eat too much.
+
+## From Rod and Katherine
 
 ## Ingredients
 

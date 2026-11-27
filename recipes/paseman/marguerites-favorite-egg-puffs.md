@@ -8,10 +8,13 @@ serves:
 time:
 status: done
 source: "Paseman Family Cookbook (2012), page 83"
+story_by: Bill
 photos: []
 ---
 
 Marguerite loves Egg Puffs and was sad when a local dessert place that serves them was shut down. So Sabrina gave Marguerite an egg puff pan for Christmas 2011.
+
+## From Rod and Katherine
 
 ## Ingredients
 

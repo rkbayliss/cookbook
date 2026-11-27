@@ -8,10 +8,13 @@ serves:
 time:
 status: done
 source: "Paseman Family Cookbook (2012), page 33"
+story_by: Bill
 photos: []
 ---
 
 I used to cook this a great deal, but migrated to Wine chicken since it was easier, and I seemed to be the only one who liked the Lemon Sauce. It is quite rich and tasty. Perhaps when the kids' palates mature a bit, I'll dust it off and try again.
+
+## From Rod and Katherine
 
 ## Ingredients
 

@@ -8,10 +8,13 @@ serves:
 time:
 status: done
 source: "Paseman Family Cookbook (2012), page 60"
+story_by: Bill
 photos: []
 ---
 
 This Dish is incredibly simple, and is one of Katherine's favorites. The recipe comes from Grandma Paseman (Waltroud). Katherine enjoys these on top of rice and will eat all the green beans first, leaving the onions and bacon to mix with the rice. The picture is from our 2006 Thanksgiving table.
+
+## From Rod and Katherine
 
 ## Ingredients
 

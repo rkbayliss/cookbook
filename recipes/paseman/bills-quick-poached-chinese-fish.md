@@ -9,10 +9,13 @@ time:
 status: done
 archive: true
 source: "Paseman Family Cookbook (2012), page 28"
+story_by: Bill
 photos: []
 ---
 
 This is not as good as Marguerite's Steamed Fish, but it is pretty good and a -lot- faster and easier to fix. Fresh fish is important, even if you have to fight to keep it in the pan.
+
+## From Rod and Katherine
 
 ## Ingredients
 

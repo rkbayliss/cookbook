@@ -2,7 +2,7 @@
 layout: base.njk
 bodyClass: page-recipe
 ---
-{%- set rd = { title: title, from: from, credit: credit, category: category, tags: tags, serves: serves, time: time, status: status, source: source, photos: photos, archive: archive } -%}
+{%- set rd = { title: title, from: from, credit: credit, category: category, tags: tags, serves: serves, time: time, status: status, source: source, photos: photos, archive: archive, story_by: story_by } -%}
 {%- set rhtml = content -%}
 {%- set rslug = page.fileSlug -%}
 <nav class="recipe-nav" aria-label="Recipe tools">

@@ -8,10 +8,13 @@ serves:
 time:
 status: done
 source: "Paseman Family Cookbook (2012), page 70"
+story_by: Bill
 photos: []
 ---
 
 This is one of 3 types of cookie Mom (Waltraud Paseman) would make around Christmas Time. She would ship them to the kids after they left home, wrapping each finished cookie individually in wax paper. The original recipe came from the back of a Nestle Toll House semi-sweet morsel bag. Here, Sabrina is making up a batch of Cookies, Brownies and cake for Harker Key Club.
+
+## From Rod and Katherine
 
 ## Ingredients
 

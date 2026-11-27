@@ -8,10 +8,13 @@ serves:
 time:
 status: done
 source: "Paseman Family Cookbook (2012), page 11"
+story_by: Bill
 photos: []
 ---
 
 When I lived in Germany, I would occasionally dip a small Brie in egg and breadcrumbs, fry it in butter and eat it with wine and bread. The experience was sort of like a small fondue, since the cheese would liquify. This recipe uses less oil, but provides a similar experience. It is dead simple and I make it occasionally at potlucks.
+
+## From Rod and Katherine
 
 ## Ingredients
 

@@ -8,10 +8,13 @@ serves:
 time:
 status: done
 source: "Paseman Family Cookbook (2012), page 56"
+story_by: Bill
 photos: []
 ---
 
 This is the general mechanism Marguerite uses to create any stir fried vegetable dish. The picture is of Marguerite at a Campsite in Corcovado Park in Costa Rica. She took me there for my 50th birthday.
+
+## From Rod and Katherine
 
 ## Ingredients
 

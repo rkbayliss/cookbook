@@ -8,10 +8,13 @@ serves:
 time:
 status: done
 source: "Paseman Family Cookbook (2012), page 32"
+story_by: Bill
 photos: []
 ---
 
 This is the first recipe that Katherine wanted to make after she got her first Cookbook "Children's Quick and Easy Cookbook". It is actually a bit more time consuming than the spaghetti recipe, but she really enjoys the crunchy pasta.
+
+## From Rod and Katherine
 
 ## Ingredients
 

@@ -9,10 +9,13 @@ time:
 status: done
 archive: true
 source: "Paseman Family Cookbook (2012), page 79"
+story_by: Bill
 photos: []
 ---
 
 This recipe was sent to me by Debbie Douglass, my father's brother's daughter. The recipe card is from my father's maternal cousin (Marion Bobey) and comes close to the spice cake my grandmother (Hilda Paseman) would make.
+
+## From Rod and Katherine
 
 ## Ingredients
 

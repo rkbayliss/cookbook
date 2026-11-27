@@ -9,10 +9,13 @@ time:
 status: done
 archive: true
 source: "Paseman Family Cookbook (2012), page 40"
+story_by: Bill
 photos: []
 ---
 
 I always liked meatloaf, but lost my Mom's recipe. So I looked this one up and Sabrina cooked it for Raymond and me (20110620). I am always suspicious about catsup in a recipe, but it is used here in a glaze, not the meat. Probably the best meatloaf I've ever eaten.
+
+## From Rod and Katherine
 
 ## Ingredients
 

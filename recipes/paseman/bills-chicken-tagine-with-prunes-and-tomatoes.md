@@ -8,10 +8,13 @@ serves:
 time:
 status: done
 source: "Paseman Family Cookbook (2012), page 23"
+story_by: Bill
 photos: []
 ---
 
 Sabrina bought me a Tangine for Christmas in 2007 after I told her how much I liked Moroccan food: Rabbit with Honey, Lemon Chicken, Couscous, etc. A Tangine is basically a Dutch Oven with a ceramic lid. A Dutch Oven can be used here also. The heavy lid keeps in the steam during cooking. I have started cooking this more and more. The picture below is of us, Meyleen Beichler, Trond Henning-Olesen and Ed Silky at our Favorite Moroccan restaurant on the CLIC IPO 10th anniversary.
+
+## From Rod and Katherine
 
 ## Ingredients
 

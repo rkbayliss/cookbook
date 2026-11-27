@@ -8,10 +8,13 @@ serves:
 time:
 status: done
 source: "Paseman Family Cookbook (2012), page 57"
+story_by: Bill
 photos: []
 ---
 
 Marguerite buys Rice Bean Thread at a Chinese Grocery Store
+
+## From Rod and Katherine
 
 ## Ingredients
 

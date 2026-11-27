@@ -8,10 +8,13 @@ serves:
 time:
 status: done
 source: "Paseman Family Cookbook (2012), page 74"
+story_by: Bill
 photos: []
 ---
 
 Mrs. Hsu would make this for Christmas. I could always count on a jar as a present. She would also send a jar every year to my father, who had a big sweet tooth. In fact, one story my father would often recite was when he was a little boy visiting his father's father. He brought a bag of jelly beans for the summer, which his grandmother promptly confiscated. Thereafter throughout the whole summer, the woman would give my father one jellybean a day. The thing that really got him upset was that they were HIS jellybeans. Although he did not eat much in general, he always had a jar of jellybeans sitting around the house as I grew up, and so especially liked this yearly gift from Clare.
+
+## From Rod and Katherine
 
 ## Ingredients
 

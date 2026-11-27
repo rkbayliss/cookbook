@@ -9,10 +9,13 @@ time:
 status: done
 archive: true
 source: "Paseman Family Cookbook (2012), page 7"
+story_by: Bill
 photos: []
 ---
 
 My Mother used to make this for me on Weekends. It is simple to make and very delicious. The picture below was taken of her and me around 1957 or 1958.
+
+## From Rod and Katherine
 
 ## Ingredients
 

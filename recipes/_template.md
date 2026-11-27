@@ -8,10 +8,17 @@ serves:
 time:
 status: draft          # draft while you're still working on it, done when it's final
 archive: false         # true = The Archive: family history, not everyday or holiday cooking
+story_by:              # who wrote the original description below, e.g. Bill. Blank if there isn't one
 photos: []             # e.g. [recipe-file-name_2026-carved.jpg]; first one is the main photo. See CLAUDE.md
 ---
 
-The story: who makes it, when, where it came from, any quotes.
+The original description, in the words of whoever wrote it (for example Bill's, from the
+2012 Paseman Family Cookbook). Put their name in story_by above. Delete this paragraph if
+there isn't one.
+
+## From Rod and Katherine
+
+Our description: what this dish means to us, when we make it, and who we make it for.
 
 ## Ingredients
 

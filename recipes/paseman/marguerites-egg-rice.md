@@ -8,10 +8,13 @@ serves:
 time:
 status: done
 source: "Paseman Family Cookbook (2012), page 63"
+story_by: Marguerite
 photos: []
 ---
 
 This is one of my (Marguerite's) favorite quick recipes along with many of the other steamed dishes that my nanny used to make for lunch. Eating it reminds me of all the lunch breaks when I would walk home from school, eat, walk to back to school and still have enough time to play a ball game with my classmates. I suspect this regimen of walking and running up and down 6 flights of stairs every day helped me athletically.
+
+## From Rod and Katherine
 
 ## Ingredients
 

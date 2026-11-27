@@ -9,10 +9,13 @@ time:
 status: done
 archive: true
 source: "Paseman Family Cookbook (2012), page 52"
+story_by: Bill
 photos: []
 ---
 
 This is the Ragu used in Timpano Alla "Big Night" (Pictured below).
+
+## From Rod and Katherine
 
 ## Ingredients
 

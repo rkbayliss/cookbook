@@ -9,10 +9,13 @@ time:
 status: done
 archive: true
 source: "Paseman Family Cookbook (2012), page 42"
+story_by: Bill
 photos: []
 ---
 
 I first met Valerie when she left Paris and was making a trip through America with her friend Danielle around 1983. Always smiling and upbeat, she made an unforgettable impression. I visited her in 1985 when she was a nurse in Versailles. She went on to work in an NGO as a nurse with her husband in Mali, Niger and Madagascar. We (briefly) hosted her son at our house in 2006 and she was nice enough to show me around Bordeaux during the summer of 2011 for a fantastic two days. She served this and a parfait the night before I left.
+
+## From Rod and Katherine
 
 ## Ingredients
 

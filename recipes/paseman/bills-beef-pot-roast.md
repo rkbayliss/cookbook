@@ -9,10 +9,13 @@ time:
 status: done
 archive: true
 source: "Paseman Family Cookbook (2012), page 21"
+story_by: Bill
 photos: []
 ---
 
 This is another "Cook on Sunday, serve all week recipes" that I got from "Joy of Cooking".
+
+## From Rod and Katherine
 
 ## Ingredients
 

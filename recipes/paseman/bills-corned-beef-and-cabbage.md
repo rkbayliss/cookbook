@@ -9,10 +9,13 @@ time:
 status: done
 archive: true
 source: "Paseman Family Cookbook (2012), page 45"
+story_by: Bill
 photos: []
 ---
 
 I usually cook this a few time a year, especially around St. Patrick's Day. I once forgot to wash off the Brine and the nitrates stayed on the meat gave me a headache. It is typical of the kind of meal I would be served as a child.
+
+## From Rod and Katherine
 
 ## Ingredients
 

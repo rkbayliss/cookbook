@@ -8,10 +8,13 @@ serves:
 time:
 status: done
 source: "Paseman Family Cookbook (2012), page 25"
+story_by: Bill
 photos: []
 ---
 
 This is Ray's Favorite everyday dish.
+
+## From Rod and Katherine
 
 ## Ingredients
 

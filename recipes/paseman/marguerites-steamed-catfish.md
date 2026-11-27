@@ -8,10 +8,13 @@ serves:
 time:
 status: done
 source: "Paseman Family Cookbook (2012), page 27"
+story_by: Bill
 photos: []
 ---
 
 Marguerite cooks this in a two or three tiered "Steamer". She also buys live fish at a Chinese Market where they kill it in front of her. When I first met Marguerite, I thought this practice was sort of barbaric and above all, unnecessary. After all, how much difference could it possibly make if a fish was dead a few hours before you cooked it? "A lot" it turns out. Fish decomposes a lot faster than I imagined and so you can really taste the difference. In fact, Chinese like to kill all their food just before cooking (chickens, fish,...). Politicians in San Francisco once passed an ordinance forbidding the practice, except, of course, for crabs. Boy were the Chinese pissed.
+
+## From Rod and Katherine
 
 ## Ingredients
 

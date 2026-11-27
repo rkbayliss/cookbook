@@ -7,12 +7,15 @@ tags: []
 serves:
 time:
 status: done
+story_by:
 photos: []
 ---
 
 The perfect island style appetizer has to be this Jamaican Steamed Cabbage recipe. A simple, yet quick and easy side dish consisting of slightly seasoned steamed white cabbage, bell peppers and carrots. It only takes 10 minutes to prepare and ready to eat within 30 minutes!!
 
 If you are looking for a side dish that's simple yet relatively easy to make. Then this steamed cabbage dish is definitely what you have been waiting for. I'm talking about a true taste of Jamaica that is guaranteed to be a made over and over again. This is a family favourite side dish of mine. It also is great to turn to if you are seeking an alternative to rice. Growing up in a Caribbean household meant that at some point I would be acquainted with cabbage. In the Caribbean, like most vegetables, cabbage doubles up as breakfast, lunch or dinner. Therefore, if you loathed  Jamaican steamed cabbage it would quickly become a major issue. I still to this day have a love/hate relationship with cabbage. Sometimes I cannot get enough of it and other times, I would rather not eat it. For my cabbage lovers out there, you will love this appetiser, it's like the Jamaican cousin to Haitian pikliz. The only difference is Jamaican cabbage is cooked while the Haitian variation is served in its raw form.
+
+## From Rod and Katherine
 
 ## Ingredients
 

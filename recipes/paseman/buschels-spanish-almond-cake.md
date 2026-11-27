@@ -9,10 +9,13 @@ time:
 status: done
 archive: true
 source: "Paseman Family Cookbook (2012), page 80"
+story_by: Bill
 photos: []
 ---
 
 Margot Pfeiffer Scholtz (My Grandmother on my mother's side) took in Borders after her husband died. One Border was Buschel, who was a friend of my Uncle Wolfgang. Buschel gave me this recipe at Wolfgang's funeral. Buschel was an incessant smoker and an ardent socialist when I first met him in 1976. My uncle Dickie explained that Buschel had started as a Nazi, had moved to CDU, CSU, SPD,... Pretty much every political system under the sun in his slow migration from extreme right to the extreme left. It seems that a lot of misfits passed through Grandmas house. She seems to have given shelter to them all. Not the worst legacy to have left behind.
+
+## From Rod and Katherine
 
 ## Ingredients
 

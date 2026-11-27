@@ -8,10 +8,13 @@ serves:
 time:
 status: done
 source: "Paseman Family Cookbook (2012), page 66"
+story_by: Bill
 photos: []
 ---
 
 My enthusiasm for Brussels Sprouts was not shared by Marguerite or the kids until around 2010, when I stopped boiling them and started using a (slight) modification of an Ina Garten recipe.
+
+## From Rod and Katherine
 
 ## Ingredients
 

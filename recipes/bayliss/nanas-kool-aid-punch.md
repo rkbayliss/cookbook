@@ -7,10 +7,13 @@ tags: []
 serves:
 time:
 status: done
+story_by:
 photos: []
 ---
 
 Benjamin's after school teacher (Ms. Berksinger?) tried to get this recipe from them. Roderick remembers drinking this over the holidays at nana's house
+
+## From Rod and Katherine
 
 ## Ingredients
 

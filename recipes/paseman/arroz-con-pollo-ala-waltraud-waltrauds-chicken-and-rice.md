@@ -9,10 +9,13 @@ time:
 status: done
 archive: true
 source: "Paseman Family Cookbook (2012), page 41"
+story_by: Bill
 photos: []
 ---
 
 Mom used to make "Chicken and Rice" occasionally. Here is my best recollection of it.
+
+## From Rod and Katherine
 
 ## Ingredients
 

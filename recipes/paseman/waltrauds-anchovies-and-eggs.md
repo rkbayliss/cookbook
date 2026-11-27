@@ -9,10 +9,13 @@ time:
 status: done
 archive: true
 source: "Paseman Family Cookbook (2012), page 14"
+story_by: Bill
 photos: []
 ---
 
 Mom used to make a lot of these for Christmas. But tastes change and now, no one seems to like it but me. So I do just 4 at a time.
+
+## From Rod and Katherine
 
 ## Ingredients
 

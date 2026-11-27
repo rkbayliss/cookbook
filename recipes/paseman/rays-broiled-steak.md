@@ -9,10 +9,13 @@ time:
 status: done
 archive: true
 source: "Paseman Family Cookbook (2012), page 26"
+story_by: Bill
 photos: []
 ---
 
 Ray likes using his "George Foreman" grill to cook hamburgers and steaks marinated with garlic salt and pepper. So in July 2009, Ray, Kat and I had a steak cooking contest. We started with three identical ribeye steaks from Costco. Ray used his George Foreman Grill. Kat pan fried hers in olive oil after marinating with some fresh rosemary. I broiled mine 10 minutes on a side after marinating it in soy sauce and garlic and coating it with peppercorns left over from a pizza delivery. The crust of mine was too spicy for the kids, but was the juciest. Ray's was the worst since the George Foreman grill squeezed the juice out of the steak during cooking.
+
+## From Rod and Katherine
 
 ## Ingredients
 

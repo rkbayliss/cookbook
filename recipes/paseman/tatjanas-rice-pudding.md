@@ -9,10 +9,13 @@ time:
 status: done
 archive: true
 source: "Paseman Family Cookbook (2012), page 73"
+story_by: Bill
 photos: []
 ---
 
 I first met my cousin Tatjana when she was 9 and we played in the garden of her mother's weekend house in 1976. She visited me in 2001 and sent me a recipe for Rice Pudding after she heard that I liked my Grandmother's pudding, but could not recreate the recipe. Here is a picture of her and I in 2003 in Bodenmais with Greg Joe (who I've known since college) and Oliver, Tatjana's then fiance and now husband.
+
+## From Rod and Katherine
 
 ## Ingredients
 

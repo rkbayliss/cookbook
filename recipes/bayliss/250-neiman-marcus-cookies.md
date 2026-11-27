@@ -7,6 +7,7 @@ tags: []
 serves:
 time:
 status: done
+story_by:
 photos: []
 ---
 
@@ -17,6 +18,8 @@ In December, when she received her bill, there was a charge for $250.00. She cal
 The bottom line is, she paid.
 
 She vowed to get back at Neiman's and wants to give the recipe out to everyone she possibly can. She asks that everyone who gets a copy send it to everyone they know. So…. here it is:
+
+## From Rod and Katherine
 
 ## Ingredients
 

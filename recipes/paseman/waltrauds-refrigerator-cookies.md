@@ -8,10 +8,13 @@ serves:
 time:
 status: done
 source: "Paseman Family Cookbook (2012), page 69"
+story_by: Bill
 photos: []
 ---
 
 This is one of 3 types of cookie Mom (Waltraud Paseman) would make around Christmas Time. She would ship them to the kids after they left home, wrapping each finished cookie individually in wax paper. Here is a batch cooling on the counter in her home on Holly Street.
+
+## From Rod and Katherine
 
 ## Ingredients
 

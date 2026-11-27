@@ -8,10 +8,13 @@ serves:
 time:
 status: done
 source: "Paseman Family Cookbook (2012), page 19"
+story_by: Bill
 photos: []
 ---
 
 Mechtha made this for me once on a visit to Bielefeld. I have altered it by using a rich red wine (Merlot) instead of white, and by letting the chicken marinate several hours before cooking. It is fast, simple and delicious. I cook it more than any other main dish, with the possible exception of spaghetti. The picture below was taken in the mid 1980's and shows Mechtha as I remember her.
+
+## From Rod and Katherine
 
 ## Ingredients
 

@@ -9,10 +9,13 @@ time:
 status: done
 archive: true
 source: "Paseman Family Cookbook (2012), page 39"
+story_by: Bill
 photos: []
 ---
 
 I have always been able to count on Eberhard and Dagmar's hospitality whenever I am in Berlin. They often cook this chicken recipe.
+
+## From Rod and Katherine
 
 ## Ingredients
 

@@ -7,6 +7,7 @@ tags: [christmas, crock pot]
 serves:
 time: about 5 hours (mostly hands-off)
 status: done
+story_by:
 photos: [pot-roast-christmas-2022.jpg]
 ---
 
@@ -15,6 +16,8 @@ Mommy makes this pot roast a lot. She made it for Roderick in Cambridge when he 
 > "Can't even tell you the last time Aunt B cooked it." - Mommy
 
 Pictured: preparing the pot roast at Christmas 2022. The roasts were too big for the crock pot, so they were baked instead.
+
+## From Rod and Katherine
 
 ## Ingredients
 

@@ -9,10 +9,13 @@ time:
 status: done
 archive: true
 source: "Paseman Family Cookbook (2012), page 54"
+story_by: Bill
 photos: []
 ---
 
 I sent the kids a pointer to one of my favorite SNL video commercials: The TacoTown Taco. Raymond was clearly inspired and created this for his roommate at UCSD in February 2010.
+
+## From Rod and Katherine
 
 ## Ingredients
 

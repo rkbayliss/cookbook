@@ -9,10 +9,13 @@ time:
 status: done
 archive: true
 source: "Paseman Family Cookbook (2012), page 47"
+story_by: Bill
 photos: []
 ---
 
 Sabrina started cooking the Family's Thanksgiving Turkey when she was 13. This included not only the Turkey, but pumpkin pie, bread and stuffing. This picture was taken in 2006 when she was 14.
+
+## From Rod and Katherine
 
 ## Ingredients
 

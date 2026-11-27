@@ -9,10 +9,13 @@ time:
 status: done
 archive: true
 source: "Paseman Family Cookbook (2012), page 12"
+story_by: Bill
 photos: []
 ---
 
 Mom would make this for Mona, her next door neighbor. This recipe is cut and pasted from an email Mom sent Mona. Here is the kitchen where Mom made her recipes, she is washing up a baking sheet with Dad in the background on 4623 Holly Street in Bellaire, Tx after making cookies with Sabrina and Katherine in 2004.
+
+## From Rod and Katherine
 
 ## Ingredients
 

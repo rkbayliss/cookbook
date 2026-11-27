@@ -23,7 +23,18 @@
   </figure>
   {%- endif %}
 
-  {%- if parts.intro | trim %}<div class="recipe-story">{{ parts.intro | safe }}</div>{% endif %}
+  {%- if parts.intro | trim %}
+  <div class="recipe-story recipe-story-original">
+    {%- if rd.story_by %}<p class="story-label">From {{ rd.story_by }}</p>{% endif %}
+    {{ parts.intro | safe }}
+  </div>
+  {%- endif %}
+  {%- if parts.ours %}
+  <div class="recipe-story recipe-story-ours{% if not (parts.intro | trim) %} recipe-story-original{% endif %}">
+    <p class="story-label">From Rod and Katherine</p>
+    {{ parts.ours | safe }}
+  </div>
+  {%- endif %}
 
   <div class="recipe-body">
     {%- if parts.ingredients %}

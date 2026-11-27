@@ -9,10 +9,13 @@ time:
 status: done
 archive: true
 source: "Paseman Family Cookbook (2012), page 35"
+story_by: Bill
 photos: []
 ---
 
 This was my primary dish when I went to graduate school at MIT. Each Saturday I would take the Green Line to Boston's farmer's market at the Haymarket stop. I would collect the produce in my green backpack and trundle back to the dorm. It incorporates no meat, so was very cheap to make. Interestingly, the winter was so cold there, that I started losing weight (6 pounds a week). The doctor told me I had to start eating some animal fat. That is not my problem today. I originally got this recipe from Family Circle's "Low Cost Main Dishes". This is a picture of Quan, Anthony, myself and Sylvia in the Ashdown House kitchen.
+
+## From Rod and Katherine
 
 ## Ingredients
 

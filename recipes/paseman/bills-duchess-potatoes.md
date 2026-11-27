@@ -9,10 +9,13 @@ time:
 status: done
 archive: true
 source: "Paseman Family Cookbook (2012), page 61"
+story_by: Bill
 photos: []
 ---
 
 I have used this recipe for mashed potatoes since I was in College. I originally got it from Family Circle's "Low Cost Main Dishes". This picture is from our 2009 Thanksgiving dinner. We had Hector Franco and his wife Wendy over that year. The potatoes are visible in the middle, along with a sweet potato pie the girls had baked and the bread from our bread machine.
+
+## From Rod and Katherine
 
 ## Ingredients
 

@@ -8,10 +8,13 @@ serves:
 time:
 status: done
 source: "Paseman Family Cookbook (2012), page 59"
+story_by: Bill
 photos: []
 ---
 
 Another simple recipe we cook a lot. I sometimes leave out the breading, since Sabrina is very calorie conscious. The picture shows our 2006 Thanksgiving dinner with the Citrus Salad and roasted fingerling potatoes in the Background.
+
+## From Rod and Katherine
 
 ## Ingredients
 

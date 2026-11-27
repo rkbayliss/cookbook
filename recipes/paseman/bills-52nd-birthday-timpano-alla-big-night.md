@@ -9,10 +9,13 @@ time:
 status: done
 archive: true
 source: "Paseman Family Cookbook (2012), page 50"
+story_by: Bill
 photos: []
 ---
 
 I saw Stanley Tucci's movie of the same name and had wanted to cook this dish for years. However, I had never made dough. Then, Marguerite's Auntie Sui Mui came to visit. She was from Sri Lanka and had made "String Hoppers" from scratch for us before. I talked her into helping make the timpano dough from scratch for my birthday in 2006. Between making the sauce and meatballs from scratch, it took a full day.
+
+## From Rod and Katherine
 
 ## Ingredients
 

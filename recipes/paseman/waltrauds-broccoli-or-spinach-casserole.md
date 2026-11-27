@@ -9,10 +9,13 @@ time:
 status: done
 archive: true
 source: "Paseman Family Cookbook (2012), page 67"
+story_by: Bill
 photos: []
 ---
 
 This was one of the staples that Mom brought to potlucks.
+
+## From Rod and Katherine
 
 ## Ingredients
 
