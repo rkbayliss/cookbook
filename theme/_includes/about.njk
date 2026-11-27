@@ -3,10 +3,13 @@ layout: base.njk
 bodyClass: page-about
 ---
 {%- set sections = content | aboutSections -%}
-<nav class="recipe-nav" aria-label="Back">
+<nav class="recipe-nav" aria-label="Page tools">
   <a href="/" class="back">← The cookbook</a>
+  <span class="tools">
+    <a class="tool" href="{{ site.repo }}/edit/{{ site.branch }}/{{ page.inputPath | replace('./', '') }}">Edit</a>
+  </span>
 </nav>
-<article class="about">
+<article class="about{% if articleClass %} {{ articleClass }}{% endif %}">
   <header class="recipe-header">
     <h1 class="recipe-title">{{ title }}</h1>
     {%- if jump and sections.length > 1 %}

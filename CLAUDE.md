@@ -87,6 +87,12 @@ scripts/                photos.js (photo tidying), build-images.js, build-pdf.js
 `## From the 2012 Paseman Family Cookbook` section (Bill's original introduction, copied
 exactly). An empty section is hidden.
 
+`pantry.md` (The Paseman Bayliss Pantry) and `make-your-own.md` (Make Your Own Cookbook) work
+the same way: each `## ` heading is a section, and an empty one is hidden. On the pantry page,
+every bullet is one item, written `- **Name** a few words about it` (no dash or colon after the
+bold name); sections are free, e.g. `## Always in the pantry`, `## Equipment we love`. These
+pages and About each have an Edit button that opens the file on GitHub.
+
 ## Photos
 
 The site is **public**. Photos must never carry location (GPS) data.

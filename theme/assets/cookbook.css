@@ -304,6 +304,13 @@ figcaption { text-align: center; font-style: italic; color: var(--ink-soft); fon
   font-weight: 400; font-style: normal; font-variant-caps: all-small-caps; letter-spacing: 0.14em; color: var(--accent);
   font-size: 0.9em; margin: 0 0 0.8rem; padding-bottom: 0.35rem; border-bottom: 1px solid var(--rule);
 }
+/* Pantry: each "- **Name** a few words about it" bullet is one item, in two columns */
+.pantry .about-section ul {
+  list-style: none; padding: 0; margin: 0 0 0.9em;
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr)); gap: 0 2rem;
+}
+.pantry .about-section li { padding: 0.55rem 0; border-bottom: 1px solid var(--rule); color: var(--ink-soft); font-style: italic; }
+.pantry .about-section li strong { display: block; font-style: normal; font-weight: 600; color: var(--ink); }
 .about-empty { text-align: center; font-style: italic; color: var(--ink-faint); }
 .about-section h3 { font-weight: 400; font-style: italic; font-size: 1.5em; text-align: center; margin: 0.4rem 0 1.2rem; }
 .about-section p:last-child:not(:first-child) { text-align: right; font-style: italic; color: var(--ink-soft); }
