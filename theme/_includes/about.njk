@@ -12,6 +12,9 @@ bodyClass: page-about
     {%- if jump and sections.length > 1 %}
     <p class="about-jump"><a href="#{{ jump.to | slugify }}">{{ jump.label | typography }} ↓</a></p>
     {%- endif %}
+    {%- if edition %}
+    <p class="about-edition"><a href="{{ edition.url }}">{{ edition.label | typography }}</a></p>
+    {%- endif %}
   </header>
   {%- for s in sections %}
   <section class="about-section" id="{{ s.heading | striptags | slugify }}">

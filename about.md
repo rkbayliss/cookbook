@@ -6,6 +6,10 @@ title: About the Cookbook
 jump:
   label: "Jump to Bill's introduction"
   to: "From the 2012 Paseman Family Cookbook"
+# A link to the original 2012 edition, shown under the title.
+edition:
+  label: "Read the original 2012 Paseman Family Cookbook (PDF)"
+  url: "https://paseman.com/Family/Cookbooks/20120101PasemanCookbook.pdf"
 ---
 
 <!--

@@ -124,6 +124,14 @@ main { padding: 0 1.25rem; }
 }
 .chip:hover { color: var(--ink); border-color: var(--rule); }
 .chip.is-on { color: var(--paper); background: var(--ink); border-color: var(--ink); }
+/* Kitchen filter: a quiet row of small-caps words, not buttons */
+.kitchens { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.3rem 1.3rem; margin-top: 0.9rem; }
+.kitchen-link {
+  font: inherit; font-variant-caps: all-small-caps; letter-spacing: 0.12em; color: var(--ink-faint);
+  background: none; border: 0; border-bottom: 1px solid transparent; padding: 0 0.1rem 0.1rem; cursor: pointer;
+}
+.kitchen-link:hover { color: var(--ink); }
+.kitchen-link.is-on { color: var(--accent); border-bottom-color: var(--accent); }
 .finder-status { text-align: center; color: var(--ink-faint); font-style: italic; min-height: 1.5em; margin: 0.6rem 0 0; font-size: 0.9em; }
 
 .contents { max-width: var(--measure); margin: 0 auto; }
@@ -327,12 +335,13 @@ figcaption { text-align: center; font-style: italic; color: var(--ink-soft); fon
 
 /* Home: "About the cookbook" in the top-right corner */
 .home-nav { max-width: var(--wide); margin: 0 auto; padding: 1.1rem 0 0; text-align: right; }
+.home-nav { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 0.4rem 1.4rem; }
 .home-nav a {
   font-variant-caps: all-small-caps; letter-spacing: 0.12em; color: var(--accent);
   text-decoration: none; border-bottom: 1px solid var(--rule); padding-bottom: 0.1rem;
 }
 .home-nav a:hover { border-bottom-color: var(--accent); }
-@media (max-width: 30rem) { .home-nav { text-align: center; } }
+@media (max-width: 30rem) { .home-nav { justify-content: center; } }
 @media print { .home-nav { display: none; } }
 
 /* ---------- Home: frontispiece ---------- */
@@ -366,6 +375,7 @@ figcaption { text-align: center; font-style: italic; color: var(--ink-soft); fon
 .finder { margin-top: 0; }
 @media (max-width: 51.99rem) { .frontis-photo { order: -1; } }
 .about-jump { margin: 0.6rem 0 0; }
+.about-edition { margin: 0.4rem 0 0; font-style: italic; color: var(--ink-soft); }
 .about-jump a {
   font-variant-caps: all-small-caps; letter-spacing: 0.12em; color: var(--accent);
   text-decoration: none; border-bottom: 1px solid var(--rule); padding-bottom: 0.1rem;

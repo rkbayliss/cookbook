@@ -1,6 +1,6 @@
 // Helpers shared by the site build. Kept free of Eleventy so they are easy to test.
 
-export const CATEGORY_ORDER = ["Weeknight Mains", "Weeknight Sides", "Holidays", "Special Occasion", "Desserts", "Drinks"];
+export const CATEGORY_ORDER = ["Weeknight Mains", "Weeknight Sides", "Holidays", "Special Occasion", "Desserts", "Magnificent Cakes", "Drinks"];
 
 export function slugify(s) {
   return String(s)

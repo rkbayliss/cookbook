@@ -2,7 +2,7 @@
 title: Recipe Name
 from: RKBayliss        # RKBayliss (our own recipes), Bayliss (Rod's family), or Paseman (Katherine's family)
 credit: Who it's from  # e.g. Mommy, Aunt B, Dad, a friend's name
-category: Weeknight Mains  # Weeknight Mains, Weeknight Sides, Holidays, Special Occasion, Desserts, Drinks
+category: Weeknight Mains  # Weeknight Mains, Weeknight Sides, Holidays, Special Occasion, Desserts, Magnificent Cakes, Drinks
 tags: []               # e.g. [thanksgiving]: a weeknight dish you also make for a holiday keeps its category and gets the holiday tag
 serves:
 time:

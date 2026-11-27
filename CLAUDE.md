@@ -33,7 +33,8 @@ scripts/                photos.js (photo tidying), build-images.js, build-pdf.js
     that came from their families.
   - `credit`: the person it came from, as the family calls them (`Mommy`, `Aunt B`, `Bill`).
   - `category`: exactly one of `Weeknight Mains`, `Weeknight Sides`, `Holidays`,
-    `Special Occasion`, `Desserts`, `Drinks`. Pick by how the dish is mainly used: anything
+    `Special Occasion`, `Desserts`, `Magnificent Cakes`, `Drinks`. Magnificent Cakes is for
+    showpiece layer cakes; other sweets go in Desserts. Pick by how the dish is mainly used: anything
     made on ordinary weeknights is Weeknight, even if it also appears at a holiday (give it the
     holiday tag instead). Holidays is for dishes made for a holiday (Thanksgiving, Christmas,
     St. Patrick's Day, New Year's). Special Occasion is for birthdays, guests, weekend
