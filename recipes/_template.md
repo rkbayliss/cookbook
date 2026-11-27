@@ -8,30 +8,27 @@ serves:
 time:
 status: draft          # draft while you're still working on it, done when it's final
 archive: false         # true = The Archive: family history, not everyday or holiday cooking
-story_by:              # who wrote the original description below, e.g. Bill. Blank if there isn't one
+story_by:              # who wrote an original description, e.g. Bill. If there is one, it goes as a paragraph right after this front matter, above "## From Katherine"
 photos: []             # e.g. [recipe-file-name_2026-carved.jpg]; first one is the main photo. See CLAUDE.md
+# Replace every lorem ipsum below. "## From Katherine" can be "## From Rod" or "## From Rod and Katherine".
+# Ingredients: equipment first, then ingredients. Preparation: numbered steps, each with a bold lead-in.
 ---
 
-The original description, in the words of whoever wrote it (for example Bill's, from the
-2012 Paseman Family Cookbook). Put their name in story_by above. Delete this paragraph if
-there isn't one.
+## From Katherine
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu feugiat libero. Duis ut imperdiet dolor. Mauris vel felis sed orci vulputate auctor.
 
-## From Rod and Katherine
-
-Our description: what this dish means to us, when we make it, and who we make it for.
-
-## Ingredients
-
-- 
-- 
-- 
+## Ingredients & Equipment
+- Lorem ipsum pot
+- Dolor sit bowl
+- 1 lorem ipsum
+- 1/2 cup dolor sit amet
+- Consectetur adipiscing
 
 ## Preparation
-
-1. 
-2. 
-3. 
+1. **Lorem ipsum:** Dolor sit amet, consectetur adipiscing elit. Etiam eu feugiat libero.
+2. **Duis ut imperdiet:** Mauris vel felis sed orci vulputate auctor.
+3. **Consectetur adipiscing:** Lorem ipsum dolor sit amet (~10 minutes).
 
 ## Notes
-
-- 
+- Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+- **Thanksgiving 2026:** Lorem ipsum dolor sit amet. Dated notes about a particular time go last.

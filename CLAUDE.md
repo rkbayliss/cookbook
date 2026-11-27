@@ -55,7 +55,13 @@ scripts/                photos.js (photo tidying), build-images.js, build-pdf.js
     shows as "From Bill" above it. Blank if there isn't an original description, or if
     Rod and Katherine wrote it.
   - `photos`: list of photo file names, first one is the main photo. `[]` if none.
-- **Body**, in this order:
+- **Body**: `recipes/_template.md` is the model, laid out like `potato-salad.md`: a signed
+  `## From Katherine` (or Rod, or Rod and Katherine) description, `## Ingredients & Equipment`
+  (equipment first), numbered `## Preparation` steps that each start with a bold lead-in
+  (`1. **Boil the potatoes:** ...`), and `## Notes`. Every section in the template is lorem
+  ipsum: replace it all when making a new recipe, and never leave lorem ipsum in a recipe
+  (it would show on the public site). A section with nothing to say yet is left empty instead.
+  In this order:
   1. The original description, with no heading: in its writer's own words (for the 2012-book
      recipes, Bill's). Never rewrite it, and name its writer in `story_by`.
   2. `## From Rod and Katherine`: Rod and Katherine's own description: what the dish means to
