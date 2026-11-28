@@ -9,7 +9,7 @@ time: 2 hours 15 minutes (prep 8 mins, cook 7 mins, cooling 2 hours)
 status: draft
 source: "Natasha's Kitchen, Lemon Posset: https://natashaskitchen.com/lemon-posset/"
 story_by: Natasha Kravchuk of Natasha's Kitchen
-photos: []
+photos: [lemon-posset_2023-birthday.jpg, lemon-posset_setting-in-lemon-halves-and-ramekins.jpg]
 ---
 
 My lemon posset recipe creates a perfect lemon custard with just 3 ingredients and only 5 minutes on the stove. The custard sets up perfectly without gelatin or eggs, making the recipe super simple. I love serving this fresh dessert in hollowed-out lemon halves, topped with whipped cream, fresh berries or lemon slices for a sophisticated presentation! You can also serve in ramekins.
@@ -37,3 +37,7 @@ My lemon posset recipe creates a perfect lemon custard with just 3 ingredients a
 - Use real lemon juice, not concentrate.
 - **How to Make Lemon Cups:** If you want to serve out of lemon peels, cut 5 to 6 lemons in half lengthwise and spoon out the inside juice and membrane. Reserve the juice for the recipe by mashing the pulp and straining it through a sieve.
 - **Make-ahead & Storage:** Once the possets have set (after about 2 hours), cover with plastic wrap, so they don't absorb food odors, and store in the refrigerator for up to 3 days.
+
+## Gallery
+
+![Lemon possets setting in lemon halves and ramekins](images/lemon-posset_setting-in-lemon-halves-and-ramekins.jpg)
