@@ -9,7 +9,7 @@ time: 2 hours 15 minutes (prep 8 mins, cook 7 mins, cooling 2 hours)
 status: draft
 source: "Natasha's Kitchen, Lemon Posset: https://natashaskitchen.com/lemon-posset/"
 story_by: Natasha Kravchuk of Natasha's Kitchen
-photos: [lemon-posset_2023-birthday.jpg, lemon-posset_setting-in-lemon-halves-and-ramekins.jpg]
+photos: [lemon-posset_2023-birthday.jpg, lemon-posset_setting-in-lemon-halves-and-ramekins.jpg, lemon-posset_2023-fruit-birthday.jpg]
 ---
 
 My lemon posset recipe creates a perfect lemon custard with just 3 ingredients and only 5 minutes on the stove. The custard sets up perfectly without gelatin or eggs, making the recipe super simple. I love serving this fresh dessert in hollowed-out lemon halves, topped with whipped cream, fresh berries or lemon slices for a sophisticated presentation! You can also serve in ramekins.
@@ -41,3 +41,6 @@ My lemon posset recipe creates a perfect lemon custard with just 3 ingredients a
 ## Gallery
 
 ![Lemon possets setting in lemon halves and ramekins](images/lemon-posset_setting-in-lemon-halves-and-ramekins.jpg)
+
+![Katherine and her sister at the table on her fruit birthday](images/lemon-posset_2023-fruit-birthday.jpg)
+Me and my sister from my fruit birthday.
